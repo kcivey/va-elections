@@ -1,6 +1,7 @@
 const fsStore = require('cache-manager-fs');
 const requestPlus = require('request-plus');
 const cacheManager = require('cache-manager');
+const delay = 5000;
 const cacheReady = new Promise(
     function (resolve) {
         const cache = cacheManager.caching({
@@ -14,4 +15,13 @@ const cacheReady = new Promise(
     }
 ).then(cache => requestPlus({cache: {cache}}));
 
-module.exports = (...args) => cacheReady.then(rp => rp(...args));
+function pause(result) {
+    return new Promise(function (resolve) {
+        setTimeout(() => resolve(result), delay);
+    });
+}
+
+module.exports = function (...args) {
+    return cacheReady.then(pause)
+        .then(rp => rp(...args));
+};
