@@ -1,0 +1,17 @@
+{
+  "name": "va-elections",
+  "version": "0.0.1",
+  "description": "Scripts to get info on Virginia legislative elections",
+  "author": "Keith C. Ivey <keith@iveys.org>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-google": "^0.12.0"
+  },
+  "dependencies": {
+    "cache-manager": "^2.9.0",
+    "cache-manager-fs": "^1.0.7",
+    "request": "^2.88.0",
+    "request-plus": "^2.0.0"
+  }
+}
