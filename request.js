@@ -21,7 +21,14 @@ function pause(result) {
     });
 }
 
-module.exports = function (...args) {
-    return cacheReady.then(pause)
-        .then(rp => rp(...args));
+module.exports = function (uri, options) {
+    if (typeof uri === 'string') {
+        options = {uri};
+    }
+    else {
+        options.uri = uri;
+    }
+    options.transform = pause;
+    console.log('request', options.uri);
+    return cacheReady.then(rp => rp(options));
 };
