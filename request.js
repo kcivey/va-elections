@@ -29,6 +29,5 @@ module.exports = function (uri, options) {
         options.uri = uri;
     }
     options.transform = pause;
-    console.log('request', options.uri);
     return cacheReady.then(rp => rp(options));
 };
