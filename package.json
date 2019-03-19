@@ -12,6 +12,7 @@
     "cache-manager": "^2.9.0",
     "cache-manager-fs": "^1.0.7",
     "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.11",
     "request": "^2.88.0",
     "request-plus": "^2.0.0"
   }
