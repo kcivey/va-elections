@@ -4,6 +4,7 @@ const url = require('url');
 const cheerio = require('cheerio');
 const _ = require('lodash');
 const csvStringify = require('csv-stringify/lib/sync');
+const {decodeHTML} = require('entities');
 const request = require('./request');
 const houseUrl = 'https://www.vpap.org/elections/house/candidates/general/';
 const senateUrl = 'https://www.vpap.org/elections/senate/candidates/general/';
@@ -23,14 +24,18 @@ async function processHtml(html) {
         const values = $(row).find('td')
             .map(function (i, td) {
                 const value = $(td).html().trim().replace(/\s+/g, ' ');
-                return i > 0 ? value.replace(/\s*<br>\s*/g, '; ').replace(/;\s*$/, '') : value;
+                return i === 0 ? value :
+                    decodeHTML(
+                        value.replace(/\s*<br>\s*/g, '; ')
+                            .replace(/;\s*$/, '')
+                    );
             })
             .get();
         let m;
         if ((m = values[0].match(/href="([^"]+)"\s*>\s*([HS]D\s*\d+)\s*</))) {
             values[0] = m[2].replace(/\s+/, '');
             const detailUrl = url.resolve(houseUrl, m[1]);
-            const html = await request(detailUrl);
+            // const html = await request(detailUrl);
             console.log(values[0]);
         }
         const record = _.zipObject(headers, values);
