@@ -38,32 +38,25 @@ async function processHtml(html) {
             values[0] = m[2].replace(/\s+/, '');
             let detailUrl = url.resolve(houseUrl, m[1]);
             const isHouse = /house/.test(detailUrl);
-            let html;
-            let $;
-            if (isHouse) {
-                detailUrl = detailUrl.replace('2019', '2017');
-                html = await request(detailUrl);
-                $ = cheerio.load(html);
-                rows = $('table.table tbody tr').get();
-                const votes = {};
-                for (const row of rows) {
-                    if ($(row).hasClass('ghost')) {
-                        continue;
-                    }
-                    const cells = $(row).find('td');
-                    const candidate = cells.eq(0).text();
-                    let m;
-                    if ((m = candidate.match(/\((\w)\)/))) {
-                        const party = m[1];
-                        votes[party] = cells.eq(2).text().replace(/^\s*([\d,]+)\s.+$/sm, '$1')
-                            .replace(',', '');
-                    }
+            detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
+            let html = await request(detailUrl);
+            let $ = cheerio.load(html);
+            rows = $('table.table tbody tr').get();
+            const votes = {};
+            for (const row of rows) {
+                if ($(row).hasClass('ghost')) {
+                    continue;
                 }
-                values.push(votes['D'], votes['R']);
+                const cells = $(row).find('td');
+                const candidate = cells.eq(0).text();
+                let m;
+                if ((m = candidate.match(/\((\w)\)/))) {
+                    const party = m[1];
+                    votes[party] = cells.eq(2).text().replace(/^\s*([\d,]+)\s.+$/sm, '$1')
+                        .replace(',', '');
+                }
             }
-            else {
-                values.push('', '');
-            }
+            values.push(votes['D'], votes['R']);
             detailUrl = detailUrl.replace(/\/elections\/.*/, '/district/');
             html = await request(detailUrl);
             $ = cheerio.load(html);
