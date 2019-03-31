@@ -2,12 +2,13 @@ const fsStore = require('cache-manager-fs');
 const requestPlus = require('request-plus');
 const cacheManager = require('cache-manager');
 const delay = 5000;
+const ttl = 48 * 60 * 60; // seconds
 const cacheReady = new Promise(
     function (resolve) {
         const cache = cacheManager.caching({
             store: fsStore,
             options: {
-                ttl: 6 * 60 * 60 /* seconds */,
+                ttl,
                 maxsize: 100e6 /* max size in bytes on disk */,
                 fillcallback: () => resolve(cache),
             },
