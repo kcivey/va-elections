@@ -5,7 +5,7 @@
   "author": "Keith C. Ivey <keith@iveys.org>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-google": "^0.12.0"
   },
   "dependencies": {
