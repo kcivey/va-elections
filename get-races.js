@@ -53,13 +53,14 @@ async function processHtml(html) {
             const cells = $(row).find('td');
             const candidate = cells.eq(0).text();
             if ((m = candidate.match(/\((\w)\)/))) {
-                votes[m[1]] = cells.eq(2).text().replace(/^\s*([\d,]+)\s.+$/sm, '$1')
+                votes[m[1]] = +cells.eq(2).text().replace(/^\s*([\d,]+)\s.+$/sm, '$1')
                     .replace(/,/g, '');
             }
         }
         for (const abbr of ['D', 'R']) {
             record[`Previous ${abbr} Votes`] = votes[abbr] || 0;
         }
+        record['Previous Margin'] = getDemMargin(votes['D'], votes['R']);
         detailUrl = detailUrl.replace(/\/elections\/.*/, '/district/');
         $ = await getCheerio(detailUrl);
         let incumbent = $('div.col-xs-12.col-md-3').find('div').eq(1).text().trim();
@@ -93,12 +94,13 @@ async function processHtml(html) {
                         if (!m) {
                             throw new Error(`Unexpected format "${cells.eq(0).text()}"`);
                         }
-                        votes[m[1]] = cells.eq(1).text().trim()
+                        votes[m[1]] = +cells.eq(1).text().trim()
                             .replace(/,/g, '');
                     }
                     for (const abbr of ['D', 'R']) {
                         record[`${election} ${abbr}`] = votes[abbr] || 0;
                     }
+                    record[`${election} Margin`] = getDemMargin(votes['D'], votes['R']);
                 }
                 prevYear = electionYear;
             }
@@ -110,4 +112,10 @@ async function processHtml(html) {
 function getCheerio(requestOptions) {
     return request(requestOptions)
         .then(html => cheerio.load(html));
+}
+
+function getDemMargin(dVotes, rVotes) {
+    dVotes = dVotes ? +dVotes : 0;
+    rVotes = rVotes ? +rVotes : 0;
+    return (dVotes >= rVotes ? '+' : '') + (100 * (dVotes - rVotes) / (dVotes + rVotes)).toFixed(0);
 }
