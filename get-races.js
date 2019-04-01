@@ -22,7 +22,6 @@ async function processHtml(html) {
         .map((i, th) => $(th).text().trim())
         .get();
     let rows = $('table.table tbody tr').get();
-    rows = rows.slice(0, 4); // @@@
     for (const row of rows) {
         const values = $(row).find('td')
             .map(function (i, td) {
