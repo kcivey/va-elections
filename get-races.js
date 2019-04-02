@@ -33,14 +33,14 @@ async function processHtml(html) {
                     );
             })
             .get();
-        let m = values[0].match(/href="([^"]+)"\s*>\s*([HS]D\s*\d+)\s*</);
+        let m = values[0].match(/href="([^"]+)"\s*>\s*([HS]D)\s*(\d+)\s*</);
         if (!m) {
             throw new Error(`Unexpected format "${values[0]}"`);
         }
         let detailUrl = url.resolve(houseUrl, m[1]);
-        values[0] = m[2].replace(/\s+/, '');
-        const record = _.zipObject(headers, values);
         const isHouse = /house/.test(detailUrl);
+        values[0] = m[2] + _.padStart(m[3], isHouse ? 3 : 2, '0'); // add leading 0s for sorting
+        const record = _.zipObject(headers, values);
         detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
         $ = await getCheerio(detailUrl);
         rows = $('table.table tbody tr').get();
