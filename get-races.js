@@ -14,7 +14,7 @@ const currentElectionYear = 2019;
 request(houseUrl).then(processHtml)
     .then(() => request(senateUrl))
     .then(processHtml)
-    .then(() => console.log(csvStringify(data, {header: true})));
+    .then(outputCsv);
 
 async function processHtml(html) {
     let $ = cheerio.load(html);
@@ -108,6 +108,7 @@ async function processHtml(html) {
         }
         data.push(record);
     }
+    return data;
 }
 
 function getCheerio(requestOptions) {
@@ -119,4 +120,8 @@ function getDemMargin(dVotes, rVotes) {
     dVotes = dVotes ? +dVotes : 0;
     rVotes = rVotes ? +rVotes : 0;
     return (dVotes >= rVotes ? '+' : '') + (100 * (dVotes - rVotes) / (dVotes + rVotes)).toFixed(0);
+}
+
+function outputCsv(data) {
+    process.stdout.write(csvStringify(data, {header: true}));
 }
