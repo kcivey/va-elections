@@ -58,7 +58,8 @@ async function processHtml(html) {
         let district = values.shift();
         values = values.map(function (value) {
             return value.split(/\s*<br>\s*/g)
-                .filter(v => (v !== ''));
+                .filter(v => (v !== ''))
+                .map(decodeHTML);
         });
         let m = district.match(/href="([^"]+)"\s*>\s*([HS]D\s*\d+)\s*</);
         if (!m) {
