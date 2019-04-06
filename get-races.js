@@ -192,11 +192,27 @@ function outputHtml(data) {
         const compiled = _.template(templateString);
         const headers = Object.keys(data[Object.keys(data)[0]]);
         headers.unshift('District');
-        const html = compiled({headers, data});
+        const html = compiled({headers, data, marginStyle});
         fs.writeFile(__dirname + '/va-elections.html', html, function (err) {
             if (err) {
                 throw err;
             }
         });
     });
+}
+
+function marginStyle(margin) {
+    let background;
+    margin = +margin;
+    if (margin === 0) {
+        background = 'white';
+    }
+    else if (margin < 0) {
+        background = `rgb(100%, ${100 + margin}%, ${100 + margin}%)`;
+    }
+    else {
+        background = `rgb(${100 - margin}%, ${100 - margin}%, 100%)`;
+    }
+    const color = Math.abs(margin) > 50 ? 'white' : 'black';
+    return `style="background-color: ${background}; color: ${color};"`;
 }

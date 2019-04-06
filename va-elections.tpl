@@ -10,8 +10,8 @@
     <% _.forEach(data, function (r, district) { %>
       <tr>
         <td><%- district %></td>
-        <% _.forEach(r, function (value) { %>
-          <td>
+        <% _.forEach(r, function (value, key) { %>
+          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% } %>>
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>
                 <%- v %><br>
