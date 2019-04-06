@@ -24,7 +24,7 @@ readExistingData()
     .then(() => request(senateUrl))
     .then(processHtml)
     .then(writeData)
-    .then(outputCsv);
+    .then(outputHtml);
 
 function readExistingData() {
     return new Promise(function (resolve, reject) {
@@ -182,4 +182,21 @@ function outputCsv(data) {
         transformedData.push(record);
     }
     process.stdout.write(csvStringify(transformedData, {header: true}));
+}
+
+function outputHtml(data) {
+    fs.readFile(__dirname + '/va-elections.tpl', 'utf8', function (err, templateString) {
+        if (err) {
+            throw err;
+        }
+        const compiled = _.template(templateString);
+        const headers = Object.keys(data[Object.keys(data)[0]]);
+        headers.unshift('District');
+        const html = compiled({headers, data});
+        fs.writeFile(__dirname + '/va-elections.html', html, function (err) {
+            if (err) {
+                throw err;
+            }
+        });
+    });
 }
