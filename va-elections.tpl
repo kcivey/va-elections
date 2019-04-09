@@ -4,11 +4,51 @@
   <meta charset="UTF-8">
   <title>Virginia 2019 Elections</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <style type="text/css">
+    .democrat {
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      background-color: blue;
+    }
+    .republican {
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      background-color: red;
+    }
+  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
   <script type="text/javascript">
     jQuery(function () {
-      $('#races-table').DataTable();
+      var numberCol = {
+        className: 'text-right',
+        render: $.fn.dataTable.render.number(',', '.')
+      };
+      $('#races-table').DataTable({
+        columns: [
+          null,
+          null,
+          null,
+          null,
+          numberCol,
+          numberCol,
+          null,
+          null,
+          null,
+          numberCol,
+          numberCol,
+          null,
+          numberCol,
+          numberCol,
+          null,
+          numberCol,
+          numberCol,
+          null
+        ],
+        paging: false
+      });
     });
   </script>
 </head>
@@ -26,7 +66,8 @@
       <tr>
         <td data-order="<%- (/^H/.test(district) ? 1 : 2) * 1000 + +district.substr(2) %>"><%- district %></td>
         <% _.forEach(r, function (value, key) { %>
-          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% } %>>
+          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% }
+            else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% } %>>
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>
                 <%- v %><br>
