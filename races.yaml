@@ -374,6 +374,8 @@ HD19:
   2014 US Senator Margin: '-25'
 HD20:
   Democrat:
+    - 'David W Blanchard, Jr'
+    - Jennifer Lewis
     - Jennifer Lewis
   Republican:
     - G John Avoli
@@ -437,6 +439,7 @@ HD23:
   Democrat: []
   Republican:
     - Ron Berman
+    - 'Edgar J Perrow, Jr'
     - Wendell S Walker
   Other: []
   Previous D Votes: 9050
@@ -476,7 +479,6 @@ HD24:
 HD25:
   Democrat:
     - Jenni Kitchen
-    - Lauren Thompson
   Republican:
     - 'Richard Fox, II'
     - Marshall Pattie
@@ -1799,8 +1801,7 @@ HD91:
   2014 US Senator Margin: '-12'
 HD92:
   Democrat:
-    - Monique Nicole Gatling
-    - Jeion Ward*
+    - Jeion Ward
   Republican: []
   Other: []
   Previous D Votes: 18873
@@ -2103,7 +2104,6 @@ SD7:
     - Cheryl Turpin
   Republican:
     - Jen Kiggans
-    - Benjamin Running Deer Valdez
     - Carolyn D Weems
   Other: []
   Previous D Votes: 15434
@@ -2268,7 +2268,6 @@ SD14:
 SD15:
   Democrat: []
   Republican:
-    - Matthew Kelly
     - Frank Ruff*
     - Dale L Sturdifen
   Other: []
@@ -2312,7 +2311,6 @@ SD17:
     - Amy Laufer
   Republican:
     - Rich Breeden
-    - Danielle Noel Gibeson
     - Bryce Reeves*
   Other: []
   Previous D Votes: 14915
