@@ -24,7 +24,7 @@
   <tbody>
     <% _.forEach(data, function (r, district) { %>
       <tr>
-        <td><%- district %></td>
+        <td data-order="<%- (/^H/.test(district) ? 1 : 2) * 1000 + +district.substr(2) %>"><%- district %></td>
         <% _.forEach(r, function (value, key) { %>
           <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% } %>>
             <% if (Array.isArray(value)) { %>
