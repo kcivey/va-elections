@@ -297,7 +297,7 @@ HD16:
   Republican:
     - Les Adams*
   Other:
-    - Dustin Evans
+    - Dustin W Evans
   Previous D Votes: 0
   Previous R Votes: 16513
   Previous Margin: '-100'
@@ -376,7 +376,6 @@ HD20:
   Democrat:
     - 'David W Blanchard, Jr'
     - Jennifer Lewis
-    - Jennifer Lewis
   Republican:
     - G John Avoli
     - Dave Bourne
@@ -439,7 +438,7 @@ HD23:
   Democrat: []
   Republican:
     - Ron Berman
-    - 'Edgar J Perrow, Jr'
+    - 'Edgar James Turner Perrow, Jr'
     - Wendell S Walker
   Other: []
   Previous D Votes: 9050
@@ -1579,7 +1578,8 @@ HD80:
   2014 US Senator R: 4526
   2014 US Senator Margin: '+51'
 HD81:
-  Democrat: []
+  Democrat:
+    - Len Myers
   Republican:
     - Barry Knight*
   Other: []
@@ -1783,7 +1783,7 @@ HD91:
     - Martha Mugler
     - Michael Wade
   Republican:
-    - Colleen Holcomb
+    - Colleen Holmes Holcomb
   Other: []
   Previous D Votes: 10764
   Previous R Votes: 13877
@@ -1940,8 +1940,7 @@ HD98:
   2014 US Senator R: 14865
   2014 US Senator Margin: '-23'
 HD99:
-  Democrat:
-    - Francis Edwards
+  Democrat: []
   Republican:
     - Margaret Ransone*
   Other: []
@@ -2227,7 +2226,6 @@ SD13:
   Democrat:
     - John Bell
   Republican:
-    - Mike Buscher
     - Geary Higgins
     - Ron Meyer
   Other:
@@ -2266,7 +2264,8 @@ SD14:
   2014 US Senator R: 33390
   2014 US Senator Margin: '-19'
 SD15:
-  Democrat: []
+  Democrat:
+    - Virginia Smith
   Republican:
     - Frank Ruff*
     - Dale L Sturdifen
