@@ -374,7 +374,6 @@ HD19:
   2014 US Senator Margin: '-25'
 HD20:
   Democrat:
-    - 'David W Blanchard, Jr'
     - Jennifer Lewis
   Republican:
     - G John Avoli
@@ -1015,7 +1014,8 @@ HD52:
   Democrat:
     - Luke Torian*
     - Kevin Wade
-  Republican: []
+  Republican:
+    - Maria Eugenia Martin
   Other: []
   Previous D Votes: 14830
   Previous R Votes: 0
@@ -1940,7 +1940,8 @@ HD98:
   2014 US Senator R: 14865
   2014 US Senator Margin: '-23'
 HD99:
-  Democrat: []
+  Democrat:
+    - Francis Edwards
   Republican:
     - Margaret Ransone*
   Other: []
