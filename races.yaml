@@ -254,7 +254,7 @@ HD13:
   2014 US Senator Margin: '-4'
 HD14:
   Democrat:
-    - Eric Stamps
+    - Eric W Stamps
   Republican:
     - Danny Marshall*
   Other: []
@@ -436,7 +436,7 @@ HD22:
 HD23:
   Democrat: []
   Republican:
-    - Ron Berman
+    - Ronald Richard Berman
     - 'Edgar James Turner Perrow, Jr'
     - Wendell S Walker
   Other: []
@@ -856,7 +856,7 @@ HD44:
   Democrat:
     - Paul Krizek*
   Republican:
-    - Richard Hayden
+    - Richard T Hayden
   Other: []
   Previous D Votes: 18243
   Previous R Votes: 0
@@ -1722,7 +1722,7 @@ HD87:
 HD88:
   Democrat:
     - Kecia Evans
-    - Jess Foster
+    - Jessica Foster
   Republican:
     - Mark Cole*
   Other: []
@@ -1801,7 +1801,7 @@ HD91:
   2014 US Senator Margin: '-12'
 HD92:
   Democrat:
-    - Jeion Ward
+    - Jeion Ward*
   Republican: []
   Other: []
   Previous D Votes: 18873
@@ -2761,9 +2761,9 @@ SD39:
 SD40:
   Democrat: []
   Republican:
-    - Ken Heath
     - Todd Pillion
-  Other: []
+  Other:
+    - Ken Heath
   Previous D Votes: 0
   Previous R Votes: 36838
   Previous Margin: '-100'
