@@ -478,8 +478,6 @@ HD25:
   Democrat:
     - Jenni Kitchen
   Republican:
-    - 'Richard Fox, II'
-    - Marshall Pattie
     - Christopher A Runion
   Other: []
   Previous D Votes: 12783
@@ -798,7 +796,8 @@ HD41:
   Democrat:
     - Eileen Filler-Corn*
   Republican: []
-  Other: []
+  Other:
+    - Rachel Mace
   Previous D Votes: 22985
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -1722,7 +1721,7 @@ HD87:
 HD88:
   Democrat:
     - Kecia Evans
-    - Jessica Foster
+    - Jess Foster
   Republican:
     - Mark Cole*
   Other: []
