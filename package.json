@@ -19,5 +19,17 @@
     "request": "^2.88.0",
     "request-plus": "^2.0.0",
     "yargs": "^13.2.2"
-  }
+  },
+  "main": "get-races.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcivey/va-elections.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kcivey/va-elections/issues"
+  },
+  "homepage": "https://github.com/kcivey/va-elections#readme"
 }
