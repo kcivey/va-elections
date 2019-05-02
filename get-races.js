@@ -4,19 +4,24 @@ const url = require('url');
 const fs = require('fs');
 const cheerio = require('cheerio');
 const _ = require('lodash');
-const program = require('commander');
 const yaml = require('js-yaml');
 const csvStringify = require('csv-stringify/lib/sync');
 const {decodeHTML} = require('entities');
+const argv = require('yargs')
+    .options({
+        full: {
+            type: 'boolean',
+            describe: 'refresh all info, including historical vote counts (takes a while)',
+        },
+    })
+    .strict(true)
+    .argv;
 const request = require('./request');
 const houseUrl = 'https://www.vpap.org/elections/house/candidates/general/';
 const senateUrl = 'https://www.vpap.org/elections/senate/candidates/general/';
 const dataFile = __dirname + '/races.yaml';
 const currentElectionYear = 2019;
 let data = {};
-
-program.option('--full', 'Refresh all info, including historical vote counts (takes a while)')
-    .parse(process.argv);
 
 readExistingData()
     .then(() => request(houseUrl))
@@ -28,7 +33,7 @@ readExistingData()
 
 function readExistingData() {
     return new Promise(function (resolve, reject) {
-        if (program.full) {
+        if (argv.full) {
             resolve();
             return;
         }
