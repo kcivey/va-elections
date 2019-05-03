@@ -73,7 +73,7 @@ async function processHtml(html) {
         let detailUrl = url.resolve(houseUrl, m[1]);
         district= m[2].replace(/\s+/, '');
         const record = _.zipObject(headers, values);
-        if (program.full || !data[district]) {
+        if (argv.full || !data[district]) {
             const isHouse = /^H/.test(district);
             detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
             $ = await getCheerio(detailUrl);
