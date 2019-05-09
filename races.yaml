@@ -1482,7 +1482,8 @@ HD75:
   2014 US Senator R: 7430
   2014 US Senator Margin: '+21'
 HD76:
-  Democrat: []
+  Democrat:
+    - Clint Jenkins
   Republican:
     - Chris Jones*
   Other: []
@@ -1558,8 +1559,7 @@ HD79:
   2014 US Senator R: 4576
   2014 US Senator Margin: '+27'
 HD80:
-  Democrat:
-    - Matthew James*
+  Democrat: []
   Republican: []
   Other: []
   Previous D Votes: 20292
