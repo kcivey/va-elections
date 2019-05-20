@@ -434,7 +434,8 @@ HD22:
   2014 US Senator R: 13787
   2014 US Senator Margin: '-31'
 HD23:
-  Democrat: []
+  Democrat:
+    - David A Zilles
   Republican:
     - Ronald Richard Berman
     - 'Edgar James Turner Perrow, Jr'
@@ -479,7 +480,8 @@ HD25:
     - Jenni Kitchen
   Republican:
     - Christopher A Runion
-  Other: []
+  Other:
+    - Janice L Allen
   Previous D Votes: 12783
   Previous R Votes: 17688
   Previous Margin: '-16'
@@ -1900,7 +1902,8 @@ HD96:
   2014 US Senator R: 15647
   2014 US Senator Margin: '-16'
 HD97:
-  Democrat: []
+  Democrat:
+    - Kevin D Washington
   Republican:
     - Chris Peace*
     - Scott Wyatt
@@ -2366,7 +2369,8 @@ SD19:
   2014 US Senator R: 35219
   2014 US Senator Margin: '-25'
 SD20:
-  Democrat: []
+  Democrat:
+    - Sherman Witcher
   Republican:
     - Bill Stanley*
   Other: []
