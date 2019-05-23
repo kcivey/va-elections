@@ -57,7 +57,8 @@ HD3:
   2014 US Senator R: 11618
   2014 US Senator Margin: '-38'
 HD4:
-  Democrat: []
+  Democrat:
+    - Starla Kiser
   Republican:
     - David Eaton
     - Will Wampler
@@ -435,7 +436,7 @@ HD22:
   2014 US Senator Margin: '-31'
 HD23:
   Democrat:
-    - David A Zilles
+    - David Zilles
   Republican:
     - Ronald Richard Berman
     - 'Edgar James Turner Perrow, Jr'
@@ -481,7 +482,7 @@ HD25:
   Republican:
     - Christopher A Runion
   Other:
-    - Janice L Allen
+    - Janice Allen
   Previous D Votes: 12783
   Previous R Votes: 17688
   Previous Margin: '-16'
@@ -1561,7 +1562,8 @@ HD79:
   2014 US Senator R: 4576
   2014 US Senator Margin: '+27'
 HD80:
-  Democrat: []
+  Democrat:
+    - Don Scott
   Republican: []
   Other: []
   Previous D Votes: 20292
@@ -1903,7 +1905,7 @@ HD96:
   2014 US Senator Margin: '-16'
 HD97:
   Democrat:
-    - Kevin D Washington
+    - Kevin Washington
   Republican:
     - Chris Peace*
     - Scott Wyatt
