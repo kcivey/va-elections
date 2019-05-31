@@ -1250,7 +1250,8 @@ HD63:
   2014 US Senator R: 5263
   2014 US Senator Margin: '+41'
 HD64:
-  Democrat: []
+  Democrat:
+    - Michele Joyce
   Republican:
     - Emily Brewer*
   Other: []
