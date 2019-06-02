@@ -1052,7 +1052,8 @@ HD53:
   2014 US Senator R: 6252
   2014 US Senator Margin: '+35'
 HD54:
-  Democrat: []
+  Democrat:
+    - Neri Canahui-Ortiz
   Republican:
     - Bobby Orrock*
   Other: []
