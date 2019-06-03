@@ -2373,8 +2373,7 @@ SD19:
   2014 US Senator R: 35219
   2014 US Senator Margin: '-25'
 SD20:
-  Democrat:
-    - Sherman Witcher
+  Democrat: []
   Republican:
     - Bill Stanley*
   Other: []
