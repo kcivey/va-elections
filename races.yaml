@@ -217,7 +217,7 @@ HD12:
   Democrat:
     - Chris Hurst*
   Republican:
-    - Travis Forrest Hite
+    - Forrest Hite
   Other: []
   Previous D Votes: 12495
   Previous R Votes: 10458
@@ -237,7 +237,7 @@ HD13:
   Democrat:
     - Danica Roem*
   Republican:
-    - Kelly Sweeney McGinn
+    - Kelly McGinn
   Other: []
   Previous D Votes: 12077
   Previous R Votes: 10318
@@ -255,7 +255,7 @@ HD13:
   2014 US Senator Margin: '-4'
 HD14:
   Democrat:
-    - Eric W Stamps
+    - Eric Stamps
   Republican:
     - Danny Marshall*
   Other: []
@@ -376,7 +376,7 @@ HD20:
   Democrat:
     - Jennifer Lewis
   Republican:
-    - G John Avoli
+    - John Avoli
     - Dave Bourne
   Other: []
   Previous D Votes: 11197
@@ -415,7 +415,7 @@ HD21:
   2014 US Senator Margin: '+3'
 HD22:
   Democrat:
-    - Jennifer K Woofter
+    - Jennifer Woofter
   Republican:
     - Kathy Byron*
   Other: []
@@ -437,9 +437,9 @@ HD23:
   Democrat:
     - David Zilles
   Republican:
-    - Ronald Richard Berman
-    - 'Edgar James Turner Perrow, Jr'
-    - Wendell S Walker
+    - Ron Berman
+    - Turner Perrow
+    - Wendell Walker
   Other: []
   Previous D Votes: 9050
   Previous R Votes: 17370
@@ -477,9 +477,9 @@ HD24:
   2014 US Senator Margin: '-23'
 HD25:
   Democrat:
-    - Jenni Kitchen
+    - Jennifer Kitchen
   Republican:
-    - Christopher A Runion
+    - Chris Runion
   Other:
     - Janice Allen
   Previous D Votes: 12783
@@ -580,7 +580,7 @@ HD29:
   2014 US Senator Margin: '-29'
 HD30:
   Democrat:
-    - Ann Faulkner Ridgeway
+    - Ann Ridgeway
   Republican:
     - Nick Freitas*
   Other: []
@@ -602,7 +602,7 @@ HD31:
   Democrat:
     - Elizabeth Guzman*
   Republican:
-    - D.J. Jordan
+    - DJ Jordan
   Other: []
   Previous D Votes: 15466
   Previous R Votes: 12658
@@ -736,7 +736,7 @@ HD37:
   2014 US Senator Margin: '+15'
 HD38:
   Democrat:
-    - Andres Felipe Jimenez
+    - Andres Jimenez
     - Kaye Kory*
   Republican: []
   Other: []
@@ -758,7 +758,7 @@ HD39:
   Democrat:
     - Vivian Watts*
   Republican:
-    - Nicholas Bell
+    - Nick Bell
   Other: []
   Previous D Votes: 21407
   Previous R Votes: 0
@@ -857,7 +857,7 @@ HD44:
   Democrat:
     - Paul Krizek*
   Republican:
-    - Richard T Hayden
+    - Richard Hayden
   Other: []
   Previous D Votes: 18243
   Previous R Votes: 0
@@ -1192,7 +1192,7 @@ HD60:
   2014 US Senator Margin: '-7'
 HD61:
   Democrat:
-    - Trudy Bell Berry
+    - Trudy Berry
   Republican:
     - Tommy Wright*
   Other: []
@@ -1332,7 +1332,7 @@ HD68:
   Democrat:
     - Dawn Adams*
   Republican:
-    - Garrison R Coward
+    - Garrison Coward
     - Lori Losi
   Other: []
   Previous D Votes: 19761
@@ -1373,7 +1373,7 @@ HD70:
     - Delores McQuinn*
   Republican: []
   Other:
-    - 'Linnard Keith Harris, Sr'
+    - 'Linnard K Harris, Sr'
   Previous D Votes: 20391
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -1392,7 +1392,8 @@ HD71:
   Democrat:
     - Jeff Bourne*
   Republican: []
-  Other: []
+  Other:
+    - Peter Wells
   Previous D Votes: 24287
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -1644,7 +1645,7 @@ HD83:
   2014 US Senator Margin: '-8'
 HD84:
   Democrat:
-    - Karen Powers Mallard
+    - Karen Mallard
   Republican:
     - Glenn Davis*
   Other: []
@@ -1703,7 +1704,7 @@ HD86:
   2014 US Senator Margin: '+18'
 HD87:
   Democrat:
-    - Hassan Minhaj Ahmad
+    - Hassan Ahmad
     - Akshay Bhamidipati
     - Johanna Gusman
     - Suhas Subramanyam
@@ -1788,7 +1789,7 @@ HD91:
     - Martha Mugler
     - Michael Wade
   Republican:
-    - Colleen Holmes Holcomb
+    - Colleen Holcomb
   Other: []
   Previous D Votes: 10764
   Previous R Votes: 13877
@@ -1887,10 +1888,10 @@ HD96:
     - Rebecca Leser
     - Chris Mayfield
   Republican:
-    - Amanda E Batten
+    - Amanda Batten
     - Melanie Rapp Beale
   Other:
-    - James W Jobe
+    - James Jobe
   Previous D Votes: 14947
   Previous R Votes: 19841
   Previous Margin: '-14'
@@ -2110,7 +2111,7 @@ SD7:
     - Cheryl Turpin
   Republican:
     - Jen Kiggans
-    - Carolyn D Weems
+    - Carolyn Weems
   Other: []
   Previous D Votes: 15434
   Previous R Votes: 18266
@@ -2150,7 +2151,8 @@ SD9:
   Democrat:
     - Jennifer McClellan*
   Republican: []
-  Other: []
+  Other:
+    - Mark Lewis
   Previous D Votes: 31067
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -2210,7 +2212,7 @@ SD11:
   2014 US Senator Margin: '-15'
 SD12:
   Democrat:
-    - Veena Gupta Lothe
+    - Veena Lothe
     - Debra Rodman
   Republican:
     - Siobhan Dunnavant*
@@ -2275,7 +2277,7 @@ SD15:
     - Virginia Smith
   Republican:
     - Frank Ruff*
-    - Dale L Sturdifen
+    - Dale Sturdifen
   Other: []
   Previous D Votes: 0
   Previous R Votes: 32745
