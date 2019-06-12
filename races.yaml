@@ -60,8 +60,8 @@ HD4:
   Democrat:
     - Starla Kiser
   Republican:
-    - David Eaton
     - Will Wampler
+    - David Eaton
   Other: []
   Previous D Votes: 0
   Previous R Votes: 15282
@@ -98,7 +98,8 @@ HD5:
   2014 US Senator R: 12373
   2014 US Senator Margin: '-34'
 HD6:
-  Democrat: []
+  Democrat:
+    - Jim Barker
   Republican:
     - Jeff Campbell*
   Other: []
@@ -437,9 +438,9 @@ HD23:
   Democrat:
     - David Zilles
   Republican:
+    - Wendell Walker
     - Ron Berman
     - Turner Perrow
-    - Wendell Walker
   Other: []
   Previous D Votes: 9050
   Previous R Votes: 17370
@@ -460,7 +461,8 @@ HD24:
     - Christian Worth
   Republican:
     - Ronnie Campbell*
-  Other: []
+  Other:
+    - Billy Eli Fishpaw
   Previous D Votes: 0
   Previous R Votes: 17351
   Previous Margin: '-100'
@@ -498,8 +500,8 @@ HD25:
   2014 US Senator Margin: '-24'
 HD26:
   Democrat:
-    - Cathy Copeland
     - Brent Finnegan
+    - Cathy Copeland
   Republican:
     - Tony Wilt*
   Other: []
@@ -736,8 +738,8 @@ HD37:
   2014 US Senator Margin: '+15'
 HD38:
   Democrat:
-    - Andres Jimenez
     - Kaye Kory*
+    - Andres Jimenez
   Republican: []
   Other: []
   Previous D Votes: 16023
@@ -955,7 +957,8 @@ HD49:
     - Alfonso Lopez*
     - JD Spain
   Republican: []
-  Other: []
+  Other:
+    - Terry Modglin
   Previous D Votes: 19308
   Previous R Votes: 4391
   Previous Margin: '+63'
@@ -1113,8 +1116,8 @@ HD56:
   2014 US Senator Margin: '-23'
 HD57:
   Democrat:
-    - Kathy M Galvin
     - Sally Hudson
+    - Kathy M Galvin
   Republican: []
   Other: []
   Previous D Votes: 25419
@@ -1393,7 +1396,7 @@ HD71:
     - Jeff Bourne*
   Republican: []
   Other:
-    - Peter Wells
+    - Pete Wells
   Previous D Votes: 24287
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -1704,10 +1707,10 @@ HD86:
   2014 US Senator Margin: '+18'
 HD87:
   Democrat:
+    - Suhas Subramanyam
     - Hassan Ahmad
     - Akshay Bhamidipati
     - Johanna Gusman
-    - Suhas Subramanyam
   Republican:
     - Bill Drennan
   Other: []
@@ -1727,8 +1730,8 @@ HD87:
   2014 US Senator Margin: '+6'
 HD88:
   Democrat:
-    - Kecia Evans
     - Jess Foster
+    - Kecia Evans
   Republican:
     - Mark Cole*
   Other: []
@@ -2106,9 +2109,9 @@ SD6:
   2014 US Senator Margin: '+8'
 SD7:
   Democrat:
+    - Cheryl Turpin
     - Susan Hippen
     - Kim Howard
-    - Cheryl Turpin
   Republican:
     - Jen Kiggans
     - Carolyn Weems
@@ -2169,9 +2172,9 @@ SD9:
   2014 US Senator Margin: '+47'
 SD10:
   Democrat:
+    - Ghazala Hashmi
     - Eileen Bedell
     - Zachary Brown
-    - Ghazala Hashmi
   Republican:
     - Glen Sturtevant*
   Other: []
@@ -2212,8 +2215,8 @@ SD11:
   2014 US Senator Margin: '-15'
 SD12:
   Democrat:
-    - Veena Lothe
     - Debra Rodman
+    - Veena Lothe
   Republican:
     - Siobhan Dunnavant*
   Other: []
@@ -2295,10 +2298,11 @@ SD15:
   2014 US Senator Margin: '-21'
 SD16:
   Democrat:
-    - Rosalyn Dance*
     - Joe Morrissey
+    - Rosalyn Dance*
   Republican: []
-  Other: []
+  Other:
+    - Waylin Ross
   Previous D Votes: 17331
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -2315,11 +2319,11 @@ SD16:
   2014 US Senator Margin: '+41'
 SD17:
   Democrat:
-    - Ben Hixon
     - Amy Laufer
+    - Ben Hixon
   Republican:
-    - Rich Breeden
     - Bryce Reeves*
+    - Rich Breeden
   Other: []
   Previous D Votes: 14915
   Previous R Votes: 24519
@@ -2397,7 +2401,8 @@ SD21:
   Democrat:
     - John Edwards*
   Republican: []
-  Other: []
+  Other:
+    - Steven L Nelson
   Previous D Votes: 20881
   Previous R Votes: 17438
   Previous Margin: '+9'
@@ -2455,8 +2460,8 @@ SD24:
   Democrat:
     - Annette Hyde
   Republican:
-    - Tina Freitas
     - Emmett Hanger*
+    - Tina Freitas
   Other: []
   Previous D Votes: 0
   Previous R Votes: 34980
