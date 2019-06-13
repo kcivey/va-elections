@@ -61,7 +61,6 @@ HD4:
     - Starla Kiser
   Republican:
     - Will Wampler
-    - David Eaton
   Other: []
   Previous D Votes: 0
   Previous R Votes: 15282
@@ -81,7 +80,6 @@ HD5:
   Democrat: []
   Republican:
     - Israel O'Quinn*
-    - Michael Osborne
   Other: []
   Previous D Votes: 0
   Previous R Votes: 18402
@@ -138,7 +136,8 @@ HD7:
   2014 US Senator R: 11118
   2014 US Senator Margin: '-16'
 HD8:
-  Democrat: []
+  Democrat:
+    - Darlene Lewis
   Republican:
     - Joe McNamara*
   Other: []
@@ -336,7 +335,6 @@ HD17:
 HD18:
   Democrat:
     - Laura Galante
-    - Tristan Shields
   Republican:
     - Michael Webert*
   Other: []
@@ -378,7 +376,6 @@ HD20:
     - Jennifer Lewis
   Republican:
     - John Avoli
-    - Dave Bourne
   Other: []
   Previous D Votes: 11197
   Previous R Votes: 14344
@@ -439,8 +436,6 @@ HD23:
     - David Zilles
   Republican:
     - Wendell Walker
-    - Ron Berman
-    - Turner Perrow
   Other: []
   Previous D Votes: 9050
   Previous R Votes: 17370
@@ -501,7 +496,6 @@ HD25:
 HD26:
   Democrat:
     - Brent Finnegan
-    - Cathy Copeland
   Republican:
     - Tony Wilt*
   Other: []
@@ -544,7 +538,6 @@ HD28:
     - Joshua Cole
   Republican:
     - Paul Milde
-    - Bob Thomas*
   Other: []
   Previous D Votes: 11760
   Previous R Votes: 11842
@@ -739,7 +732,6 @@ HD37:
 HD38:
   Democrat:
     - Kaye Kory*
-    - Andres Jimenez
   Republican: []
   Other: []
   Previous D Votes: 16023
@@ -955,7 +947,6 @@ HD48:
 HD49:
   Democrat:
     - Alfonso Lopez*
-    - JD Spain
   Republican: []
   Other:
     - Terry Modglin
@@ -976,7 +967,6 @@ HD49:
 HD50:
   Democrat:
     - Lee Carter*
-    - Mark Wolfe
   Republican:
     - Ian Lovejoy
   Other: []
@@ -1017,7 +1007,6 @@ HD51:
 HD52:
   Democrat:
     - Luke Torian*
-    - Kevin Wade
   Republican:
     - Maria Eugenia Martin
   Other: []
@@ -1117,7 +1106,6 @@ HD56:
 HD57:
   Democrat:
     - Sally Hudson
-    - Kathy M Galvin
   Republican: []
   Other: []
   Previous D Votes: 25419
@@ -1216,7 +1204,6 @@ HD61:
 HD62:
   Democrat:
     - Lindsey Dougherty
-    - Tavorise Marks
   Republican:
     - Carrie Coyner
   Other: []
@@ -1297,7 +1284,8 @@ HD66:
     - Sheila Bynum-Coleman
   Republican:
     - Kirk Cox*
-  Other: []
+  Other:
+    - 'Linnard K Harris, Sr'
   Previous D Votes: 10656
   Previous R Votes: 18572
   Previous Margin: '-27'
@@ -1336,7 +1324,6 @@ HD68:
     - Dawn Adams*
   Republican:
     - Garrison Coward
-    - Lori Losi
   Other: []
   Previous D Votes: 19761
   Previous R Votes: 19425
@@ -1375,8 +1362,7 @@ HD70:
   Democrat:
     - Delores McQuinn*
   Republican: []
-  Other:
-    - 'Linnard K Harris, Sr'
+  Other: []
   Previous D Votes: 20391
   Previous R Votes: 0
   Previous Margin: '+100'
@@ -1708,9 +1694,6 @@ HD86:
 HD87:
   Democrat:
     - Suhas Subramanyam
-    - Hassan Ahmad
-    - Akshay Bhamidipati
-    - Johanna Gusman
   Republican:
     - Bill Drennan
   Other: []
@@ -1731,7 +1714,6 @@ HD87:
 HD88:
   Democrat:
     - Jess Foster
-    - Kecia Evans
   Republican:
     - Mark Cole*
   Other: []
@@ -1790,7 +1772,6 @@ HD90:
 HD91:
   Democrat:
     - Martha Mugler
-    - Michael Wade
   Republican:
     - Colleen Holcomb
   Other: []
@@ -1830,7 +1811,8 @@ HD92:
 HD93:
   Democrat:
     - Mike Mullin*
-  Republican: []
+  Republican:
+    - Heather Cordasco
   Other: []
   Previous D Votes: 15988
   Previous R Votes: 10625
@@ -1888,11 +1870,8 @@ HD95:
 HD96:
   Democrat:
     - Mark Downey
-    - Rebecca Leser
-    - Chris Mayfield
   Republican:
     - Amanda Batten
-    - Melanie Rapp Beale
   Other:
     - James Jobe
   Previous D Votes: 14947
@@ -1931,7 +1910,8 @@ HD97:
   2014 US Senator R: 19651
   2014 US Senator Margin: '-39'
 HD98:
-  Democrat: []
+  Democrat:
+    - Ella Webster
   Republican:
     - Keith Hodges*
   Other: []
@@ -2090,7 +2070,6 @@ SD5:
 SD6:
   Democrat:
     - Lynwood Lewis*
-    - Willie Randall
   Republican: []
   Other: []
   Previous D Votes: 16738
@@ -2110,11 +2089,8 @@ SD6:
 SD7:
   Democrat:
     - Cheryl Turpin
-    - Susan Hippen
-    - Kim Howard
   Republican:
     - Jen Kiggans
-    - Carolyn Weems
   Other: []
   Previous D Votes: 15434
   Previous R Votes: 18266
@@ -2173,8 +2149,6 @@ SD9:
 SD10:
   Democrat:
     - Ghazala Hashmi
-    - Eileen Bedell
-    - Zachary Brown
   Republican:
     - Glen Sturtevant*
   Other: []
@@ -2195,7 +2169,6 @@ SD10:
 SD11:
   Democrat:
     - Amanda Pohl
-    - Wayne Powell
   Republican:
     - Amanda Chase*
   Other: []
@@ -2216,7 +2189,6 @@ SD11:
 SD12:
   Democrat:
     - Debra Rodman
-    - Veena Lothe
   Republican:
     - Siobhan Dunnavant*
   Other: []
@@ -2239,7 +2211,6 @@ SD13:
     - John Bell
   Republican:
     - Geary Higgins
-    - Ron Meyer
   Other:
     - Jasmine Moawad-Barrientos
   Previous D Votes: 23544
@@ -2280,7 +2251,6 @@ SD15:
     - Virginia Smith
   Republican:
     - Frank Ruff*
-    - Dale Sturdifen
   Other: []
   Previous D Votes: 0
   Previous R Votes: 32745
@@ -2299,7 +2269,6 @@ SD15:
 SD16:
   Democrat:
     - Joe Morrissey
-    - Rosalyn Dance*
   Republican: []
   Other:
     - Waylin Ross
@@ -2320,10 +2289,8 @@ SD16:
 SD17:
   Democrat:
     - Amy Laufer
-    - Ben Hixon
   Republican:
     - Bryce Reeves*
-    - Rich Breeden
   Other: []
   Previous D Votes: 14915
   Previous R Votes: 24519
@@ -2461,7 +2428,6 @@ SD24:
     - Annette Hyde
   Republican:
     - Emmett Hanger*
-    - Tina Freitas
   Other: []
   Previous D Votes: 0
   Previous R Votes: 34980
@@ -2539,7 +2505,6 @@ SD27:
 SD28:
   Democrat:
     - Qasim Rashid
-    - Laura Sellers
   Republican:
     - Richard Stuart*
   Other: []
@@ -2598,7 +2563,6 @@ SD30:
 SD31:
   Democrat:
     - Barbara Favola*
-    - Nicole Merlene
   Republican: []
   Other: []
   Previous D Votes: 26373
@@ -2637,7 +2601,6 @@ SD32:
 SD33:
   Democrat:
     - Jennifer Boysko*
-    - Sharafat Hussain
   Republican:
     - Suzanne Fox
   Other: []
@@ -2677,8 +2640,6 @@ SD34:
 SD35:
   Democrat:
     - Dick Saslaw*
-    - Yasmine Taeb
-    - Karen Torrent
   Republican: []
   Other: []
   Previous D Votes: 18754
