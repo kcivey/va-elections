@@ -457,7 +457,7 @@ HD24:
   Republican:
     - Ronnie Campbell*
   Other:
-    - Billy Eli Fishpaw
+    - Billy Fishpaw
   Previous D Votes: 0
   Previous R Votes: 17351
   Previous Margin: '-100'
@@ -2369,7 +2369,7 @@ SD21:
     - John Edwards*
   Republican: []
   Other:
-    - Steven L Nelson
+    - Steven Nelson
   Previous D Votes: 20881
   Previous R Votes: 17438
   Previous Margin: '+9'
@@ -2582,7 +2582,8 @@ SD31:
 SD32:
   Democrat:
     - Janet Howell*
-  Republican: []
+  Republican:
+    - Arthur Purves
   Other: []
   Previous D Votes: 31156
   Previous R Votes: 0
