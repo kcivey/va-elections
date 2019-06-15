@@ -18,7 +18,10 @@
       background-color: red;
     }
     .empty {
-      background-color: gray;
+      background-color: lightgray;
+    }
+    .number {
+      text-align: right;
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -71,7 +74,8 @@
         <% _.forEach(r, function (value, key) { %>
           <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% }
             else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% }
-            else if (Array.isArray(value) && !value.length) { %> class="empty"<% } %>
+            else if (Array.isArray(value) && !value.length) { %> class="empty"<% }
+            else if (/^[\d,]+$/.test(value)) { %> class="number"<% } %>
           >
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>

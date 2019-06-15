@@ -220,5 +220,5 @@ function marginStyle(margin) {
         background = `rgb(${100 - margin}%, ${100 - margin}%, 100%)`;
     }
     const color = Math.abs(margin) > 50 ? 'white' : 'black';
-    return `style="background-color: ${background}; color: ${color};"`;
+    return `style="background-color: ${background}; color: ${color};" class="number"`;
 }
