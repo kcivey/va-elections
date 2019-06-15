@@ -72,7 +72,7 @@
       <tr>
         <td data-order="<%- (/^H/.test(district) ? 1 : 2) * 1000 + +district.substr(2) %>"><%- district %></td>
         <% _.forEach(r, function (value, key) { %>
-          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %>"<% }
+          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %><% }
             else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% }
             else if (Array.isArray(value) && !value.length) { %> class="empty"<% }
             else if (/^[\d,]+$/.test(value)) { %> class="number"<% } %>
