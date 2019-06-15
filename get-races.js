@@ -159,7 +159,7 @@ function getCheerio(requestOptions) {
 function getDemMargin(dVotes, rVotes) {
     dVotes = dVotes ? +dVotes : 0;
     rVotes = rVotes ? +rVotes : 0;
-    return (dVotes >= rVotes ? '+' : '') + (100 * (dVotes - rVotes) / (dVotes + rVotes)).toFixed(0);
+    return (dVotes >= rVotes ? '+' : '−') + (100 * Math.abs(dVotes - rVotes) / (dVotes + rVotes)).toFixed(0);
 }
 
 function writeData() {
