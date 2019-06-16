@@ -43,7 +43,18 @@
         };
       $('#races-table').DataTable({
         columns: [
-          null,
+          {
+            render: function (value, type) {
+              var m;
+              if (type === 'sort') {
+                m = value.match(/^([HS]D)(\d+)$/);
+                if (m) {
+                  return m[1] + m[2].padStart(3, '0');
+                }
+              }
+              return value;
+            }
+          },
           null,
           null,
           null,
