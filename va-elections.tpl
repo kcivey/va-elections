@@ -37,6 +37,9 @@
         marginCol = {
           className: 'number',
           render: function (value, type) {
+            if (value === '') {
+              return '';
+            }
             value = +value;
             return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
           }
@@ -94,11 +97,11 @@
   <tbody>
     <% _.forEach(data, function (r, district) { %>
       <tr>
-        <td><%- district %></td>
-        <% _.forEach(r, function (value, key) { %>
+        <% _.forEach(headers, function (key) { %>
+          <% var value = key === 'District' ? district : r[key]; %>
           <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %><% }
             else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% }
-            else if (Array.isArray(value) && !value.length) { %> class="empty"<% } %>
+            else if ((Array.isArray(value) && !value.length) || value == null) { %> class="empty"<% } %>
           >
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>

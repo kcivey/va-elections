@@ -29,7 +29,8 @@ readExistingData()
     .then(() => request(senateUrl))
     .then(processHtml)
     .then(writeData)
-    .then(outputHtml);
+    .then(outputHtml)
+    .catch(err => console.error(err));
 
 function readExistingData() {
     return new Promise(function (resolve, reject) {
@@ -55,6 +56,7 @@ async function processHtml(html) {
         .map((i, th) => $(th).text().trim())
         .get();
     headers.shift(); // remove "District" column head
+    headers.push('Incumbent', 'Party'); // to set order of keys
     let rows = $('table.table tbody tr').get();
     for (const row of rows) {
         let values = $(row).find('td')
@@ -74,7 +76,6 @@ async function processHtml(html) {
         district= m[2].replace(/\s+/, '');
         const record = _.zipObject(headers, values);
         if (argv.full || !data[district]) {
-            headers.push('Incumbent', 'Party'); // to set order of keys
             values.push(null, null);
             const isHouse = /^H/.test(district);
             detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
@@ -141,13 +142,13 @@ async function processHtml(html) {
                 }
             }
         }
-        if (data[district]) {
-            for (const [key, value] of Object.entries(record)) {
+        for (const [key, value] of Object.entries(record)) {
+            if (!data[district]) {
+                data[district] = {};
+            }
+            if (value !== undefined) {
                 data[district][key] = value;
             }
-        }
-        else {
-            data[district] = record;
         }
     }
     return data;
@@ -212,6 +213,9 @@ function outputHtml(data) {
 
 function marginStyle(margin) {
     let background;
+    if (margin == null) {
+        return 'class="empty"';
+    }
     margin = +margin;
     if (margin === 0) {
         background = 'white';
