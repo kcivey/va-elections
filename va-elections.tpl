@@ -71,6 +71,9 @@
           marginCol,
           numberCol,
           numberCol,
+          marginCol,
+          numberCol,
+          numberCol,
           marginCol
         ],
         fixedHeader: true,
