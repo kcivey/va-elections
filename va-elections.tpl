@@ -29,9 +29,16 @@
   <script type="text/javascript">
     jQuery(function () {
       var numberCol = {
-        className: 'text-right',
-        render: $.fn.dataTable.render.number(',', '.')
-      };
+          className: 'number',
+          render: $.fn.dataTable.render.number(',', '.')
+        },
+        marginCol = {
+          className: 'number',
+          render: function (value, type) {
+            value = +value;
+            return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
+          }
+        };
       $('#races-table').DataTable({
         columns: [
           null,
@@ -40,18 +47,18 @@
           null,
           numberCol,
           numberCol,
+          marginCol,
           null,
           null,
-          null,
           numberCol,
           numberCol,
-          null,
+          marginCol,
           numberCol,
           numberCol,
-          null,
+          marginCol,
           numberCol,
           numberCol,
-          null
+          marginCol
         ],
         paging: false
       });
@@ -74,8 +81,7 @@
         <% _.forEach(r, function (value, key) { %>
           <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %><% }
             else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% }
-            else if (Array.isArray(value) && !value.length) { %> class="empty"<% }
-            else if (/^[\d,]+$/.test(value)) { %> class="number"<% } %>
+            else if (Array.isArray(value) && !value.length) { %> class="empty"<% } %>
           >
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>
