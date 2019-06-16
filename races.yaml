@@ -3,11 +3,11 @@ HD1:
   Republican:
     - Terry Kilgore*
   Other: []
+  Incumbent: Terry Kilgore
+  Party: R
   Previous D Votes: 4639
   Previous R Votes: 14848
   Previous Margin: -52
-  Incumbent: Terry Kilgore
-  Party: R
   2018 US Senator D: 5311
   2018 US Senator R: 16040
   2018 US Senator Margin: -50
@@ -26,11 +26,11 @@ HD2:
   Republican:
     - Heather Mitchell
   Other: []
+  Incumbent: Jennifer Carroll Foy
+  Party: D
   Previous D Votes: 13366
   Previous R Votes: 7803
   Previous Margin: 26
-  Incumbent: Jennifer Carroll Foy
-  Party: D
   2018 US Senator D: 16636
   2018 US Senator R: 8699
   2018 US Senator Margin: 31
@@ -48,11 +48,11 @@ HD3:
   Republican:
     - Will Morefield*
   Other: []
+  Incumbent: Will Morefield
+  Party: R
   Previous D Votes: 3759
   Previous R Votes: 13572
   Previous Margin: -57
-  Incumbent: Will Morefield
-  Party: R
   2018 US Senator D: 4899
   2018 US Senator R: 16347
   2018 US Senator Margin: -54
@@ -71,11 +71,11 @@ HD4:
   Republican:
     - Will Wampler
   Other: []
+  Incumbent: Todd Pillion
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 15282
   Previous Margin: -100
-  Incumbent: Todd Pillion
-  Party: R
   2018 US Senator D: 6578
   2018 US Senator R: 16315
   2018 US Senator Margin: -43
@@ -93,11 +93,11 @@ HD5:
   Republican:
     - Israel O'Quinn*
   Other: []
+  Incumbent: Israel O'Quinn
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 18402
   Previous Margin: -100
-  Incumbent: Israel O'Quinn
-  Party: R
   2018 US Senator D: 6750
   2018 US Senator R: 18163
   2018 US Senator Margin: -46
@@ -116,11 +116,11 @@ HD6:
   Republican:
     - Jeff Campbell*
   Other: []
+  Incumbent: Jeff Campbell
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 16795
   Previous Margin: -100
-  Incumbent: Jeff Campbell
-  Party: R
   2018 US Senator D: 6628
   2018 US Senator R: 18733
   2018 US Senator Margin: -48
@@ -139,11 +139,11 @@ HD7:
   Republican:
     - Nick Rush*
   Other: []
+  Incumbent: Nick Rush
+  Party: R
   Previous D Votes: 8878
   Previous R Votes: 17560
   Previous Margin: -33
-  Incumbent: Nick Rush
-  Party: R
   2018 US Senator D: 11217
   2018 US Senator R: 17230
   2018 US Senator Margin: -21
@@ -162,11 +162,11 @@ HD8:
   Republican:
     - Joe McNamara*
   Other: []
+  Incumbent: Joe McNamara
+  Party: R
   Previous D Votes: 10294
   Previous R Votes: 18311
   Previous Margin: -28
-  Incumbent: Joe McNamara
-  Party: R
   2018 US Senator D: 13050
   2018 US Senator R: 19123
   2018 US Senator Margin: -19
@@ -184,11 +184,11 @@ HD9:
   Republican:
     - Charles Poindexter*
   Other: []
+  Incumbent: Charles Poindexter
+  Party: R
   Previous D Votes: 6916
   Previous R Votes: 16413
   Previous Margin: -41
-  Incumbent: Charles Poindexter
-  Party: R
   2018 US Senator D: 8350
   2018 US Senator R: 19050
   2018 US Senator Margin: -39
@@ -207,11 +207,11 @@ HD10:
   Republican:
     - Randy Minchew
   Other: []
+  Incumbent: Wendy Gooditis
+  Party: D
   Previous D Votes: 15161
   Previous R Votes: 14025
   Previous Margin: 4
-  Incumbent: Wendy Gooditis
-  Party: D
   2018 US Senator D: 20890
   2018 US Senator R: 14840
   2018 US Senator Margin: 17
@@ -229,11 +229,11 @@ HD11:
     - Sam Rasoul*
   Republican: []
   Other: []
+  Incumbent: Sam Rasoul
+  Party: D
   Previous D Votes: 15667
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Sam Rasoul
-  Party: D
   2018 US Senator D: 15727
   2018 US Senator R: 7065
   2018 US Senator Margin: 38
@@ -249,11 +249,11 @@ HD12:
   Republican:
     - Forrest Hite
   Other: []
+  Incumbent: Chris Hurst
+  Party: D
   Previous D Votes: 12495
   Previous R Votes: 10458
   Previous Margin: 9
-  Incumbent: Chris Hurst
-  Party: D
   2018 US Senator D: 15038
   2018 US Senator R: 10521
   2018 US Senator Margin: 18
@@ -272,11 +272,11 @@ HD13:
   Republican:
     - Kelly McGinn
   Other: []
+  Incumbent: Danica Roem
+  Party: D
   Previous D Votes: 12077
   Previous R Votes: 10318
   Previous Margin: 8
-  Incumbent: Danica Roem
-  Party: D
   2018 US Senator D: 16374
   2018 US Senator R: 9662
   2018 US Senator Margin: 26
@@ -295,11 +295,11 @@ HD14:
   Republican:
     - Danny Marshall*
   Other: []
+  Incumbent: Danny Marshall
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 15505
   Previous Margin: -100
-  Incumbent: Danny Marshall
-  Party: R
   2018 US Senator D: 13354
   2018 US Senator R: 14190
   2018 US Senator Margin: -3
@@ -318,11 +318,11 @@ HD15:
   Republican:
     - Todd Gilbert*
   Other: []
+  Incumbent: Todd Gilbert
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 19284
   Previous Margin: -100
-  Incumbent: Todd Gilbert
-  Party: R
   2018 US Senator D: 8537
   2018 US Senator R: 19576
   2018 US Senator Margin: -39
@@ -341,11 +341,11 @@ HD16:
     - Les Adams*
   Other:
     - Dustin W Evans
+  Incumbent: Les Adams
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 16513
   Previous Margin: -100
-  Incumbent: Les Adams
-  Party: R
   2018 US Senator D: 10826
   2018 US Senator R: 16256
   2018 US Senator Margin: -20
@@ -363,11 +363,11 @@ HD17:
   Republican:
     - Christopher Head*
   Other: []
+  Incumbent: Christopher Head
+  Party: R
   Previous D Votes: 10378
   Previous R Votes: 15997
   Previous Margin: -21
-  Incumbent: Christopher Head
-  Party: R
   2018 US Senator D: 13145
   2018 US Senator R: 17708
   2018 US Senator Margin: -15
@@ -386,11 +386,11 @@ HD18:
   Republican:
     - Michael Webert*
   Other: []
+  Incumbent: Michael Webert
+  Party: R
   Previous D Votes: 9486
   Previous R Votes: 16686
   Previous Margin: -28
-  Incumbent: Michael Webert
-  Party: R
   2018 US Senator D: 13782
   2018 US Senator R: 19005
   2018 US Senator Margin: -16
@@ -408,11 +408,11 @@ HD19:
   Republican:
     - Terry Austin*
   Other: []
+  Incumbent: Terry Austin
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 20966
   Previous Margin: -100
-  Incumbent: Terry Austin
-  Party: R
   2018 US Senator D: 9145
   2018 US Senator R: 20912
   2018 US Senator Margin: -39
@@ -431,11 +431,11 @@ HD20:
   Republican:
     - John Avoli
   Other: []
+  Incumbent: Dickie Bell
+  Party: R
   Previous D Votes: 11197
   Previous R Votes: 14344
   Previous Margin: -12
-  Incumbent: Dickie Bell
-  Party: R
   2018 US Senator D: 13501
   2018 US Senator R: 16557
   2018 US Senator Margin: -10
@@ -454,11 +454,11 @@ HD21:
   Republican:
     - Shannon Kane
   Other: []
+  Incumbent: Kelly Fowler
+  Party: D
   Previous D Votes: 12540
   Previous R Votes: 11309
   Previous Margin: 5
-  Incumbent: Kelly Fowler
-  Party: D
   2018 US Senator D: 16892
   2018 US Senator R: 11537
   2018 US Senator Margin: 19
@@ -477,11 +477,11 @@ HD22:
   Republican:
     - Kathy Byron*
   Other: []
+  Incumbent: Kathy Byron
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 19014
   Previous Margin: -100
-  Incumbent: Kathy Byron
-  Party: R
   2018 US Senator D: 10680
   2018 US Senator R: 19072
   2018 US Senator Margin: -28
@@ -500,11 +500,11 @@ HD23:
   Republican:
     - Wendell Walker
   Other: []
+  Incumbent: Scott Garrett
+  Party: R
   Previous D Votes: 9050
   Previous R Votes: 17370
   Previous Margin: -31
-  Incumbent: Scott Garrett
-  Party: R
   2018 US Senator D: 12189
   2018 US Senator R: 18125
   2018 US Senator Margin: -20
@@ -524,11 +524,11 @@ HD24:
     - Ronnie Campbell*
   Other:
     - Billy Fishpaw
+  Incumbent: Ronnie Campbell
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 17351
   Previous Margin: -100
-  Incumbent: Ronnie Campbell
-  Party: R
   2018 US Senator D: 9833
   2018 US Senator R: 17811
   2018 US Senator Margin: -29
@@ -548,11 +548,11 @@ HD25:
     - Chris Runion
   Other:
     - Janice Allen
+  Incumbent: Steve Landes
+  Party: R
   Previous D Votes: 12783
   Previous R Votes: 17688
   Previous Margin: -16
-  Incumbent: Steve Landes
-  Party: R
   2018 US Senator D: 15289
   2018 US Senator R: 19131
   2018 US Senator Margin: -11
@@ -571,11 +571,11 @@ HD26:
   Republican:
     - Tony Wilt*
   Other: []
+  Incumbent: Tony Wilt
+  Party: R
   Previous D Votes: 9234
   Previous R Votes: 11106
   Previous Margin: -9
-  Incumbent: Tony Wilt
-  Party: R
   2018 US Senator D: 12291
   2018 US Senator R: 11623
   2018 US Senator Margin: 3
@@ -594,11 +594,11 @@ HD27:
   Republican:
     - Roxann Robinson*
   Other: []
+  Incumbent: Roxann Robinson
+  Party: R
   Previous D Votes: 14333
   Previous R Votes: 14461
   Previous Margin: -0.0
-  Incumbent: Roxann Robinson
-  Party: R
   2018 US Senator D: 18997
   2018 US Senator R: 15387
   2018 US Senator Margin: 10
@@ -617,11 +617,11 @@ HD28:
   Republican:
     - Paul Milde
   Other: []
+  Incumbent: Bob Thomas
+  Party: R
   Previous D Votes: 11760
   Previous R Votes: 11842
   Previous Margin: -0.0
-  Incumbent: Bob Thomas
-  Party: R
   2018 US Senator D: 16438
   2018 US Senator R: 12847
   2018 US Senator Margin: 12
@@ -640,11 +640,11 @@ HD29:
   Republican:
     - Chris Collins*
   Other: []
+  Incumbent: Chris Collins
+  Party: R
   Previous D Votes: 8390
   Previous R Votes: 15139
   Previous Margin: -29
-  Incumbent: Chris Collins
-  Party: R
   2018 US Senator D: 12300
   2018 US Senator R: 17660
   2018 US Senator Margin: -18
@@ -663,11 +663,11 @@ HD30:
   Republican:
     - Nick Freitas*
   Other: []
+  Incumbent: Nick Freitas
+  Party: R
   Previous D Votes: 9333
   Previous R Votes: 15355
   Previous Margin: -24
-  Incumbent: Nick Freitas
-  Party: R
   2018 US Senator D: 12822
   2018 US Senator R: 17873
   2018 US Senator Margin: -16
@@ -686,11 +686,11 @@ HD31:
   Republican:
     - DJ Jordan
   Other: []
+  Incumbent: Elizabeth Guzman
+  Party: D
   Previous D Votes: 15466
   Previous R Votes: 12658
   Previous Margin: 10
-  Incumbent: Elizabeth Guzman
-  Party: D
   2018 US Senator D: 18923
   2018 US Senator R: 12492
   2018 US Senator Margin: 20
@@ -708,11 +708,11 @@ HD32:
     - David Reid*
   Republican: []
   Other: []
+  Incumbent: David Reid
+  Party: D
   Previous D Votes: 17865
   Previous R Votes: 12653
   Previous Margin: 17
-  Incumbent: David Reid
-  Party: D
   2018 US Senator D: 24585
   2018 US Senator R: 12494
   2018 US Senator Margin: 33
@@ -731,11 +731,11 @@ HD33:
   Republican:
     - Dave LaRock*
   Other: []
+  Incumbent: Dave LaRock
+  Party: R
   Previous D Votes: 13770
   Previous R Votes: 16723
   Previous Margin: -10
-  Incumbent: Dave LaRock
-  Party: R
   2018 US Senator D: 17948
   2018 US Senator R: 19051
   2018 US Senator Margin: -3
@@ -754,11 +754,11 @@ HD34:
   Republican:
     - Gary Pan
   Other: []
+  Incumbent: Kathleen Murphy
+  Party: D
   Previous D Votes: 20522
   Previous R Votes: 13146
   Previous Margin: 22
-  Incumbent: Kathleen Murphy
-  Party: D
   2018 US Senator D: 21606
   2018 US Senator R: 12085
   2018 US Senator Margin: 28
@@ -776,11 +776,11 @@ HD35:
     - Mark Keam*
   Republican: []
   Other: []
+  Incumbent: Mark Keam
+  Party: D
   Previous D Votes: 22596
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Mark Keam
-  Party: D
   2018 US Senator D: 22512
   2018 US Senator R: 7933
   2018 US Senator Margin: 48
@@ -798,11 +798,11 @@ HD36:
     - Ken Plum*
   Republican: []
   Other: []
+  Incumbent: Ken Plum
+  Party: D
   Previous D Votes: 24149
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Ken Plum
-  Party: D
   2018 US Senator D: 23985
   2018 US Senator R: 7530
   2018 US Senator Margin: 52
@@ -820,11 +820,11 @@ HD37:
     - David Bulova*
   Republican: []
   Other: []
+  Incumbent: David Bulova
+  Party: D
   Previous D Votes: 18877
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: David Bulova
-  Party: D
   2018 US Senator D: 19396
   2018 US Senator R: 7260
   2018 US Senator Margin: 46
@@ -842,11 +842,11 @@ HD38:
     - Kaye Kory*
   Republican: []
   Other: []
+  Incumbent: Kaye Kory
+  Party: D
   Previous D Votes: 16023
   Previous R Votes: 5723
   Previous Margin: 47
-  Incumbent: Kaye Kory
-  Party: D
   2018 US Senator D: 17812
   2018 US Senator R: 5792
   2018 US Senator Margin: 51
@@ -865,11 +865,11 @@ HD39:
   Republican:
     - Nick Bell
   Other: []
+  Incumbent: Vivian Watts
+  Party: D
   Previous D Votes: 21407
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Vivian Watts
-  Party: D
   2018 US Senator D: 21668
   2018 US Senator R: 8201
   2018 US Senator Margin: 45
@@ -888,11 +888,11 @@ HD40:
   Republican:
     - Tim Hugo*
   Other: []
+  Incumbent: Tim Hugo
+  Party: R
   Previous D Votes: 15004
   Previous R Votes: 15110
   Previous Margin: -0.0
-  Incumbent: Tim Hugo
-  Party: R
   2018 US Senator D: 19327
   2018 US Senator R: 13102
   2018 US Senator Margin: 19
@@ -911,11 +911,11 @@ HD41:
   Republican: []
   Other:
     - Rachel Mace
+  Incumbent: Eileen Filler-Corn
+  Party: D
   Previous D Votes: 22985
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Eileen Filler-Corn
-  Party: D
   2018 US Senator D: 22510
   2018 US Senator R: 9418
   2018 US Senator Margin: 41
@@ -934,11 +934,11 @@ HD42:
   Republican:
     - Steve Adragna
   Other: []
+  Incumbent: Kathy Tran
+  Party: D
   Previous D Votes: 18761
   Previous R Votes: 11967
   Previous Margin: 22
-  Incumbent: Kathy Tran
-  Party: D
   2018 US Senator D: 21179
   2018 US Senator R: 10877
   2018 US Senator Margin: 32
@@ -957,11 +957,11 @@ HD43:
   Republican: []
   Other:
     - Gail Parker
+  Incumbent: Mark Sickles
+  Party: D
   Previous D Votes: 22094
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Mark Sickles
-  Party: D
   2018 US Senator D: 23025
   2018 US Senator R: 7049
   2018 US Senator Margin: 53
@@ -980,11 +980,11 @@ HD44:
   Republican:
     - Richard Hayden
   Other: []
+  Incumbent: Paul Krizek
+  Party: D
   Previous D Votes: 18243
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Paul Krizek
-  Party: D
   2018 US Senator D: 18648
   2018 US Senator R: 6151
   2018 US Senator Margin: 50
@@ -1003,11 +1003,11 @@ HD45:
   Republican:
     - Michael Clinkscale
   Other: []
+  Incumbent: Mark Levine
+  Party: D
   Previous D Votes: 31417
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Mark Levine
-  Party: D
   2018 US Senator D: 30668
   2018 US Senator R: 6656
   2018 US Senator Margin: 64
@@ -1025,11 +1025,11 @@ HD46:
     - Charniele Herring*
   Republican: []
   Other: []
+  Incumbent: Charniele Herring
+  Party: D
   Previous D Votes: 18947
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Charniele Herring
-  Party: D
   2018 US Senator D: 21017
   2018 US Senator R: 4122
   2018 US Senator Margin: 67
@@ -1047,11 +1047,11 @@ HD47:
     - Patrick Hope*
   Republican: []
   Other: []
+  Incumbent: Patrick Hope
+  Party: D
   Previous D Votes: 29706
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Patrick Hope
-  Party: D
   2018 US Senator D: 28291
   2018 US Senator R: 5754
   2018 US Senator Margin: 66
@@ -1069,11 +1069,11 @@ HD48:
     - Rip Sullivan*
   Republican: []
   Other: []
+  Incumbent: Rip Sullivan
+  Party: D
   Previous D Votes: 27670
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Rip Sullivan
-  Party: D
   2018 US Senator D: 24881
   2018 US Senator R: 7197
   2018 US Senator Margin: 55
@@ -1092,11 +1092,11 @@ HD49:
   Republican: []
   Other:
     - Terry Modglin
+  Incumbent: Alfonso Lopez
+  Party: D
   Previous D Votes: 19308
   Previous R Votes: 4391
   Previous Margin: 63
-  Incumbent: Alfonso Lopez
-  Party: D
   2018 US Senator D: 22613
   2018 US Senator R: 4036
   2018 US Senator Margin: 70
@@ -1115,11 +1115,11 @@ HD50:
   Republican:
     - Ian Lovejoy
   Other: []
+  Incumbent: Lee Carter
+  Party: D
   Previous D Votes: 11366
   Previous R Votes: 9518
   Previous Margin: 9
-  Incumbent: Lee Carter
-  Party: D
   2018 US Senator D: 15103
   2018 US Senator R: 8610
   2018 US Senator Margin: 27
@@ -1138,11 +1138,11 @@ HD51:
   Republican:
     - Rich Anderson
   Other: []
+  Incumbent: Hala Ayala
+  Party: D
   Previous D Votes: 15244
   Previous R Votes: 13476
   Previous Margin: 6
-  Incumbent: Hala Ayala
-  Party: D
   2018 US Senator D: 18513
   2018 US Senator R: 12250
   2018 US Senator Margin: 20
@@ -1161,11 +1161,11 @@ HD52:
   Republican:
     - Maria Eugenia Martin
   Other: []
+  Incumbent: Luke Torian
+  Party: D
   Previous D Votes: 14830
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Luke Torian
-  Party: D
   2018 US Senator D: 18020
   2018 US Senator R: 4518
   2018 US Senator Margin: 60
@@ -1183,11 +1183,11 @@ HD53:
     - Marcus Simon*
   Republican: []
   Other: []
+  Incumbent: Marcus Simon
+  Party: D
   Previous D Votes: 19235
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Marcus Simon
-  Party: D
   2018 US Senator D: 22172
   2018 US Senator R: 6358
   2018 US Senator Margin: 55
@@ -1206,11 +1206,11 @@ HD54:
   Republican:
     - Bobby Orrock*
   Other: []
+  Incumbent: Bobby Orrock
+  Party: R
   Previous D Votes: 9982
   Previous R Votes: 13782
   Previous Margin: -16
-  Incumbent: Bobby Orrock
-  Party: R
   2018 US Senator D: 15090
   2018 US Senator R: 14689
   2018 US Senator Margin: 1
@@ -1229,11 +1229,11 @@ HD55:
   Republican:
     - Buddy Fowler*
   Other: []
+  Incumbent: Buddy Fowler
+  Party: R
   Previous D Votes: 12056
   Previous R Votes: 18087
   Previous Margin: -20
-  Incumbent: Buddy Fowler
-  Party: R
   2018 US Senator D: 15696
   2018 US Senator R: 19833
   2018 US Senator Margin: -12
@@ -1252,11 +1252,11 @@ HD56:
   Republican:
     - John McGuire*
   Other: []
+  Incumbent: John McGuire
+  Party: R
   Previous D Votes: 12761
   Previous R Votes: 18792
   Previous Margin: -19
-  Incumbent: John McGuire
-  Party: R
   2018 US Senator D: 16936
   2018 US Senator R: 19686
   2018 US Senator Margin: -8
@@ -1274,11 +1274,11 @@ HD57:
     - Sally Hudson
   Republican: []
   Other: []
+  Incumbent: David Toscano
+  Party: D
   Previous D Votes: 25419
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: David Toscano
-  Party: D
   2018 US Senator D: 27416
   2018 US Senator R: 5741
   2018 US Senator Margin: 65
@@ -1297,11 +1297,11 @@ HD58:
   Republican:
     - Rob Bell*
   Other: []
+  Incumbent: Rob Bell
+  Party: R
   Previous D Votes: 11797
   Previous R Votes: 18652
   Previous Margin: -23
-  Incumbent: Rob Bell
-  Party: R
   2018 US Senator D: 16883
   2018 US Senator R: 18272
   2018 US Senator Margin: -4
@@ -1320,11 +1320,11 @@ HD59:
   Republican:
     - Matt Fariss*
   Other: []
+  Incumbent: Matt Fariss
+  Party: R
   Previous D Votes: 8773
   Previous R Votes: 15758
   Previous Margin: -28
-  Incumbent: Matt Fariss
-  Party: R
   2018 US Senator D: 12090
   2018 US Senator R: 18653
   2018 US Senator Margin: -21
@@ -1342,11 +1342,11 @@ HD60:
   Republican:
     - James Edmunds*
   Other: []
+  Incumbent: James Edmunds
+  Party: R
   Previous D Votes: 8177
   Previous R Votes: 13330
   Previous Margin: -24
-  Incumbent: James Edmunds
-  Party: R
   2018 US Senator D: 11521
   2018 US Senator R: 14331
   2018 US Senator Margin: -11
@@ -1365,11 +1365,11 @@ HD61:
   Republican:
     - Tommy Wright*
   Other: []
+  Incumbent: Tommy Wright
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 17507
   Previous Margin: -100
-  Incumbent: Tommy Wright
-  Party: R
   2018 US Senator D: 11556
   2018 US Senator R: 16044
   2018 US Senator Margin: -16
@@ -1388,11 +1388,11 @@ HD62:
   Republican:
     - Carrie Coyner
   Other: []
+  Incumbent: Riley Ingram
+  Party: R
   Previous D Votes: 11344
   Previous R Votes: 12163
   Previous Margin: -3
-  Incumbent: Riley Ingram
-  Party: R
   2018 US Senator D: 14597
   2018 US Senator R: 12961
   2018 US Senator Margin: 6
@@ -1410,11 +1410,11 @@ HD63:
     - Lashrecse Aird*
   Republican: []
   Other: []
+  Incumbent: Lashrecse Aird
+  Party: D
   Previous D Votes: 15623
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Lashrecse Aird
-  Party: D
   2018 US Senator D: 16524
   2018 US Senator R: 11906
   2018 US Senator Margin: 16
@@ -1433,11 +1433,11 @@ HD64:
   Republican:
     - Emily Brewer*
   Other: []
+  Incumbent: Emily Brewer
+  Party: R
   Previous D Votes: 11551
   Previous R Votes: 19223
   Previous Margin: -25
-  Incumbent: Emily Brewer
-  Party: R
   2018 US Senator D: 14439
   2018 US Senator R: 18248
   2018 US Senator Margin: -12
@@ -1455,11 +1455,11 @@ HD65:
   Republican:
     - Lee Ware*
   Other: []
+  Incumbent: Lee Ware
+  Party: R
   Previous D Votes: 12530
   Previous R Votes: 22394
   Previous Margin: -28
-  Incumbent: Lee Ware
-  Party: R
   2018 US Senator D: 17345
   2018 US Senator R: 24235
   2018 US Senator Margin: -17
@@ -1479,11 +1479,11 @@ HD66:
     - Kirk Cox*
   Other:
     - 'Linnard K Harris, Sr'
+  Incumbent: Kirk Cox
+  Party: R
   Previous D Votes: 10656
   Previous R Votes: 18572
   Previous Margin: -27
-  Incumbent: Kirk Cox
-  Party: R
   2018 US Senator D: 17163
   2018 US Senator R: 12909
   2018 US Senator Margin: 14
@@ -1501,11 +1501,11 @@ HD67:
     - Karrie Delaney*
   Republican: []
   Other: []
+  Incumbent: Karrie Delaney
+  Party: D
   Previous D Votes: 17036
   Previous R Votes: 12365
   Previous Margin: 16
-  Incumbent: Karrie Delaney
-  Party: D
   2018 US Senator D: 21079
   2018 US Senator R: 10242
   2018 US Senator Margin: 35
@@ -1524,11 +1524,11 @@ HD68:
   Republican:
     - Garrison Coward
   Other: []
+  Incumbent: Dawn Adams
+  Party: D
   Previous D Votes: 19761
   Previous R Votes: 19425
   Previous Margin: 1
-  Incumbent: Dawn Adams
-  Party: D
   2018 US Senator D: 26381
   2018 US Senator R: 16015
   2018 US Senator Margin: 24
@@ -1546,11 +1546,11 @@ HD69:
     - Betsy Carr*
   Republican: []
   Other: []
+  Incumbent: Betsy Carr
+  Party: D
   Previous D Votes: 19775
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Betsy Carr
-  Party: D
   2018 US Senator D: 24387
   2018 US Senator R: 2877
   2018 US Senator Margin: 79
@@ -1568,11 +1568,11 @@ HD70:
     - Delores McQuinn*
   Republican: []
   Other: []
+  Incumbent: Delores McQuinn
+  Party: D
   Previous D Votes: 20391
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Delores McQuinn
-  Party: D
   2018 US Senator D: 22796
   2018 US Senator R: 7337
   2018 US Senator Margin: 51
@@ -1591,11 +1591,11 @@ HD71:
   Republican: []
   Other:
     - Pete Wells
+  Incumbent: Jeff Bourne
+  Party: D
   Previous D Votes: 24287
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Jeff Bourne
-  Party: D
   2018 US Senator D: 30013
   2018 US Senator R: 2812
   2018 US Senator Margin: 83
@@ -1614,11 +1614,11 @@ HD72:
   Republican:
     - GayDonna Vandergriff
   Other: []
+  Incumbent: Schuyler VanValkenburg
+  Party: D
   Previous D Votes: 16655
   Previous R Votes: 14869
   Previous Margin: 6
-  Incumbent: Schuyler VanValkenburg
-  Party: D
   2018 US Senator D: 20855
   2018 US Senator R: 13898
   2018 US Senator Margin: 20
@@ -1637,11 +1637,11 @@ HD73:
   Republican:
     - Mary Margaret Kastelberg
   Other: []
+  Incumbent: Debra Rodman
+  Party: D
   Previous D Votes: 14697
   Previous R Votes: 13803
   Previous Margin: 3
-  Incumbent: Debra Rodman
-  Party: D
   2018 US Senator D: 19739
   2018 US Senator R: 12961
   2018 US Senator Margin: 21
@@ -1659,11 +1659,11 @@ HD74:
     - Lamont Bagby*
   Republican: []
   Other: []
+  Incumbent: Lamont Bagby
+  Party: D
   Previous D Votes: 20041
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Lamont Bagby
-  Party: D
   2018 US Senator D: 24869
   2018 US Senator R: 7023
   2018 US Senator Margin: 56
@@ -1681,11 +1681,11 @@ HD75:
     - Roslyn Tyler*
   Republican: []
   Other: []
+  Incumbent: Roslyn Tyler
+  Party: D
   Previous D Votes: 16245
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Roslyn Tyler
-  Party: D
   2018 US Senator D: 14021
   2018 US Senator R: 10943
   2018 US Senator Margin: 12
@@ -1704,11 +1704,11 @@ HD76:
   Republican:
     - Chris Jones*
   Other: []
+  Incumbent: Chris Jones
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 22736
   Previous Margin: -100
-  Incumbent: Chris Jones
-  Party: R
   2018 US Senator D: 19006
   2018 US Senator R: 11279
   2018 US Senator Margin: 26
@@ -1727,11 +1727,11 @@ HD77:
   Republican:
     - Ron Wallace
   Other: []
+  Incumbent: Cliff Hayes
+  Party: D
   Previous D Votes: 16483
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Cliff Hayes
-  Party: D
   2018 US Senator D: 18043
   2018 US Senator R: 8383
   2018 US Senator Margin: 37
@@ -1749,11 +1749,11 @@ HD78:
   Republican:
     - Jay Leftwich*
   Other: []
+  Incumbent: Jay Leftwich
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 20768
   Previous Margin: -100
-  Incumbent: Jay Leftwich
-  Party: R
   2018 US Senator D: 13682
   2018 US Senator R: 18215
   2018 US Senator Margin: -14
@@ -1771,11 +1771,11 @@ HD79:
     - Steve Heretick*
   Republican: []
   Other: []
+  Incumbent: Steve Heretick
+  Party: D
   Previous D Votes: 12864
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Steve Heretick
-  Party: D
   2018 US Senator D: 11205
   2018 US Senator R: 6345
   2018 US Senator Margin: 28
@@ -1793,11 +1793,11 @@ HD80:
     - Don Scott
   Republican: []
   Other: []
+  Incumbent: Matthew James
+  Party: D
   Previous D Votes: 20292
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Matthew James
-  Party: D
   2018 US Senator D: 18139
   2018 US Senator R: 6648
   2018 US Senator Margin: 46
@@ -1807,11 +1807,11 @@ HD81:
   Republican:
     - Barry Knight*
   Other: []
+  Incumbent: Barry Knight
+  Party: R
   Previous D Votes: 9127
   Previous R Votes: 13162
   Previous Margin: -18
-  Incumbent: Barry Knight
-  Party: R
   2018 US Senator D: 14349
   2018 US Senator R: 12932
   2018 US Senator Margin: 5
@@ -1830,11 +1830,11 @@ HD82:
   Republican:
     - Jason Miyares*
   Other: []
+  Incumbent: Jason Miyares
+  Party: R
   Previous D Votes: 11174
   Previous R Votes: 16048
   Previous Margin: -18
-  Incumbent: Jason Miyares
-  Party: R
   2018 US Senator D: 15459
   2018 US Senator R: 15593
   2018 US Senator Margin: -0.0
@@ -1853,11 +1853,11 @@ HD83:
   Republican:
     - Chris Stolle*
   Other: []
+  Incumbent: Chris Stolle
+  Party: R
   Previous D Votes: 10077
   Previous R Votes: 13173
   Previous Margin: -13
-  Incumbent: Chris Stolle
-  Party: R
   2018 US Senator D: 15177
   2018 US Senator R: 10678
   2018 US Senator Margin: 17
@@ -1876,11 +1876,11 @@ HD84:
   Republican:
     - Glenn Davis*
   Other: []
+  Incumbent: Glenn Davis
+  Party: R
   Previous D Votes: 10093
   Previous R Votes: 10835
   Previous Margin: -4
-  Incumbent: Glenn Davis
-  Party: R
   2018 US Senator D: 14149
   2018 US Senator R: 11678
   2018 US Senator Margin: 10
@@ -1899,11 +1899,11 @@ HD85:
   Republican:
     - Rocky Holcomb
   Other: []
+  Incumbent: Cheryl Turpin
+  Party: D
   Previous D Votes: 11843
   Previous R Votes: 11454
   Previous Margin: 2
-  Incumbent: Cheryl Turpin
-  Party: D
   2018 US Senator D: 16624
   2018 US Senator R: 11890
   2018 US Senator Margin: 17
@@ -1921,11 +1921,11 @@ HD86:
     - Ibraheem Samirah*
   Republican: []
   Other: []
+  Incumbent: Ibraheem Samirah
+  Party: D
   Previous D Votes: 16865
   Previous R Votes: 7707
   Previous Margin: 37
-  Incumbent: Ibraheem Samirah
-  Party: D
   2018 US Senator D: 20343
   2018 US Senator R: 7918
   2018 US Senator Margin: 44
@@ -1944,11 +1944,11 @@ HD87:
   Republican:
     - Bill Drennan
   Other: []
+  Incumbent: John Bell
+  Party: D
   Previous D Votes: 18234
   Previous R Votes: 11236
   Previous Margin: 24
-  Incumbent: John Bell
-  Party: D
   2018 US Senator D: 26053
   2018 US Senator R: 12035
   2018 US Senator Margin: 37
@@ -1967,11 +1967,11 @@ HD88:
   Republican:
     - Mark Cole*
   Other: []
+  Incumbent: Mark Cole
+  Party: R
   Previous D Votes: 9918
   Previous R Votes: 14022
   Previous Margin: -17
-  Incumbent: Mark Cole
-  Party: R
   2018 US Senator D: 16356
   2018 US Senator R: 17006
   2018 US Senator Margin: -2
@@ -1989,11 +1989,11 @@ HD89:
     - Jay Jones*
   Republican: []
   Other: []
+  Incumbent: Jay Jones
+  Party: D
   Previous D Votes: 16541
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Jay Jones
-  Party: D
   2018 US Senator D: 20367
   2018 US Senator R: 3214
   2018 US Senator Margin: 73
@@ -2011,11 +2011,11 @@ HD90:
     - Joe Lindsey*
   Republican: []
   Other: []
+  Incumbent: Joe Lindsey
+  Party: D
   Previous D Votes: 15996
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Joe Lindsey
-  Party: D
   2018 US Senator D: 16256
   2018 US Senator R: 6405
   2018 US Senator Margin: 43
@@ -2034,11 +2034,11 @@ HD91:
   Republican:
     - Colleen Holcomb
   Other: []
+  Incumbent: Gordon Helsel
+  Party: R
   Previous D Votes: 10764
   Previous R Votes: 13877
   Previous Margin: -13
-  Incumbent: Gordon Helsel
-  Party: R
   2018 US Senator D: 15667
   2018 US Senator R: 11401
   2018 US Senator Margin: 16
@@ -2056,11 +2056,11 @@ HD92:
     - Jeion Ward*
   Republican: []
   Other: []
+  Incumbent: Jeion Ward
+  Party: D
   Previous D Votes: 18873
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Jeion Ward
-  Party: D
   2018 US Senator D: 21939
   2018 US Senator R: 5662
   2018 US Senator Margin: 59
@@ -2079,11 +2079,11 @@ HD93:
   Republican:
     - Heather Cordasco
   Other: []
+  Incumbent: Mike Mullin
+  Party: D
   Previous D Votes: 15988
   Previous R Votes: 10625
   Previous Margin: 20
-  Incumbent: Mike Mullin
-  Party: D
   2018 US Senator D: 17921
   2018 US Senator R: 12322
   2018 US Senator Margin: 19
@@ -2102,11 +2102,11 @@ HD94:
   Republican:
     - David Yancey*
   Other: []
+  Incumbent: David Yancey
+  Party: R
   Previous D Votes: 11608
   Previous R Votes: 11608
   Previous Margin: 0
-  Incumbent: David Yancey
-  Party: R
   2018 US Senator D: 16209
   2018 US Senator R: 9039
   2018 US Senator Margin: 28
@@ -2124,11 +2124,11 @@ HD95:
     - Cia Price*
   Republican: []
   Other: []
+  Incumbent: Cia Price
+  Party: D
   Previous D Votes: 15766
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Cia Price
-  Party: D
   2018 US Senator D: 16689
   2018 US Senator R: 6068
   2018 US Senator Margin: 47
@@ -2148,11 +2148,11 @@ HD96:
     - Amanda Batten
   Other:
     - James Jobe
+  Incumbent: Brenda Pogge
+  Party: R
   Previous D Votes: 14947
   Previous R Votes: 19841
   Previous Margin: -14
-  Incumbent: Brenda Pogge
-  Party: R
   2018 US Senator D: 18965
   2018 US Senator R: 19444
   2018 US Senator Margin: -1
@@ -2172,11 +2172,11 @@ HD97:
     - Chris Peace*
     - Scott Wyatt
   Other: []
+  Incumbent: Chris Peace
+  Party: R
   Previous D Votes: 9319
   Previous R Votes: 24363
   Previous Margin: -45
-  Incumbent: Chris Peace
-  Party: R
   2018 US Senator D: 13271
   2018 US Senator R: 25863
   2018 US Senator Margin: -32
@@ -2195,11 +2195,11 @@ HD98:
   Republican:
     - Keith Hodges*
   Other: []
+  Incumbent: Keith Hodges
+  Party: R
   Previous D Votes: 9945
   Previous R Votes: 18561
   Previous Margin: -30
-  Incumbent: Keith Hodges
-  Party: R
   2018 US Senator D: 12189
   2018 US Senator R: 19022
   2018 US Senator Margin: -22
@@ -2218,11 +2218,11 @@ HD99:
   Republican:
     - Margaret Ransone*
   Other: []
+  Incumbent: Margaret Ransone
+  Party: R
   Previous D Votes: 10043
   Previous R Votes: 16548
   Previous Margin: -24
-  Incumbent: Margaret Ransone
-  Party: R
   2018 US Senator D: 13391
   2018 US Senator R: 16895
   2018 US Senator Margin: -12
@@ -2241,11 +2241,11 @@ HD100:
   Republican:
     - Rob Bloxom*
   Other: []
+  Incumbent: Rob Bloxom
+  Party: R
   Previous D Votes: 10720
   Previous R Votes: 11720
   Previous Margin: -4
-  Incumbent: Rob Bloxom
-  Party: R
   2018 US Senator D: 14053
   2018 US Senator R: 11366
   2018 US Senator Margin: 11
@@ -2263,11 +2263,11 @@ SD1:
     - Monty Mason*
   Republican: []
   Other: []
+  Incumbent: Monty Mason
+  Party: D
   Previous D Votes: 17989
   Previous R Votes: 12278
   Previous Margin: 19
-  Incumbent: Monty Mason
-  Party: D
   2018 US Senator D: 42630
   2018 US Senator R: 21952
   2018 US Senator Margin: 32
@@ -2285,11 +2285,11 @@ SD2:
     - Mamie Locke*
   Republican: []
   Other: []
+  Incumbent: Mamie Locke
+  Party: D
   Previous D Votes: 17459
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Mamie Locke
-  Party: D
   2018 US Senator D: 48960
   2018 US Senator R: 16509
   2018 US Senator Margin: 50
@@ -2308,11 +2308,11 @@ SD3:
   Republican:
     - Tommy Norment*
   Other: []
+  Incumbent: Tommy Norment
+  Party: R
   Previous D Votes: 15432
   Previous R Votes: 35520
   Previous Margin: -39
-  Incumbent: Tommy Norment
-  Party: R
   2018 US Senator D: 39682
   2018 US Senator R: 56504
   2018 US Senator Margin: -17
@@ -2331,11 +2331,11 @@ SD4:
   Republican:
     - Ryan McDougle*
   Other: []
+  Incumbent: Ryan McDougle
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 37882
   Previous Margin: -100
-  Incumbent: Ryan McDougle
-  Party: R
   2018 US Senator D: 36769
   2018 US Senator R: 49322
   2018 US Senator Margin: -15
@@ -2354,11 +2354,11 @@ SD5:
   Republican: []
   Other:
     - Jeff Staples
+  Incumbent: Lionell Sr Spruill
+  Party: D
   Previous D Votes: 13955
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Lionell Sr Spruill
-  Party: D
   2018 US Senator D: 46459
   2018 US Senator R: 13353
   2018 US Senator Margin: 55
@@ -2376,11 +2376,11 @@ SD6:
     - Lynwood Lewis*
   Republican: []
   Other: []
+  Incumbent: Lynwood Lewis
+  Party: D
   Previous D Votes: 16738
   Previous R Votes: 11386
   Previous Margin: 19
-  Incumbent: Lynwood Lewis
-  Party: D
   2018 US Senator D: 32433
   2018 US Senator R: 20675
   2018 US Senator Margin: 22
@@ -2399,11 +2399,11 @@ SD7:
   Republican:
     - Jen Kiggans
   Other: []
+  Incumbent: ''
+  Party: ''
   Previous D Votes: 15434
   Previous R Votes: 18266
   Previous Margin: -8
-  Incumbent: ''
-  Party: ''
   2018 US Senator D: 40252
   2018 US Senator R: 30398
   2018 US Senator Margin: 14
@@ -2422,11 +2422,11 @@ SD8:
   Republican:
     - Bill DeSteph*
   Other: []
+  Incumbent: Bill DeSteph
+  Party: R
   Previous D Votes: 11075
   Previous R Votes: 15905
   Previous Margin: -18
-  Incumbent: Bill DeSteph
-  Party: R
   2018 US Senator D: 35098
   2018 US Senator R: 31301
   2018 US Senator Margin: 6
@@ -2445,11 +2445,11 @@ SD9:
   Republican: []
   Other:
     - Mark Lewis
+  Incumbent: Jennifer McClellan
+  Party: D
   Previous D Votes: 31067
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Jennifer McClellan
-  Party: D
   2018 US Senator D: 65386
   2018 US Senator R: 17850
   2018 US Senator Margin: 57
@@ -2468,11 +2468,11 @@ SD10:
   Republican:
     - Glen Sturtevant*
   Other: []
+  Incumbent: Glen Sturtevant
+  Party: R
   Previous D Votes: 26173
   Previous R Votes: 27651
   Previous Margin: -3
-  Incumbent: Glen Sturtevant
-  Party: R
   2018 US Senator D: 58339
   2018 US Senator R: 35621
   2018 US Senator Margin: 24
@@ -2491,11 +2491,11 @@ SD11:
   Republican:
     - Amanda Chase*
   Other: []
+  Incumbent: Amanda Chase
+  Party: R
   Previous D Votes: 15485
   Previous R Votes: 27218
   Previous Margin: -27
-  Incumbent: Amanda Chase
-  Party: R
   2018 US Senator D: 44585
   2018 US Senator R: 43853
   2018 US Senator Margin: 1
@@ -2514,11 +2514,11 @@ SD12:
   Republican:
     - Siobhan Dunnavant*
   Other: []
+  Incumbent: Siobhan Dunnavant
+  Party: R
   Previous D Votes: 16797
   Previous R Votes: 25504
   Previous Margin: -21
-  Incumbent: Siobhan Dunnavant
-  Party: R
   2018 US Senator D: 51668
   2018 US Senator R: 37556
   2018 US Senator Margin: 16
@@ -2538,11 +2538,11 @@ SD13:
     - Geary Higgins
   Other:
     - Jasmine Moawad-Barrientos
+  Incumbent: Dick Black
+  Party: R
   Previous D Votes: 23544
   Previous R Votes: 25898
   Previous Margin: -5
-  Incumbent: Dick Black
-  Party: R
   2018 US Senator D: 58385
   2018 US Senator R: 39555
   2018 US Senator Margin: 19
@@ -2560,11 +2560,11 @@ SD14:
   Republican:
     - John Cosgrove*
   Other: []
+  Incumbent: John Cosgrove
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 15371
   Previous Margin: -100
-  Incumbent: John Cosgrove
-  Party: R
   2018 US Senator D: 35756
   2018 US Senator R: 43573
   2018 US Senator Margin: -10
@@ -2583,11 +2583,11 @@ SD15:
   Republican:
     - Frank Ruff*
   Other: []
+  Incumbent: Frank Ruff
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 32745
   Previous Margin: -100
-  Incumbent: Frank Ruff
-  Party: R
   2018 US Senator D: 25745
   2018 US Senator R: 44073
   2018 US Senator Margin: -26
@@ -2606,11 +2606,11 @@ SD16:
   Republican: []
   Other:
     - Waylin Ross
+  Incumbent: Rosalyn Dance
+  Party: D
   Previous D Votes: 17331
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Rosalyn Dance
-  Party: D
   2018 US Senator D: 44952
   2018 US Senator R: 16084
   2018 US Senator Margin: 47
@@ -2629,11 +2629,11 @@ SD17:
   Republican:
     - Bryce Reeves*
   Other: []
+  Incumbent: Bryce Reeves
+  Party: R
   Previous D Votes: 14915
   Previous R Votes: 24519
   Previous Margin: -24
-  Incumbent: Bryce Reeves
-  Party: R
   2018 US Senator D: 41577
   2018 US Senator R: 36461
   2018 US Senator Margin: 7
@@ -2651,11 +2651,11 @@ SD18:
     - Louise Lucas*
   Republican: []
   Other: []
+  Incumbent: Louise Lucas
+  Party: D
   Previous D Votes: 20321
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Louise Lucas
-  Party: D
   2018 US Senator D: 45937
   2018 US Senator R: 21151
   2018 US Senator Margin: 37
@@ -2674,11 +2674,11 @@ SD19:
   Republican:
     - Dave Suetterlein*
   Other: []
+  Incumbent: Dave Suetterlein
+  Party: R
   Previous D Votes: 15738
   Previous R Votes: 33120
   Previous Margin: -36
-  Incumbent: Dave Suetterlein
-  Party: R
   2018 US Senator D: 26952
   2018 US Senator R: 50164
   2018 US Senator Margin: -30
@@ -2696,11 +2696,11 @@ SD20:
   Republican:
     - Bill Stanley*
   Other: []
+  Incumbent: Bill Stanley
+  Party: R
   Previous D Votes: 16455
   Previous R Votes: 22701
   Previous Margin: -16
-  Incumbent: Bill Stanley
-  Party: R
   2018 US Senator D: 28754
   2018 US Senator R: 36138
   2018 US Senator Margin: -11
@@ -2719,11 +2719,11 @@ SD21:
   Republican: []
   Other:
     - Steven Nelson
+  Incumbent: John Edwards
+  Party: D
   Previous D Votes: 20881
   Previous R Votes: 17438
   Previous Margin: 9
-  Incumbent: John Edwards
-  Party: D
   2018 US Senator D: 38474
   2018 US Senator R: 25492
   2018 US Senator Margin: 20
@@ -2742,11 +2742,11 @@ SD22:
   Republican:
     - Mark Peake*
   Other: []
+  Incumbent: Mark Peake
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 24913
   Previous Margin: -100
-  Incumbent: Mark Peake
-  Party: R
   2018 US Senator D: 33155
   2018 US Senator R: 40002
   2018 US Senator Margin: -9
@@ -2764,11 +2764,11 @@ SD23:
   Republican:
     - Steve Newman*
   Other: []
+  Incumbent: Steve Newman
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 27309
   Previous Margin: -100
-  Incumbent: Steve Newman
-  Party: R
   2018 US Senator D: 24464
   2018 US Senator R: 55633
   2018 US Senator Margin: -39
@@ -2787,11 +2787,11 @@ SD24:
   Republican:
     - Emmett Hanger*
   Other: []
+  Incumbent: Emmett Hanger
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 34980
   Previous Margin: -100
-  Incumbent: Emmett Hanger
-  Party: R
   2018 US Senator D: 28545
   2018 US Senator R: 49668
   2018 US Senator Margin: -27
@@ -2809,11 +2809,11 @@ SD25:
     - Creigh Deeds*
   Republican: []
   Other: []
+  Incumbent: Creigh Deeds
+  Party: D
   Previous D Votes: 34419
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Creigh Deeds
-  Party: D
   2018 US Senator D: 50518
   2018 US Senator R: 30098
   2018 US Senator Margin: 25
@@ -2832,11 +2832,11 @@ SD26:
   Republican:
     - Mark Obenshain*
   Other: []
+  Incumbent: Mark Obenshain
+  Party: R
   Previous D Votes: 11308
   Previous R Votes: 25042
   Previous Margin: -38
-  Incumbent: Mark Obenshain
-  Party: R
   2018 US Senator D: 26180
   2018 US Senator R: 40161
   2018 US Senator Margin: -21
@@ -2855,11 +2855,11 @@ SD27:
   Republican:
     - Jill Vogel*
   Other: []
+  Incumbent: Jill Vogel
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 34203
   Previous Margin: -100
-  Incumbent: Jill Vogel
-  Party: R
   2018 US Senator D: 34917
   2018 US Senator R: 47932
   2018 US Senator Margin: -16
@@ -2878,11 +2878,11 @@ SD28:
   Republican:
     - Richard Stuart*
   Other: []
+  Incumbent: Richard Stuart
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 30187
   Previous Margin: -100
-  Incumbent: Richard Stuart
-  Party: R
   2018 US Senator D: 39324
   2018 US Senator R: 40299
   2018 US Senator Margin: -1
@@ -2900,11 +2900,11 @@ SD29:
     - Jeremy McPike*
   Republican: []
   Other: []
+  Incumbent: Jeremy McPike
+  Party: D
   Previous D Votes: 16489
   Previous R Votes: 14131
   Previous Margin: 8
-  Incumbent: Jeremy McPike
-  Party: D
   2018 US Senator D: 43084
   2018 US Senator R: 16901
   2018 US Senator Margin: 44
@@ -2922,11 +2922,11 @@ SD30:
     - Adam Ebbin*
   Republican: []
   Other: []
+  Incumbent: Adam Ebbin
+  Party: D
   Previous D Votes: 27274
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Adam Ebbin
-  Party: D
   2018 US Senator D: 63880
   2018 US Senator R: 16475
   2018 US Senator Margin: 59
@@ -2944,11 +2944,11 @@ SD31:
     - Barbara Favola*
   Republican: []
   Other: []
+  Incumbent: Barbara Favola
+  Party: D
   Previous D Votes: 26373
   Previous R Votes: 15904
   Previous Margin: 25
-  Incumbent: Barbara Favola
-  Party: D
   2018 US Senator D: 60502
   2018 US Senator R: 20294
   2018 US Senator Margin: 50
@@ -2967,11 +2967,11 @@ SD32:
   Republican:
     - Arthur Purves
   Other: []
+  Incumbent: Janet Howell
+  Party: D
   Previous D Votes: 31156
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Janet Howell
-  Party: D
   2018 US Senator D: 61929
   2018 US Senator R: 21629
   2018 US Senator Margin: 48
@@ -2990,11 +2990,11 @@ SD33:
   Republican:
     - Suzanne Fox
   Other: []
+  Incumbent: Jennifer Boysko
+  Party: D
   Previous D Votes: 18577
   Previous R Votes: 14190
   Previous Margin: 13
-  Incumbent: Jennifer Boysko
-  Party: D
   2018 US Senator D: 51011
   2018 US Senator R: 20869
   2018 US Senator Margin: 42
@@ -3012,11 +3012,11 @@ SD34:
     - Chap Petersen*
   Republican: []
   Other: []
+  Incumbent: Chap Petersen
+  Party: D
   Previous D Votes: 27690
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Chap Petersen
-  Party: D
   2018 US Senator D: 53269
   2018 US Senator R: 22010
   2018 US Senator Margin: 42
@@ -3034,11 +3034,11 @@ SD35:
     - Dick Saslaw*
   Republican: []
   Other: []
+  Incumbent: Dick Saslaw
+  Party: D
   Previous D Votes: 18754
   Previous R Votes: 0
   Previous Margin: 100
-  Incumbent: Dick Saslaw
-  Party: D
   2018 US Senator D: 48022
   2018 US Senator R: 13406
   2018 US Senator Margin: 56
@@ -3056,11 +3056,11 @@ SD36:
     - Scott Surovell*
   Republican: []
   Other: []
+  Incumbent: Scott Surovell
+  Party: D
   Previous D Votes: 18320
   Previous R Votes: 11890
   Previous Margin: 21
-  Incumbent: Scott Surovell
-  Party: D
   2018 US Senator D: 45881
   2018 US Senator R: 17025
   2018 US Senator Margin: 46
@@ -3078,11 +3078,11 @@ SD37:
     - Dave Marsden*
   Republican: []
   Other: []
+  Incumbent: Dave Marsden
+  Party: D
   Previous D Votes: 18966
   Previous R Votes: 15216
   Previous Margin: 11
-  Incumbent: Dave Marsden
-  Party: D
   2018 US Senator D: 49035
   2018 US Senator R: 20968
   2018 US Senator Margin: 40
@@ -3100,11 +3100,11 @@ SD38:
   Republican:
     - Ben Chafin*
   Other: []
+  Incumbent: Ben Chafin
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 31025
   Previous Margin: -100
-  Incumbent: Ben Chafin
-  Party: R
   2018 US Senator D: 16756
   2018 US Senator R: 38259
   2018 US Senator Margin: -39
@@ -3122,11 +3122,11 @@ SD39:
     - George Barker*
   Republican: []
   Other: []
+  Incumbent: George Barker
+  Party: D
   Previous D Votes: 20083
   Previous R Votes: 17101
   Previous Margin: 8
-  Incumbent: George Barker
-  Party: D
   2018 US Senator D: 54215
   2018 US Senator R: 22300
   2018 US Senator Margin: 42
@@ -3145,11 +3145,11 @@ SD40:
     - Todd Pillion
   Other:
     - Ken Heath
+  Incumbent: Bill Carrico
+  Party: R
   Previous D Votes: 0
   Previous R Votes: 36838
   Previous Margin: -100
-  Incumbent: Bill Carrico
-  Party: R
   2018 US Senator D: 15758
   2018 US Senator R: 43853
   2018 US Senator Margin: -47

@@ -74,6 +74,8 @@ async function processHtml(html) {
         district= m[2].replace(/\s+/, '');
         const record = _.zipObject(headers, values);
         if (argv.full || !data[district]) {
+            headers.push('Incumbent', 'Party'); // to set order of keys
+            values.push(null, null);
             const isHouse = /^H/.test(district);
             detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
             $ = await getCheerio(detailUrl);
