@@ -43,8 +43,17 @@
             value = +value;
             return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
           }
-        };
-      $('#races-table').DataTable({
+        },
+        table;
+      $.fn.dataTable.ext.search.push(
+        function (settings, searchData, index, rowData, counter) {
+          if ($('#show-uncontested').prop('checked')) {
+            return true;
+          }
+          return searchData[1] && searchData[2];
+        }
+      );
+      table = $('#races-table').DataTable({
         columns: [
           {
             render: function (value, type) {
@@ -82,17 +91,19 @@
         fixedHeader: true,
         paging: false
       });
+      $('#show-uncontested').on('click', function () { table.draw(); });
     });
   </script>
 </head>
 <body>
+<input type="checkbox" id="show-uncontested"> Show uncontested races
 <table id="races-table">
   <thead>
-  <tr>
-    <% _.forEach(headers, function (header) { %>
-      <th><%- header %></th>
-    <% }); %>
-  </tr>
+    <tr>
+      <% _.forEach(headers, function (header) { %>
+        <th><%- header %></th>
+      <% }); %>
+    </tr>
   </thead>
   <tbody>
     <% _.forEach(data, function (r, district) { %>
