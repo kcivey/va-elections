@@ -24,6 +24,10 @@
     .number {
       text-align: right;
     }
+    #controls {
+      position: absolute;
+      z-index: 100;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -32,10 +36,12 @@
     jQuery(function () {
       var numberCol = {
           className: 'number',
+          visible: false,
           render: $.fn.dataTable.render.number(',', '.')
         },
         marginCol = {
           className: 'number',
+          width: 30,
           render: function (value, type) {
             if (value === '') {
               return '';
@@ -56,6 +62,7 @@
       table = $('#races-table').DataTable({
         columns: [
           {
+            width: 30,
             render: function (value, type) {
               var m;
               if (type === 'sort') {
@@ -71,7 +78,7 @@
           null,
           null,
           null,
-          null,
+          {width: 20},
           numberCol,
           numberCol,
           marginCol,
@@ -92,11 +99,20 @@
         paging: false
       });
       $('#show-uncontested').on('click', function () { table.draw(); });
+      $('#show-vote-totals').on('click', function () {
+        table.columns([6, 7, 9, 10, 12, 13, 15, 16, 18, 19]).visible($(this).prop('checked'));
+        setTimeout(function () {
+          table.draw();
+        }, 5000);
+      });
     });
   </script>
 </head>
 <body>
-<input type="checkbox" id="show-uncontested"> Show uncontested races
+<div id="controls">
+  <input type="checkbox" id="show-uncontested"> Show uncontested races
+  <input type="checkbox" id="show-vote-totals"> Show vote totals
+</div>
 <table id="races-table">
   <thead>
     <tr>
