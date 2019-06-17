@@ -128,8 +128,8 @@
         <% _.forEach(headers, function (key) { %>
           <% var value = key === 'District' ? district : r[key]; %>
           <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %><% }
-            else if (key === 'Party') { %> class="<%= value === 'D' ? 'democrat' : 'republican' %>"<% }
-            else if ((Array.isArray(value) && !value.length) || value == null) { %> class="empty"<% } %>
+            else if (key === 'Party') { %> class="<%= {D: 'democrat', R: 'republican'}[value] || 'empty' %>"<% }
+            else if ((Array.isArray(value) && !value.length) || value == null || value === '') { %> class="empty"<% } %>
           >
             <% if (Array.isArray(value)) { %>
               <% _.forEach(value, function (v) { %>
