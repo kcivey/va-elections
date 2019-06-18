@@ -1409,7 +1409,8 @@ HD63:
   Democrat:
     - Lashrecse Aird*
   Republican: []
-  Other: []
+  Other:
+    - Larry Haake
   Incumbent: Lashrecse Aird
   Party: D
   Previous D Votes: 15623
@@ -1451,7 +1452,8 @@ HD64:
   2014 US Senator R: 13472
   2014 US Senator Margin: -12
 HD65:
-  Democrat: []
+  Democrat:
+    - Mike Asip
   Republican:
     - Lee Ware*
   Other: []
@@ -1791,8 +1793,10 @@ HD79:
 HD80:
   Democrat:
     - Don Scott
-  Republican: []
-  Other: []
+  Republican:
+    - 'James William Evans, Sr'
+  Other:
+    - Ryan Collin Benton
   Incumbent: Matthew James
   Party: D
   Previous D Votes: 20292
@@ -2695,7 +2699,8 @@ SD20:
   Democrat: []
   Republican:
     - Bill Stanley*
-  Other: []
+  Other:
+    - Sherman Witcher
   Incumbent: Bill Stanley
   Party: R
   Previous D Votes: 16455
@@ -3099,7 +3104,8 @@ SD38:
   Democrat: []
   Republican:
     - Ben Chafin*
-  Other: []
+  Other:
+    - 'George W McCall, III'
   Incumbent: Ben Chafin
   Party: R
   Previous D Votes: 0
