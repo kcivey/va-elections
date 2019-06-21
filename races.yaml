@@ -180,7 +180,8 @@ HD8:
   2014 US Senator R: 13979
   2014 US Senator Margin: -20
 HD9:
-  Democrat: []
+  Democrat:
+    - Jordan Law
   Republican:
     - Charles Poindexter*
   Other: []
@@ -911,6 +912,7 @@ HD41:
   Republican: []
   Other:
     - Rachel Mace
+    - John Michael Wolfe
   Incumbent: Eileen Filler-Corn
   Party: D
   Previous D Votes: 22985
@@ -1794,7 +1796,7 @@ HD80:
   Democrat:
     - Don Scott
   Republican:
-    - 'James William Evans, Sr'
+    - Jim Evans
   Other:
     - Ryan Collin Benton
   Incumbent: Matthew James
@@ -2105,7 +2107,8 @@ HD94:
     - Shelly Simonds
   Republican:
     - David Yancey*
-  Other: []
+  Other:
+    - Michael Bartley
   Incumbent: David Yancey
   Party: R
   Previous D Votes: 11608
@@ -2378,7 +2381,8 @@ SD5:
 SD6:
   Democrat:
     - Lynwood Lewis*
-  Republican: []
+  Republican:
+    - Elizabeth Lankford
   Other: []
   Incumbent: Lynwood Lewis
   Party: D
@@ -3105,7 +3109,7 @@ SD38:
   Republican:
     - Ben Chafin*
   Other:
-    - 'George W McCall, III'
+    - George McCall
   Incumbent: Ben Chafin
   Party: R
   Previous D Votes: 0
