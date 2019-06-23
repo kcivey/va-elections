@@ -180,8 +180,7 @@ HD8:
   2014 US Senator R: 13979
   2014 US Senator Margin: -20
 HD9:
-  Democrat:
-    - Jordan Law
+  Democrat: []
   Republican:
     - Charles Poindexter*
   Other: []
@@ -2176,7 +2175,6 @@ HD97:
   Democrat:
     - Kevin Washington
   Republican:
-    - Chris Peace*
     - Scott Wyatt
   Other: []
   Incumbent: Chris Peace
