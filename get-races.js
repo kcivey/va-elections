@@ -13,6 +13,10 @@ const argv = require('yargs')
             type: 'boolean',
             describe: 'refresh all info, including historical vote counts (takes a while)',
         },
+        csv: {
+            type: 'boolean',
+            describe: 'output to stdout as CSV rather than writing HTML file',
+        },
     })
     .strict(true)
     .argv;
@@ -29,7 +33,7 @@ readExistingData()
     .then(() => request(senateUrl))
     .then(processHtml)
     .then(writeData)
-    .then(outputHtml)
+    .then(argv.csv ? outputCsv : outputHtml)
     .catch(err => console.error(err));
 
 function readExistingData() {
@@ -76,7 +80,6 @@ async function processHtml(html) {
         district= m[2].replace(/\s+/, '');
         const record = _.zipObject(headers, values);
         if (argv.full || !data[district]) {
-            values.push(null, null);
             const isHouse = /^H/.test(district);
             detailUrl = detailUrl.replace('2019', isHouse ? '2017' : '2015');
             $ = await getCheerio(detailUrl);
