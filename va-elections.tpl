@@ -38,23 +38,35 @@
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
   <script type="text/javascript">
     jQuery(function () {
-      var numberCol = {
-          className: 'number',
-          visible: false,
-          render: $.fn.dataTable.render.number(',', '.')
-        },
-        marginCol = {
-          className: 'number',
-          width: 30,
-          render: function (value, type) {
-            if (value === '') {
-              return '';
+      const districtCol = {
+        width: 20,
+        render: function (value, type) {
+          var m;
+          if (type === 'sort') {
+            m = value.match(/^([HS]D)(\d+)$/);
+            if (m) {
+              return m[1] + m[2].padStart(3, '0');
             }
-            value = +value;
-            return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
           }
-        },
-        table;
+          return value;
+        }
+      };
+      const numberCol = {
+        className: 'number',
+        visible: false,
+        render: $.fn.dataTable.render.number(',', '.')
+      };
+      const marginCol = {
+        className: 'number',
+        width: 30,
+        render: function (value, type) {
+          if (value === '') {
+            return '';
+          }
+          value = +value;
+          return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
+        }
+      };
       $.fn.dataTable.ext.search.push(
         function (settings, searchData, index, rowData, counter) {
           if ($('#show-uncontested').prop('checked')) {
@@ -63,41 +75,15 @@
           return searchData[1] && searchData[2];
         }
       );
-      table = $('#races-table').DataTable({
+      const table = $('#races-table').DataTable({
         columns: [
-          {
-            width: 20,
-            render: function (value, type) {
-              var m;
-              if (type === 'sort') {
-                m = value.match(/^([HS]D)(\d+)$/);
-                if (m) {
-                  return m[1] + m[2].padStart(3, '0');
-                }
-              }
-              return value;
-            }
-          },
-          null,
-          null,
-          null,
-          null,
-          {width: 20},
-          numberCol,
-          numberCol,
-          marginCol,
-          numberCol,
-          numberCol,
-          marginCol,
-          numberCol,
-          numberCol,
-          marginCol,
-          numberCol,
-          numberCol,
-          marginCol,
-          numberCol,
-          numberCol,
-          marginCol
+          <% _.forEach(headers, function (header) {
+            if (header === 'District') { %>districtCol<% }
+            else if (header === 'Party') { %>{width: 20}<% }
+            else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
+            else if (/Margin$/.test(header)) { %>marginCol<% }
+            else { %>null<% } %>,
+          <% }); %>
         ],
         fixedHeader: true,
         paging: false

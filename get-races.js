@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+require('dotenv').config();
 const url = require('url');
 const fs = require('fs');
 const cheerio = require('cheerio');
@@ -7,6 +8,7 @@ const _ = require('lodash');
 const yaml = require('js-yaml');
 const csvStringify = require('csv-stringify/lib/sync');
 const {decodeHTML} = require('entities');
+const {google} = require('googleapis');
 const argv = require('yargs')
     .options({
         csv: {
@@ -17,21 +19,25 @@ const argv = require('yargs')
             type: 'boolean',
             describe: 'refresh all info, including historical vote counts (takes a while)',
         },
+        vpap: {
+            type: 'boolean',
+            describe: 'get earlier election votes from VPAP rather than Daily Kos',
+        },
     })
     .strict(true)
     .argv;
 const request = require('./request');
+const googleApiKey = process.env.GOOGLE_API_KEY;
+const dailyKosSpreadsheetId = '1YZRfFiCDBEYB7M18fDGLH8IrmyMQGdQKqpOu9lLvmdo';
 const houseUrl = 'https://www.vpap.org/elections/house/candidates/general/';
 const senateUrl = 'https://www.vpap.org/elections/senate/candidates/general/';
 const dataFile = __dirname + '/races.yaml';
 const currentElectionYear = 2019;
-let data = {};
+let recordsByDistrict = {};
 
 readExistingData()
-    .then(() => request(houseUrl))
-    .then(processHtml)
-    .then(() => request(senateUrl))
-    .then(processHtml)
+    .then(() => processChamber(houseUrl))
+    .then(() => processChamber(senateUrl))
     .then(writeData)
     .then(argv.csv ? outputCsv : outputHtml)
     .catch(err => console.error(err));
@@ -44,7 +50,7 @@ function readExistingData() {
         }
         fs.readFile(dataFile, 'utf8', function (err, yamlString) {
             if (!err) {
-                data = yaml.safeLoad(yamlString);
+                recordsByDistrict = yaml.safeLoad(yamlString);
             }
             else if (err.code !== 'ENOENT') {
                 reject(err);
@@ -54,8 +60,9 @@ function readExistingData() {
     });
 }
 
-async function processHtml(html) {
-    const $ = await cheerio.load(html);
+async function processChamber(chamberUrl) {
+    const isHouse = /\/house/.test(chamberUrl);
+    const $ = await getCheerio(chamberUrl);
     const headers = $('table.table thead tr:first-child th')
         .map((i, th) => $(th).text().trim())
         .get();
@@ -74,29 +81,32 @@ async function processHtml(html) {
         });
         const m = districtLinkHtml.match(/href="([^"]+)"\s*>\s*([HS]D\s*\d+)\s*</);
         if (!m) {
-            throw new Error(`Unexpected format "${district}"`);
+            throw new Error(`Unexpected format "${districtLinkHtml}"`);
         }
-        const election2019Url = url.resolve(houseUrl, m[1]);
+        const election2019Url = url.resolve(chamberUrl, m[1]);
         const district= m[2].replace(/\s+/, '');
         const record = _.zipObject(headers, values);
-        if (argv.full || !data[district]) {
+        if (argv.full || !recordsByDistrict[district]) {
             Object.assign(
                 record,
                 await getPreviousElectionData(election2019Url),
                 await getIncumbentAndParty(election2019Url),
-                await getEarlierElectionsData(election2019Url),
+                argv.vpap ? await getEarlierElectionsDataFromVpap(election2019Url) : {},
             );
         }
         for (const [key, value] of Object.entries(record)) {
-            if (!data[district]) {
-                data[district] = {};
+            if (!recordsByDistrict[district]) {
+                recordsByDistrict[district] = {};
             }
             if (value !== undefined) {
-                data[district][key] = value;
+                recordsByDistrict[district][key] = value;
             }
         }
     }
-    return data;
+    if (!argv.vpap) {
+        recordsByDistrict = await addDailyKosData(isHouse, recordsByDistrict);
+    }
+    return recordsByDistrict;
 }
 
 async function getPreviousElectionData(election2019Url) {
@@ -141,7 +151,7 @@ async function getIncumbentAndParty(election2019Url) {
     };
 }
 
-async function getEarlierElectionsData(election2019Url) {
+async function getEarlierElectionsDataFromVpap(election2019Url) {
     const districtUrl = election2019Url.replace(/\/elections\/.*/, '/district/');
     let $ = await getCheerio(districtUrl);
     let prevYear = currentElectionYear;
@@ -181,6 +191,65 @@ async function getEarlierElectionsData(election2019Url) {
     return record;
 }
 
+function addDailyKosData(isHouse, records) {
+    const sheetName = isHouse ? 'VA_Lower' : 'VA_Upper';
+    const sheets = google.sheets({version: 'v4', auth: googleApiKey});
+    return sheets.spreadsheets.values
+        .get({
+            spreadsheetId: dailyKosSpreadsheetId,
+            range: sheetName,
+        })
+        .then(function (res) {
+            const headers = [];
+            const rows = res.data.values;
+            let endReached = false;
+            rows.forEach(function (row, rowIndex) {
+                if (rowIndex < 2) {
+                    let currentTopHeader = '';
+                    for (let i = 0; i < row.length; i++) {
+                        const value = row[i];
+                        currentTopHeader = headers[i] || (value && currentTopHeader);
+                        if (currentTopHeader && !/^[HS]D$/.test(value)) {
+                            headers[i] = currentTopHeader + ' ' + value;
+                        }
+                        else {
+                            headers[i] = value;
+                        }
+                    }
+                    return;
+                }
+                if (endReached || row[0] === 'Total') {
+                    endReached = true;
+                    return;
+                }
+                const district = headers[0] + row[0];
+                row = row.map(function (v) {
+                    // Convert numbers to numbers
+                    return /^[\d,]+$/.test(v) ? +v.replace(/,/g, '') : v;
+                });
+                const rowData = _.zipObject(headers, row);
+                Object.assign(
+                    records[district],
+                    {
+                        '2017 Governor D': rowData['2017 Governor Northam'],
+                        '2017 Governor R': rowData['2017 Governor Gillespie'],
+                        '2017 Governor Margin': getDemMargin(
+                            rowData['2017 Governor Northam'],
+                            rowData['2017 Governor Gillespie']
+                        ),
+                        '2016 President D': rowData['2016 President Clinton'],
+                        '2016 President R': rowData['2016 President Trump'],
+                        '2016 President Margin': getDemMargin(
+                            rowData['2016 President Clinton'],
+                            rowData['2016 President Trump']
+                        ),
+                    }
+                );
+            });
+            return records;
+        });
+}
+
 function getCheerio(requestOptions) {
     return request(requestOptions)
         .then(html => cheerio.load(html))
@@ -196,12 +265,12 @@ function getDemMargin(dVotes, rVotes) {
 
 function writeData() {
     return new Promise(function (resolve, reject) {
-        fs.writeFile(dataFile, yaml.safeDump(data), function (err) {
+        fs.writeFile(dataFile, yaml.safeDump(recordsByDistrict), function (err) {
             if (err) {
                 reject(err);
             }
             else {
-                resolve(data);
+                resolve(recordsByDistrict);
             }
         });
     });
