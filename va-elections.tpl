@@ -95,7 +95,9 @@
           }
         }
       );
-      const table = $('#races-table').DataTable({
+      const $table = $('#races-table')
+        .on('draw.dt', () => $('#races-table_wrapper').width($table.width()));
+      const table = $table.DataTable({
         columns: [
           <% _.forEach(headers, function (header) {
             if (header === 'District') { %>districtCol<% }
