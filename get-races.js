@@ -67,7 +67,7 @@ async function processChamber(chamberUrl) {
         .map((i, th) => $(th).text().trim())
         .get();
     headers.shift(); // remove "District" column head
-    headers.push('Incumbent', 'Party'); // to set order of keys
+    headers.push('Open', 'Retiring Incumbent', 'Party'); // to set order of keys
     const rows = $('table.table tbody tr').get();
     for (const row of rows) {
         let values = $(row).find('td')
@@ -93,6 +93,12 @@ async function processChamber(chamberUrl) {
                 await getIncumbentAndParty(election2019Url),
                 argv.vpap ? await getEarlierElectionsDataFromVpap(election2019Url) : {},
             );
+            const open = !values.some(function (value) {
+                return Array.isArray(value) && value.some(v => v.substr(-1) === '*');
+            });
+            record['Open'] = open;
+            record['Retiring Incumbent'] = open ? record['Incumbent'] : '';
+            delete record['Incumbent'];
         }
         for (const [key, value] of Object.entries(record)) {
             if (!recordsByDistrict[district]) {

@@ -3,7 +3,8 @@ HD1:
   Republican:
     - Terry Kilgore*
   Other: []
-  Incumbent: Terry Kilgore
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 4639
   Previous R Votes: 14848
@@ -20,7 +21,8 @@ HD2:
   Republican:
     - Heather Mitchell
   Other: []
-  Incumbent: Jennifer Carroll Foy
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 13366
   Previous R Votes: 7803
@@ -36,7 +38,8 @@ HD3:
   Republican:
     - Will Morefield*
   Other: []
-  Incumbent: Will Morefield
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 3759
   Previous R Votes: 13572
@@ -53,7 +56,8 @@ HD4:
   Republican:
     - Will Wampler
   Other: []
-  Incumbent: Todd Pillion
+  Open: true
+  Retiring Incumbent: Todd Pillion
   Party: R
   Previous D Votes: 0
   Previous R Votes: 15282
@@ -69,7 +73,8 @@ HD5:
   Republican:
     - Israel O'Quinn*
   Other: []
-  Incumbent: Israel O'Quinn
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 18402
@@ -86,7 +91,8 @@ HD6:
   Republican:
     - Jeff Campbell*
   Other: []
-  Incumbent: Jeff Campbell
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 16795
@@ -103,7 +109,8 @@ HD7:
   Republican:
     - Nick Rush*
   Other: []
-  Incumbent: Nick Rush
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 8878
   Previous R Votes: 17560
@@ -120,7 +127,8 @@ HD8:
   Republican:
     - Joe McNamara*
   Other: []
-  Incumbent: Joe McNamara
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10294
   Previous R Votes: 18311
@@ -136,7 +144,8 @@ HD9:
   Republican:
     - Charles Poindexter*
   Other: []
-  Incumbent: Charles Poindexter
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 6916
   Previous R Votes: 16413
@@ -153,7 +162,8 @@ HD10:
   Republican:
     - Randy Minchew
   Other: []
-  Incumbent: Wendy Gooditis
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15161
   Previous R Votes: 14025
@@ -169,7 +179,8 @@ HD11:
     - Sam Rasoul*
   Republican: []
   Other: []
-  Incumbent: Sam Rasoul
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15667
   Previous R Votes: 0
@@ -186,7 +197,8 @@ HD12:
   Republican:
     - Forrest Hite
   Other: []
-  Incumbent: Chris Hurst
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 12495
   Previous R Votes: 10458
@@ -203,7 +215,8 @@ HD13:
   Republican:
     - Kelly McGinn
   Other: []
-  Incumbent: Danica Roem
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 12077
   Previous R Votes: 10318
@@ -220,7 +233,8 @@ HD14:
   Republican:
     - Danny Marshall*
   Other: []
-  Incumbent: Danny Marshall
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 15505
@@ -237,7 +251,8 @@ HD15:
   Republican:
     - Todd Gilbert*
   Other: []
-  Incumbent: Todd Gilbert
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 19284
@@ -254,7 +269,8 @@ HD16:
     - Les Adams*
   Other:
     - Dustin W Evans
-  Incumbent: Les Adams
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 16513
@@ -270,7 +286,8 @@ HD17:
   Republican:
     - Christopher Head*
   Other: []
-  Incumbent: Christopher Head
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10378
   Previous R Votes: 15997
@@ -287,7 +304,8 @@ HD18:
   Republican:
     - Michael Webert*
   Other: []
-  Incumbent: Michael Webert
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9486
   Previous R Votes: 16686
@@ -303,7 +321,8 @@ HD19:
   Republican:
     - Terry Austin*
   Other: []
-  Incumbent: Terry Austin
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 20966
@@ -320,7 +339,8 @@ HD20:
   Republican:
     - John Avoli
   Other: []
-  Incumbent: Dickie Bell
+  Open: true
+  Retiring Incumbent: Dickie Bell
   Party: R
   Previous D Votes: 11197
   Previous R Votes: 14344
@@ -337,7 +357,8 @@ HD21:
   Republican:
     - Shannon Kane
   Other: []
-  Incumbent: Kelly Fowler
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 12540
   Previous R Votes: 11309
@@ -354,7 +375,8 @@ HD22:
   Republican:
     - Kathy Byron*
   Other: []
-  Incumbent: Kathy Byron
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 19014
@@ -371,7 +393,8 @@ HD23:
   Republican:
     - Wendell Walker
   Other: []
-  Incumbent: Scott Garrett
+  Open: true
+  Retiring Incumbent: Scott Garrett
   Party: R
   Previous D Votes: 9050
   Previous R Votes: 17370
@@ -389,7 +412,8 @@ HD24:
     - Ronnie Campbell*
   Other:
     - Billy Fishpaw
-  Incumbent: Ronnie Campbell
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 17351
@@ -407,7 +431,8 @@ HD25:
     - Chris Runion
   Other:
     - Janice Allen
-  Incumbent: Steve Landes
+  Open: true
+  Retiring Incumbent: Steve Landes
   Party: R
   Previous D Votes: 12783
   Previous R Votes: 17688
@@ -424,7 +449,8 @@ HD26:
   Republican:
     - Tony Wilt*
   Other: []
-  Incumbent: Tony Wilt
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9234
   Previous R Votes: 11106
@@ -441,7 +467,8 @@ HD27:
   Republican:
     - Roxann Robinson*
   Other: []
-  Incumbent: Roxann Robinson
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 14333
   Previous R Votes: 14461
@@ -458,7 +485,8 @@ HD28:
   Republican:
     - Paul Milde
   Other: []
-  Incumbent: Bob Thomas
+  Open: true
+  Retiring Incumbent: Bob Thomas
   Party: R
   Previous D Votes: 11760
   Previous R Votes: 11842
@@ -475,7 +503,8 @@ HD29:
   Republican:
     - Chris Collins*
   Other: []
-  Incumbent: Chris Collins
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 8390
   Previous R Votes: 15139
@@ -492,7 +521,8 @@ HD30:
   Republican:
     - Nick Freitas*
   Other: []
-  Incumbent: Nick Freitas
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9333
   Previous R Votes: 15355
@@ -509,7 +539,8 @@ HD31:
   Republican:
     - DJ Jordan
   Other: []
-  Incumbent: Elizabeth Guzman
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15466
   Previous R Votes: 12658
@@ -525,7 +556,8 @@ HD32:
     - David Reid*
   Republican: []
   Other: []
-  Incumbent: David Reid
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 17865
   Previous R Votes: 12653
@@ -542,7 +574,8 @@ HD33:
   Republican:
     - Dave LaRock*
   Other: []
-  Incumbent: Dave LaRock
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 13770
   Previous R Votes: 16723
@@ -559,7 +592,8 @@ HD34:
   Republican:
     - Gary Pan
   Other: []
-  Incumbent: Kathleen Murphy
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20522
   Previous R Votes: 13146
@@ -575,7 +609,8 @@ HD35:
     - Mark Keam*
   Republican: []
   Other: []
-  Incumbent: Mark Keam
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 22596
   Previous R Votes: 0
@@ -591,7 +626,8 @@ HD36:
     - Ken Plum*
   Republican: []
   Other: []
-  Incumbent: Ken Plum
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 24149
   Previous R Votes: 0
@@ -607,7 +643,8 @@ HD37:
     - David Bulova*
   Republican: []
   Other: []
-  Incumbent: David Bulova
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18877
   Previous R Votes: 0
@@ -623,7 +660,8 @@ HD38:
     - Kaye Kory*
   Republican: []
   Other: []
-  Incumbent: Kaye Kory
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16023
   Previous R Votes: 5723
@@ -640,7 +678,8 @@ HD39:
   Republican:
     - Nick Bell
   Other: []
-  Incumbent: Vivian Watts
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 21407
   Previous R Votes: 0
@@ -657,7 +696,8 @@ HD40:
   Republican:
     - Tim Hugo*
   Other: []
-  Incumbent: Tim Hugo
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 15004
   Previous R Votes: 15110
@@ -675,7 +715,8 @@ HD41:
   Other:
     - Rachel Mace
     - John Michael Wolfe
-  Incumbent: Eileen Filler-Corn
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 22985
   Previous R Votes: 0
@@ -692,7 +733,8 @@ HD42:
   Republican:
     - Steve Adragna
   Other: []
-  Incumbent: Kathy Tran
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18761
   Previous R Votes: 11967
@@ -709,7 +751,8 @@ HD43:
   Republican: []
   Other:
     - Gail Parker
-  Incumbent: Mark Sickles
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 22094
   Previous R Votes: 0
@@ -726,7 +769,8 @@ HD44:
   Republican:
     - Richard Hayden
   Other: []
-  Incumbent: Paul Krizek
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18243
   Previous R Votes: 0
@@ -743,7 +787,8 @@ HD45:
   Republican:
     - Michael Clinkscale
   Other: []
-  Incumbent: Mark Levine
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 31417
   Previous R Votes: 0
@@ -759,7 +804,8 @@ HD46:
     - Charniele Herring*
   Republican: []
   Other: []
-  Incumbent: Charniele Herring
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18947
   Previous R Votes: 0
@@ -775,7 +821,8 @@ HD47:
     - Patrick Hope*
   Republican: []
   Other: []
-  Incumbent: Patrick Hope
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 29706
   Previous R Votes: 0
@@ -791,7 +838,8 @@ HD48:
     - Rip Sullivan*
   Republican: []
   Other: []
-  Incumbent: Rip Sullivan
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 27670
   Previous R Votes: 0
@@ -808,7 +856,8 @@ HD49:
   Republican: []
   Other:
     - Terry Modglin
-  Incumbent: Alfonso Lopez
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 19308
   Previous R Votes: 4391
@@ -825,7 +874,8 @@ HD50:
   Republican:
     - Ian Lovejoy
   Other: []
-  Incumbent: Lee Carter
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 11366
   Previous R Votes: 9518
@@ -842,7 +892,8 @@ HD51:
   Republican:
     - Rich Anderson
   Other: []
-  Incumbent: Hala Ayala
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15244
   Previous R Votes: 13476
@@ -859,7 +910,8 @@ HD52:
   Republican:
     - Maria Eugenia Martin
   Other: []
-  Incumbent: Luke Torian
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 14830
   Previous R Votes: 0
@@ -875,7 +927,8 @@ HD53:
     - Marcus Simon*
   Republican: []
   Other: []
-  Incumbent: Marcus Simon
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 19235
   Previous R Votes: 0
@@ -892,7 +945,8 @@ HD54:
   Republican:
     - Bobby Orrock*
   Other: []
-  Incumbent: Bobby Orrock
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9982
   Previous R Votes: 13782
@@ -909,7 +963,8 @@ HD55:
   Republican:
     - Buddy Fowler*
   Other: []
-  Incumbent: Buddy Fowler
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 12056
   Previous R Votes: 18087
@@ -926,7 +981,8 @@ HD56:
   Republican:
     - John McGuire*
   Other: []
-  Incumbent: John McGuire
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 12761
   Previous R Votes: 18792
@@ -942,7 +998,8 @@ HD57:
     - Sally Hudson
   Republican: []
   Other: []
-  Incumbent: David Toscano
+  Open: true
+  Retiring Incumbent: David Toscano
   Party: D
   Previous D Votes: 25419
   Previous R Votes: 0
@@ -959,7 +1016,8 @@ HD58:
   Republican:
     - Rob Bell*
   Other: []
-  Incumbent: Rob Bell
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11797
   Previous R Votes: 18652
@@ -976,7 +1034,8 @@ HD59:
   Republican:
     - Matt Fariss*
   Other: []
-  Incumbent: Matt Fariss
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 8773
   Previous R Votes: 15758
@@ -992,7 +1051,8 @@ HD60:
   Republican:
     - James Edmunds*
   Other: []
-  Incumbent: James Edmunds
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 8177
   Previous R Votes: 13330
@@ -1009,7 +1069,8 @@ HD61:
   Republican:
     - Tommy Wright*
   Other: []
-  Incumbent: Tommy Wright
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 17507
@@ -1026,7 +1087,8 @@ HD62:
   Republican:
     - Carrie Coyner
   Other: []
-  Incumbent: Riley Ingram
+  Open: true
+  Retiring Incumbent: Riley Ingram
   Party: R
   Previous D Votes: 11344
   Previous R Votes: 12163
@@ -1043,7 +1105,8 @@ HD63:
   Republican: []
   Other:
     - Larry Haake
-  Incumbent: Lashrecse Aird
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15623
   Previous R Votes: 0
@@ -1060,7 +1123,8 @@ HD64:
   Republican:
     - Emily Brewer*
   Other: []
-  Incumbent: Emily Brewer
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11551
   Previous R Votes: 19223
@@ -1077,7 +1141,8 @@ HD65:
   Republican:
     - Lee Ware*
   Other: []
-  Incumbent: Lee Ware
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 12530
   Previous R Votes: 22394
@@ -1095,7 +1160,8 @@ HD66:
     - Kirk Cox*
   Other:
     - 'Linnard K Harris, Sr'
-  Incumbent: Kirk Cox
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10656
   Previous R Votes: 18572
@@ -1111,7 +1177,8 @@ HD67:
     - Karrie Delaney*
   Republican: []
   Other: []
-  Incumbent: Karrie Delaney
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 17036
   Previous R Votes: 12365
@@ -1128,7 +1195,8 @@ HD68:
   Republican:
     - Garrison Coward
   Other: []
-  Incumbent: Dawn Adams
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 19761
   Previous R Votes: 19425
@@ -1144,7 +1212,8 @@ HD69:
     - Betsy Carr*
   Republican: []
   Other: []
-  Incumbent: Betsy Carr
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 19775
   Previous R Votes: 0
@@ -1160,7 +1229,8 @@ HD70:
     - Delores McQuinn*
   Republican: []
   Other: []
-  Incumbent: Delores McQuinn
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20391
   Previous R Votes: 0
@@ -1177,7 +1247,8 @@ HD71:
   Republican: []
   Other:
     - Pete Wells
-  Incumbent: Jeff Bourne
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 24287
   Previous R Votes: 0
@@ -1194,7 +1265,8 @@ HD72:
   Republican:
     - GayDonna Vandergriff
   Other: []
-  Incumbent: Schuyler VanValkenburg
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16655
   Previous R Votes: 14869
@@ -1211,7 +1283,8 @@ HD73:
   Republican:
     - Mary Margaret Kastelberg
   Other: []
-  Incumbent: Debra Rodman
+  Open: true
+  Retiring Incumbent: Debra Rodman
   Party: D
   Previous D Votes: 14697
   Previous R Votes: 13803
@@ -1227,7 +1300,8 @@ HD74:
     - Lamont Bagby*
   Republican: []
   Other: []
-  Incumbent: Lamont Bagby
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20041
   Previous R Votes: 0
@@ -1243,7 +1317,8 @@ HD75:
     - Roslyn Tyler*
   Republican: []
   Other: []
-  Incumbent: Roslyn Tyler
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16245
   Previous R Votes: 0
@@ -1260,7 +1335,8 @@ HD76:
   Republican:
     - Chris Jones*
   Other: []
-  Incumbent: Chris Jones
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 22736
@@ -1277,7 +1353,8 @@ HD77:
   Republican:
     - Ron Wallace
   Other: []
-  Incumbent: Cliff Hayes
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16483
   Previous R Votes: 0
@@ -1293,7 +1370,8 @@ HD78:
   Republican:
     - Jay Leftwich*
   Other: []
-  Incumbent: Jay Leftwich
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 20768
@@ -1309,7 +1387,8 @@ HD79:
     - Steve Heretick*
   Republican: []
   Other: []
-  Incumbent: Steve Heretick
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 12864
   Previous R Votes: 0
@@ -1327,7 +1406,8 @@ HD80:
     - Jim Evans
   Other:
     - Ryan Collin Benton
-  Incumbent: Matthew James
+  Open: true
+  Retiring Incumbent: Matthew James
   Party: D
   Previous D Votes: 20292
   Previous R Votes: 0
@@ -1344,7 +1424,8 @@ HD81:
   Republican:
     - Barry Knight*
   Other: []
-  Incumbent: Barry Knight
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9127
   Previous R Votes: 13162
@@ -1361,7 +1442,8 @@ HD82:
   Republican:
     - Jason Miyares*
   Other: []
-  Incumbent: Jason Miyares
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11174
   Previous R Votes: 16048
@@ -1378,7 +1460,8 @@ HD83:
   Republican:
     - Chris Stolle*
   Other: []
-  Incumbent: Chris Stolle
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10077
   Previous R Votes: 13173
@@ -1395,7 +1478,8 @@ HD84:
   Republican:
     - Glenn Davis*
   Other: []
-  Incumbent: Glenn Davis
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10093
   Previous R Votes: 10835
@@ -1412,7 +1496,8 @@ HD85:
   Republican:
     - Rocky Holcomb
   Other: []
-  Incumbent: Cheryl Turpin
+  Open: true
+  Retiring Incumbent: Cheryl Turpin
   Party: D
   Previous D Votes: 11843
   Previous R Votes: 11454
@@ -1428,7 +1513,8 @@ HD86:
     - Ibraheem Samirah*
   Republican: []
   Other: []
-  Incumbent: Ibraheem Samirah
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16865
   Previous R Votes: 7707
@@ -1445,7 +1531,8 @@ HD87:
   Republican:
     - Bill Drennan
   Other: []
-  Incumbent: John Bell
+  Open: true
+  Retiring Incumbent: John Bell
   Party: D
   Previous D Votes: 18234
   Previous R Votes: 11236
@@ -1462,7 +1549,8 @@ HD88:
   Republican:
     - Mark Cole*
   Other: []
-  Incumbent: Mark Cole
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9918
   Previous R Votes: 14022
@@ -1478,7 +1566,8 @@ HD89:
     - Jay Jones*
   Republican: []
   Other: []
-  Incumbent: Jay Jones
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16541
   Previous R Votes: 0
@@ -1494,7 +1583,8 @@ HD90:
     - Joe Lindsey*
   Republican: []
   Other: []
-  Incumbent: Joe Lindsey
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15996
   Previous R Votes: 0
@@ -1511,7 +1601,8 @@ HD91:
   Republican:
     - Colleen Holcomb
   Other: []
-  Incumbent: Gordon Helsel
+  Open: true
+  Retiring Incumbent: Gordon Helsel
   Party: R
   Previous D Votes: 10764
   Previous R Votes: 13877
@@ -1527,7 +1618,8 @@ HD92:
     - Jeion Ward*
   Republican: []
   Other: []
-  Incumbent: Jeion Ward
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18873
   Previous R Votes: 0
@@ -1544,7 +1636,8 @@ HD93:
   Republican:
     - Heather Cordasco
   Other: []
-  Incumbent: Mike Mullin
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15988
   Previous R Votes: 10625
@@ -1562,7 +1655,8 @@ HD94:
     - David Yancey*
   Other:
     - Michael Bartley
-  Incumbent: David Yancey
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11608
   Previous R Votes: 11608
@@ -1578,7 +1672,8 @@ HD95:
     - Cia Price*
   Republican: []
   Other: []
-  Incumbent: Cia Price
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 15766
   Previous R Votes: 0
@@ -1596,7 +1691,8 @@ HD96:
     - Amanda Batten
   Other:
     - James Jobe
-  Incumbent: Brenda Pogge
+  Open: true
+  Retiring Incumbent: Brenda Pogge
   Party: R
   Previous D Votes: 14947
   Previous R Votes: 19841
@@ -1613,7 +1709,8 @@ HD97:
   Republican:
     - Scott Wyatt
   Other: []
-  Incumbent: Chris Peace
+  Open: true
+  Retiring Incumbent: Chris Peace
   Party: R
   Previous D Votes: 9319
   Previous R Votes: 24363
@@ -1630,7 +1727,8 @@ HD98:
   Republican:
     - Keith Hodges*
   Other: []
-  Incumbent: Keith Hodges
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 9945
   Previous R Votes: 18561
@@ -1647,7 +1745,8 @@ HD99:
   Republican:
     - Margaret Ransone*
   Other: []
-  Incumbent: Margaret Ransone
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10043
   Previous R Votes: 16548
@@ -1664,7 +1763,8 @@ HD100:
   Republican:
     - Rob Bloxom*
   Other: []
-  Incumbent: Rob Bloxom
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 10720
   Previous R Votes: 11720
@@ -1680,7 +1780,8 @@ SD1:
     - Monty Mason*
   Republican: []
   Other: []
-  Incumbent: Monty Mason
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 17989
   Previous R Votes: 12278
@@ -1696,7 +1797,8 @@ SD2:
     - Mamie Locke*
   Republican: []
   Other: []
-  Incumbent: Mamie Locke
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 17459
   Previous R Votes: 0
@@ -1713,7 +1815,8 @@ SD3:
   Republican:
     - Tommy Norment*
   Other: []
-  Incumbent: Tommy Norment
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 15432
   Previous R Votes: 35520
@@ -1730,7 +1833,8 @@ SD4:
   Republican:
     - Ryan McDougle*
   Other: []
-  Incumbent: Ryan McDougle
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 37882
@@ -1747,7 +1851,8 @@ SD5:
   Republican: []
   Other:
     - Jeff Staples
-  Incumbent: Lionell Sr Spruill
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 13955
   Previous R Votes: 0
@@ -1764,7 +1869,8 @@ SD6:
   Republican:
     - Elizabeth Lankford
   Other: []
-  Incumbent: Lynwood Lewis
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16738
   Previous R Votes: 11386
@@ -1781,7 +1887,8 @@ SD7:
   Republican:
     - Jen Kiggans
   Other: []
-  Incumbent: ''
+  Open: true
+  Retiring Incumbent: ''
   Party: ''
   Previous D Votes: 15434
   Previous R Votes: 18266
@@ -1798,7 +1905,8 @@ SD8:
   Republican:
     - Bill DeSteph*
   Other: []
-  Incumbent: Bill DeSteph
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11075
   Previous R Votes: 15905
@@ -1815,7 +1923,8 @@ SD9:
   Republican: []
   Other:
     - Mark Lewis
-  Incumbent: Jennifer McClellan
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 31067
   Previous R Votes: 0
@@ -1832,7 +1941,8 @@ SD10:
   Republican:
     - Glen Sturtevant*
   Other: []
-  Incumbent: Glen Sturtevant
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 26173
   Previous R Votes: 27651
@@ -1849,7 +1959,8 @@ SD11:
   Republican:
     - Amanda Chase*
   Other: []
-  Incumbent: Amanda Chase
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 15485
   Previous R Votes: 27218
@@ -1866,7 +1977,8 @@ SD12:
   Republican:
     - Siobhan Dunnavant*
   Other: []
-  Incumbent: Siobhan Dunnavant
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 16797
   Previous R Votes: 25504
@@ -1884,7 +1996,8 @@ SD13:
     - Geary Higgins
   Other:
     - Jasmine Moawad-Barrientos
-  Incumbent: Dick Black
+  Open: true
+  Retiring Incumbent: Dick Black
   Party: R
   Previous D Votes: 23544
   Previous R Votes: 25898
@@ -1900,7 +2013,8 @@ SD14:
   Republican:
     - John Cosgrove*
   Other: []
-  Incumbent: John Cosgrove
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 15371
@@ -1917,7 +2031,8 @@ SD15:
   Republican:
     - Frank Ruff*
   Other: []
-  Incumbent: Frank Ruff
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 32745
@@ -1934,7 +2049,8 @@ SD16:
   Republican: []
   Other:
     - Waylin Ross
-  Incumbent: Rosalyn Dance
+  Open: true
+  Retiring Incumbent: Rosalyn Dance
   Party: D
   Previous D Votes: 17331
   Previous R Votes: 0
@@ -1951,7 +2067,8 @@ SD17:
   Republican:
     - Bryce Reeves*
   Other: []
-  Incumbent: Bryce Reeves
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 14915
   Previous R Votes: 24519
@@ -1967,7 +2084,8 @@ SD18:
     - Louise Lucas*
   Republican: []
   Other: []
-  Incumbent: Louise Lucas
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20321
   Previous R Votes: 0
@@ -1984,7 +2102,8 @@ SD19:
   Republican:
     - Dave Suetterlein*
   Other: []
-  Incumbent: Dave Suetterlein
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 15738
   Previous R Votes: 33120
@@ -2001,7 +2120,8 @@ SD20:
     - Bill Stanley*
   Other:
     - Sherman Witcher
-  Incumbent: Bill Stanley
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 16455
   Previous R Votes: 22701
@@ -2018,7 +2138,8 @@ SD21:
   Republican: []
   Other:
     - Steven Nelson
-  Incumbent: John Edwards
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20881
   Previous R Votes: 17438
@@ -2035,7 +2156,8 @@ SD22:
   Republican:
     - Mark Peake*
   Other: []
-  Incumbent: Mark Peake
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 24913
@@ -2051,7 +2173,8 @@ SD23:
   Republican:
     - Steve Newman*
   Other: []
-  Incumbent: Steve Newman
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 27309
@@ -2068,7 +2191,8 @@ SD24:
   Republican:
     - Emmett Hanger*
   Other: []
-  Incumbent: Emmett Hanger
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 34980
@@ -2084,7 +2208,8 @@ SD25:
     - Creigh Deeds*
   Republican: []
   Other: []
-  Incumbent: Creigh Deeds
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 34419
   Previous R Votes: 0
@@ -2101,7 +2226,8 @@ SD26:
   Republican:
     - Mark Obenshain*
   Other: []
-  Incumbent: Mark Obenshain
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 11308
   Previous R Votes: 25042
@@ -2118,7 +2244,8 @@ SD27:
   Republican:
     - Jill Vogel*
   Other: []
-  Incumbent: Jill Vogel
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 34203
@@ -2135,7 +2262,8 @@ SD28:
   Republican:
     - Richard Stuart*
   Other: []
-  Incumbent: Richard Stuart
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 30187
@@ -2151,7 +2279,8 @@ SD29:
     - Jeremy McPike*
   Republican: []
   Other: []
-  Incumbent: Jeremy McPike
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 16489
   Previous R Votes: 14131
@@ -2167,7 +2296,8 @@ SD30:
     - Adam Ebbin*
   Republican: []
   Other: []
-  Incumbent: Adam Ebbin
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 27274
   Previous R Votes: 0
@@ -2183,7 +2313,8 @@ SD31:
     - Barbara Favola*
   Republican: []
   Other: []
-  Incumbent: Barbara Favola
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 26373
   Previous R Votes: 15904
@@ -2200,7 +2331,8 @@ SD32:
   Republican:
     - Arthur Purves
   Other: []
-  Incumbent: Janet Howell
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 31156
   Previous R Votes: 0
@@ -2217,7 +2349,8 @@ SD33:
   Republican:
     - Suzanne Fox
   Other: []
-  Incumbent: Jennifer Boysko
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18577
   Previous R Votes: 14190
@@ -2233,7 +2366,8 @@ SD34:
     - Chap Petersen*
   Republican: []
   Other: []
-  Incumbent: Chap Petersen
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 27690
   Previous R Votes: 0
@@ -2249,7 +2383,8 @@ SD35:
     - Dick Saslaw*
   Republican: []
   Other: []
-  Incumbent: Dick Saslaw
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18754
   Previous R Votes: 0
@@ -2265,7 +2400,8 @@ SD36:
     - Scott Surovell*
   Republican: []
   Other: []
-  Incumbent: Scott Surovell
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18320
   Previous R Votes: 11890
@@ -2281,7 +2417,8 @@ SD37:
     - Dave Marsden*
   Republican: []
   Other: []
-  Incumbent: Dave Marsden
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 18966
   Previous R Votes: 15216
@@ -2298,7 +2435,8 @@ SD38:
     - Ben Chafin*
   Other:
     - George McCall
-  Incumbent: Ben Chafin
+  Open: false
+  Retiring Incumbent: ''
   Party: R
   Previous D Votes: 0
   Previous R Votes: 31025
@@ -2314,7 +2452,8 @@ SD39:
     - George Barker*
   Republican: []
   Other: []
-  Incumbent: George Barker
+  Open: false
+  Retiring Incumbent: ''
   Party: D
   Previous D Votes: 20083
   Previous R Votes: 17101
@@ -2331,7 +2470,8 @@ SD40:
     - Todd Pillion
   Other:
     - Ken Heath
-  Incumbent: Bill Carrico
+  Open: true
+  Retiring Incumbent: Bill Carrico
   Party: R
   Previous D Votes: 0
   Previous R Votes: 36838

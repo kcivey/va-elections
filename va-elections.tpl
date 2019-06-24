@@ -24,6 +24,9 @@
     .number {
       text-align: right;
     }
+    .center {
+      text-align: center;
+    }
     #controls {
       position: absolute;
       z-index: 100;
@@ -41,15 +44,21 @@
       const districtCol = {
         width: 20,
         render: function (value, type) {
-          var m;
           if (type === 'sort') {
-            m = value.match(/^([HS]D)(\d+)$/);
+            const m = value.match(/^([HS]D)(\d+)$/);
             if (m) {
               return m[1] + m[2].padStart(3, '0');
             }
           }
           return value;
         }
+      };
+      const openCol = {
+        className: 'center',
+        width: 20,
+        render: function (value, type) {
+          return value === 'true' ? '\u2713' : '';
+        },
       };
       const numberCol = {
         className: 'number',
@@ -91,6 +100,7 @@
           <% _.forEach(headers, function (header) {
             if (header === 'District') { %>districtCol<% }
             else if (header === 'Party') { %>{width: 20}<% }
+            else if (header === 'Open') { %>openCol<% }
             else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
             else if (/Margin$/.test(header)) { %>marginCol<% }
             else { %>null<% } %>,
