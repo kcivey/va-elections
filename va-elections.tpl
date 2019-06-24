@@ -68,11 +68,22 @@
         }
       };
       $.fn.dataTable.ext.search.push(
-        function (settings, searchData, index, rowData, counter) {
+        function (settings, searchData) {
           if ($('#show-uncontested').prop('checked')) {
             return true;
           }
           return searchData[1] && searchData[2];
+        },
+        function (settings, searchData) {
+          const chamber = $('#show-chamber input:checked').val();
+          switch (chamber) {
+            case 'house':
+              return searchData[0].substr(0, 1) === 'H';
+            case 'senate':
+              return searchData[0].substr(0, 1) === 'S';
+            default:
+              return true;
+          }
         }
       );
       const table = $('#races-table').DataTable({
@@ -89,6 +100,7 @@
         paging: false
       });
       $('#show-uncontested').on('click', function () { table.draw(); });
+      $('#show-chamber input').on('change', function () { table.draw(); });
       $('#show-vote-totals').on('click', function () {
         table.columns([6, 7, 9, 10, 12, 13, 15, 16, 18, 19]).visible($(this).prop('checked'));
       });
@@ -99,6 +111,11 @@
 <div id="controls">
   <input type="checkbox" id="show-uncontested"> Show uncontested races
   <input type="checkbox" id="show-vote-totals"> Show vote totals
+  <span id="show-chamber">
+    <label><input type="radio" name="chamber" value="senate"> Senate</label>
+    <label><input type="radio" name="chamber" value="house"> House</label>
+    <label><input type="radio" name="chamber" value="both" checked> Both</label>
+  </span>
 </div>
 <table id="races-table">
   <thead>
