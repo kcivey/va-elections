@@ -6,6 +6,7 @@ HD1:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 4639
   Previous R Votes: 14848
   Previous Margin: -52
@@ -24,6 +25,7 @@ HD2:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 13366
   Previous R Votes: 7803
   Previous Margin: 26
@@ -41,6 +43,7 @@ HD3:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 3759
   Previous R Votes: 13572
   Previous Margin: -57
@@ -59,6 +62,7 @@ HD4:
   Open: true
   Retiring Incumbent: Todd Pillion
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 15282
   Previous Margin: -100
@@ -76,6 +80,7 @@ HD5:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 18402
   Previous Margin: -100
@@ -94,6 +99,7 @@ HD6:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 16795
   Previous Margin: -100
@@ -112,6 +118,7 @@ HD7:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 8878
   Previous R Votes: 17560
   Previous Margin: -33
@@ -130,6 +137,7 @@ HD8:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10294
   Previous R Votes: 18311
   Previous Margin: -28
@@ -147,6 +155,7 @@ HD9:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 6916
   Previous R Votes: 16413
   Previous Margin: -41
@@ -165,6 +174,7 @@ HD10:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Loudoun County
   Previous D Votes: 15161
   Previous R Votes: 14025
   Previous Margin: 4
@@ -182,6 +192,7 @@ HD11:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 15667
   Previous R Votes: 0
   Previous Margin: 100
@@ -200,6 +211,7 @@ HD12:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 12495
   Previous R Votes: 10458
   Previous Margin: 9
@@ -218,6 +230,7 @@ HD13:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 12077
   Previous R Votes: 10318
   Previous Margin: 8
@@ -236,6 +249,7 @@ HD14:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 15505
   Previous Margin: -100
@@ -254,6 +268,7 @@ HD15:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 19284
   Previous Margin: -100
@@ -272,6 +287,7 @@ HD16:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 16513
   Previous Margin: -100
@@ -289,6 +305,7 @@ HD17:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10378
   Previous R Votes: 15997
   Previous Margin: -21
@@ -307,6 +324,7 @@ HD18:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9486
   Previous R Votes: 16686
   Previous Margin: -28
@@ -324,6 +342,7 @@ HD19:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 20966
   Previous Margin: -100
@@ -342,6 +361,7 @@ HD20:
   Open: true
   Retiring Incumbent: Dickie Bell
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11197
   Previous R Votes: 14344
   Previous Margin: -12
@@ -360,6 +380,7 @@ HD21:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 12540
   Previous R Votes: 11309
   Previous Margin: 5
@@ -378,6 +399,7 @@ HD22:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 19014
   Previous Margin: -100
@@ -396,6 +418,7 @@ HD23:
   Open: true
   Retiring Incumbent: Scott Garrett
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9050
   Previous R Votes: 17370
   Previous Margin: -31
@@ -415,6 +438,7 @@ HD24:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 17351
   Previous Margin: -100
@@ -434,6 +458,7 @@ HD25:
   Open: true
   Retiring Incumbent: Steve Landes
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 12783
   Previous R Votes: 17688
   Previous Margin: -16
@@ -452,6 +477,7 @@ HD26:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9234
   Previous R Votes: 11106
   Previous Margin: -9
@@ -470,6 +496,7 @@ HD27:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 14333
   Previous R Votes: 14461
   Previous Margin: -0.0
@@ -488,6 +515,7 @@ HD28:
   Open: true
   Retiring Incumbent: Bob Thomas
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11760
   Previous R Votes: 11842
   Previous Margin: -0.0
@@ -506,6 +534,7 @@ HD29:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 8390
   Previous R Votes: 15139
   Previous Margin: -29
@@ -524,6 +553,7 @@ HD30:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9333
   Previous R Votes: 15355
   Previous Margin: -24
@@ -542,6 +572,7 @@ HD31:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 15466
   Previous R Votes: 12658
   Previous Margin: 10
@@ -559,6 +590,7 @@ HD32:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Loudoun County
   Previous D Votes: 17865
   Previous R Votes: 12653
   Previous Margin: 17
@@ -577,6 +609,7 @@ HD33:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: Loudoun County
   Previous D Votes: 13770
   Previous R Votes: 16723
   Previous Margin: -10
@@ -595,6 +628,7 @@ HD34:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 20522
   Previous R Votes: 13146
   Previous Margin: 22
@@ -612,6 +646,7 @@ HD35:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 22596
   Previous R Votes: 0
   Previous Margin: 100
@@ -629,6 +664,7 @@ HD36:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 24149
   Previous R Votes: 0
   Previous Margin: 100
@@ -646,6 +682,7 @@ HD37:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18877
   Previous R Votes: 0
   Previous Margin: 100
@@ -663,6 +700,7 @@ HD38:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 16023
   Previous R Votes: 5723
   Previous Margin: 47
@@ -681,6 +719,7 @@ HD39:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 21407
   Previous R Votes: 0
   Previous Margin: 100
@@ -699,6 +738,7 @@ HD40:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: Fairfax County
   Previous D Votes: 15004
   Previous R Votes: 15110
   Previous Margin: -0.0
@@ -718,6 +758,7 @@ HD41:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 22985
   Previous R Votes: 0
   Previous Margin: 100
@@ -736,6 +777,7 @@ HD42:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18761
   Previous R Votes: 11967
   Previous Margin: 22
@@ -754,6 +796,7 @@ HD43:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 22094
   Previous R Votes: 0
   Previous Margin: 100
@@ -772,6 +815,7 @@ HD44:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18243
   Previous R Votes: 0
   Previous Margin: 100
@@ -790,6 +834,7 @@ HD45:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 31417
   Previous R Votes: 0
   Previous Margin: 100
@@ -807,6 +852,7 @@ HD46:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Alexandria City
   Previous D Votes: 18947
   Previous R Votes: 0
   Previous Margin: 100
@@ -824,6 +870,7 @@ HD47:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 29706
   Previous R Votes: 0
   Previous Margin: 100
@@ -841,6 +888,7 @@ HD48:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 27670
   Previous R Votes: 0
   Previous Margin: 100
@@ -859,6 +907,7 @@ HD49:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 19308
   Previous R Votes: 4391
   Previous Margin: 63
@@ -877,6 +926,7 @@ HD50:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 11366
   Previous R Votes: 9518
   Previous Margin: 9
@@ -895,6 +945,7 @@ HD51:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 15244
   Previous R Votes: 13476
   Previous Margin: 6
@@ -913,6 +964,7 @@ HD52:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 14830
   Previous R Votes: 0
   Previous Margin: 100
@@ -930,6 +982,7 @@ HD53:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 19235
   Previous R Votes: 0
   Previous Margin: 100
@@ -948,6 +1001,7 @@ HD54:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9982
   Previous R Votes: 13782
   Previous Margin: -16
@@ -966,6 +1020,7 @@ HD55:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 12056
   Previous R Votes: 18087
   Previous Margin: -20
@@ -984,6 +1039,7 @@ HD56:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 12761
   Previous R Votes: 18792
   Previous Margin: -19
@@ -1001,6 +1057,7 @@ HD57:
   Open: true
   Retiring Incumbent: David Toscano
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 25419
   Previous R Votes: 0
   Previous Margin: 100
@@ -1019,6 +1076,7 @@ HD58:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11797
   Previous R Votes: 18652
   Previous Margin: -23
@@ -1037,6 +1095,7 @@ HD59:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 8773
   Previous R Votes: 15758
   Previous Margin: -28
@@ -1054,6 +1113,7 @@ HD60:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 8177
   Previous R Votes: 13330
   Previous Margin: -24
@@ -1072,6 +1132,7 @@ HD61:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 17507
   Previous Margin: -100
@@ -1090,6 +1151,7 @@ HD62:
   Open: true
   Retiring Incumbent: Riley Ingram
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11344
   Previous R Votes: 12163
   Previous Margin: -3
@@ -1108,6 +1170,7 @@ HD63:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 15623
   Previous R Votes: 0
   Previous Margin: 100
@@ -1126,6 +1189,7 @@ HD64:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11551
   Previous R Votes: 19223
   Previous Margin: -25
@@ -1144,6 +1208,7 @@ HD65:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 12530
   Previous R Votes: 22394
   Previous Margin: -28
@@ -1163,6 +1228,7 @@ HD66:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10656
   Previous R Votes: 18572
   Previous Margin: -27
@@ -1180,6 +1246,7 @@ HD67:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 17036
   Previous R Votes: 12365
   Previous Margin: 16
@@ -1198,6 +1265,7 @@ HD68:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 19761
   Previous R Votes: 19425
   Previous Margin: 1
@@ -1215,6 +1283,7 @@ HD69:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 19775
   Previous R Votes: 0
   Previous Margin: 100
@@ -1232,6 +1301,7 @@ HD70:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 20391
   Previous R Votes: 0
   Previous Margin: 100
@@ -1250,6 +1320,7 @@ HD71:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 24287
   Previous R Votes: 0
   Previous Margin: 100
@@ -1268,6 +1339,7 @@ HD72:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 16655
   Previous R Votes: 14869
   Previous Margin: 6
@@ -1286,6 +1358,7 @@ HD73:
   Open: true
   Retiring Incumbent: Debra Rodman
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 14697
   Previous R Votes: 13803
   Previous Margin: 3
@@ -1303,6 +1376,7 @@ HD74:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 20041
   Previous R Votes: 0
   Previous Margin: 100
@@ -1320,6 +1394,7 @@ HD75:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 16245
   Previous R Votes: 0
   Previous Margin: 100
@@ -1338,6 +1413,7 @@ HD76:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 22736
   Previous Margin: -100
@@ -1356,6 +1432,7 @@ HD77:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 16483
   Previous R Votes: 0
   Previous Margin: 100
@@ -1373,6 +1450,7 @@ HD78:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 20768
   Previous Margin: -100
@@ -1390,6 +1468,7 @@ HD79:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 12864
   Previous R Votes: 0
   Previous Margin: 100
@@ -1409,6 +1488,7 @@ HD80:
   Open: true
   Retiring Incumbent: Matthew James
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 20292
   Previous R Votes: 0
   Previous Margin: 100
@@ -1427,6 +1507,7 @@ HD81:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9127
   Previous R Votes: 13162
   Previous Margin: -18
@@ -1445,6 +1526,7 @@ HD82:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11174
   Previous R Votes: 16048
   Previous Margin: -18
@@ -1463,6 +1545,7 @@ HD83:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10077
   Previous R Votes: 13173
   Previous Margin: -13
@@ -1481,6 +1564,7 @@ HD84:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10093
   Previous R Votes: 10835
   Previous Margin: -4
@@ -1499,6 +1583,7 @@ HD85:
   Open: true
   Retiring Incumbent: Cheryl Turpin
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 11843
   Previous R Votes: 11454
   Previous Margin: 2
@@ -1516,6 +1601,7 @@ HD86:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 16865
   Previous R Votes: 7707
   Previous Margin: 37
@@ -1534,6 +1620,7 @@ HD87:
   Open: true
   Retiring Incumbent: John Bell
   Party: D
+  Closest NoVa County: Loudoun County
   Previous D Votes: 18234
   Previous R Votes: 11236
   Previous Margin: 24
@@ -1552,6 +1639,7 @@ HD88:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9918
   Previous R Votes: 14022
   Previous Margin: -17
@@ -1569,6 +1657,7 @@ HD89:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 16541
   Previous R Votes: 0
   Previous Margin: 100
@@ -1586,6 +1675,7 @@ HD90:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 15996
   Previous R Votes: 0
   Previous Margin: 100
@@ -1604,6 +1694,7 @@ HD91:
   Open: true
   Retiring Incumbent: Gordon Helsel
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10764
   Previous R Votes: 13877
   Previous Margin: -13
@@ -1621,6 +1712,7 @@ HD92:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 18873
   Previous R Votes: 0
   Previous Margin: 100
@@ -1639,6 +1731,7 @@ HD93:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 15988
   Previous R Votes: 10625
   Previous Margin: 20
@@ -1658,6 +1751,7 @@ HD94:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11608
   Previous R Votes: 11608
   Previous Margin: 0
@@ -1675,6 +1769,7 @@ HD95:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 15766
   Previous R Votes: 0
   Previous Margin: 100
@@ -1694,6 +1789,7 @@ HD96:
   Open: true
   Retiring Incumbent: Brenda Pogge
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 14947
   Previous R Votes: 19841
   Previous Margin: -14
@@ -1712,6 +1808,7 @@ HD97:
   Open: true
   Retiring Incumbent: Chris Peace
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9319
   Previous R Votes: 24363
   Previous Margin: -45
@@ -1730,6 +1827,7 @@ HD98:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 9945
   Previous R Votes: 18561
   Previous Margin: -30
@@ -1748,6 +1846,7 @@ HD99:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10043
   Previous R Votes: 16548
   Previous Margin: -24
@@ -1766,6 +1865,7 @@ HD100:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 10720
   Previous R Votes: 11720
   Previous Margin: -4
@@ -1783,6 +1883,7 @@ SD1:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 17989
   Previous R Votes: 12278
   Previous Margin: 19
@@ -1800,6 +1901,7 @@ SD2:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 17459
   Previous R Votes: 0
   Previous Margin: 100
@@ -1818,6 +1920,7 @@ SD3:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 15432
   Previous R Votes: 35520
   Previous Margin: -39
@@ -1836,6 +1939,7 @@ SD4:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 37882
   Previous Margin: -100
@@ -1854,6 +1958,7 @@ SD5:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 13955
   Previous R Votes: 0
   Previous Margin: 100
@@ -1872,6 +1977,7 @@ SD6:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 16738
   Previous R Votes: 11386
   Previous Margin: 19
@@ -1890,6 +1996,7 @@ SD7:
   Open: true
   Retiring Incumbent: ''
   Party: ''
+  Closest NoVa County: ''
   Previous D Votes: 15434
   Previous R Votes: 18266
   Previous Margin: -8
@@ -1908,6 +2015,7 @@ SD8:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11075
   Previous R Votes: 15905
   Previous Margin: -18
@@ -1926,6 +2034,7 @@ SD9:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 31067
   Previous R Votes: 0
   Previous Margin: 100
@@ -1944,6 +2053,7 @@ SD10:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 26173
   Previous R Votes: 27651
   Previous Margin: -3
@@ -1962,6 +2072,7 @@ SD11:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 15485
   Previous R Votes: 27218
   Previous Margin: -27
@@ -1980,6 +2091,7 @@ SD12:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 16797
   Previous R Votes: 25504
   Previous Margin: -21
@@ -1999,6 +2111,7 @@ SD13:
   Open: true
   Retiring Incumbent: Dick Black
   Party: R
+  Closest NoVa County: Loudoun County
   Previous D Votes: 23544
   Previous R Votes: 25898
   Previous Margin: -5
@@ -2016,6 +2129,7 @@ SD14:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 15371
   Previous Margin: -100
@@ -2034,6 +2148,7 @@ SD15:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 32745
   Previous Margin: -100
@@ -2052,6 +2167,7 @@ SD16:
   Open: true
   Retiring Incumbent: Rosalyn Dance
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 17331
   Previous R Votes: 0
   Previous Margin: 100
@@ -2070,6 +2186,7 @@ SD17:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 14915
   Previous R Votes: 24519
   Previous Margin: -24
@@ -2087,6 +2204,7 @@ SD18:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 20321
   Previous R Votes: 0
   Previous Margin: 100
@@ -2105,6 +2223,7 @@ SD19:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 15738
   Previous R Votes: 33120
   Previous Margin: -36
@@ -2123,6 +2242,7 @@ SD20:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 16455
   Previous R Votes: 22701
   Previous Margin: -16
@@ -2141,6 +2261,7 @@ SD21:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 20881
   Previous R Votes: 17438
   Previous Margin: 9
@@ -2159,6 +2280,7 @@ SD22:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 24913
   Previous Margin: -100
@@ -2176,6 +2298,7 @@ SD23:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 27309
   Previous Margin: -100
@@ -2194,6 +2317,7 @@ SD24:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 34980
   Previous Margin: -100
@@ -2211,6 +2335,7 @@ SD25:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: ''
   Previous D Votes: 34419
   Previous R Votes: 0
   Previous Margin: 100
@@ -2229,6 +2354,7 @@ SD26:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 11308
   Previous R Votes: 25042
   Previous Margin: -38
@@ -2247,6 +2373,7 @@ SD27:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: Loudoun County
   Previous D Votes: 0
   Previous R Votes: 34203
   Previous Margin: -100
@@ -2265,6 +2392,7 @@ SD28:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: Prince William County
   Previous D Votes: 0
   Previous R Votes: 30187
   Previous Margin: -100
@@ -2282,6 +2410,7 @@ SD29:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Prince William County
   Previous D Votes: 16489
   Previous R Votes: 14131
   Previous Margin: 8
@@ -2299,6 +2428,7 @@ SD30:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 27274
   Previous R Votes: 0
   Previous Margin: 100
@@ -2316,6 +2446,7 @@ SD31:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 26373
   Previous R Votes: 15904
   Previous Margin: 25
@@ -2334,6 +2465,7 @@ SD32:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Arlington County
   Previous D Votes: 31156
   Previous R Votes: 0
   Previous Margin: 100
@@ -2352,6 +2484,7 @@ SD33:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18577
   Previous R Votes: 14190
   Previous Margin: 13
@@ -2369,6 +2502,7 @@ SD34:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 27690
   Previous R Votes: 0
   Previous Margin: 100
@@ -2386,6 +2520,7 @@ SD35:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Alexandria City
   Previous D Votes: 18754
   Previous R Votes: 0
   Previous Margin: 100
@@ -2403,6 +2538,7 @@ SD36:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18320
   Previous R Votes: 11890
   Previous Margin: 21
@@ -2420,6 +2556,7 @@ SD37:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Fairfax County
   Previous D Votes: 18966
   Previous R Votes: 15216
   Previous Margin: 11
@@ -2438,6 +2575,7 @@ SD38:
   Open: false
   Retiring Incumbent: ''
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 31025
   Previous Margin: -100
@@ -2455,6 +2593,7 @@ SD39:
   Open: false
   Retiring Incumbent: ''
   Party: D
+  Closest NoVa County: Alexandria City
   Previous D Votes: 20083
   Previous R Votes: 17101
   Previous Margin: 8
@@ -2473,6 +2612,7 @@ SD40:
   Open: true
   Retiring Incumbent: Bill Carrico
   Party: R
+  Closest NoVa County: ''
   Previous D Votes: 0
   Previous R Votes: 36838
   Previous Margin: -100

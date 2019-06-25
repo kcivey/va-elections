@@ -33,6 +33,17 @@ const houseUrl = 'https://www.vpap.org/elections/house/candidates/general/';
 const senateUrl = 'https://www.vpap.org/elections/senate/candidates/general/';
 const dataFile = __dirname + '/races.yaml';
 const currentElectionYear = 2019;
+const noVaCounties = [ // ordered by increasing distance from DC
+    'Arlington County',
+    'Alexandria City',
+    'Fairfax County',
+    'Falls Church City',
+    'Fairfax City',
+    'Loudoun County',
+    'Prince William County',
+    'Manassas Park City',
+    'Manassas City',
+];
 let recordsByDistrict = {};
 
 readExistingData()
@@ -67,7 +78,7 @@ async function processChamber(chamberUrl) {
         .map((i, th) => $(th).text().trim())
         .get();
     headers.shift(); // remove "District" column head
-    headers.push('Open', 'Retiring Incumbent', 'Party'); // to set order of keys
+    headers.push('Open', 'Retiring Incumbent', 'Party', 'Closest NoVa County'); // to set order of keys
     const rows = $('table.table tbody tr').get();
     for (const row of rows) {
         let values = $(row).find('td')
@@ -151,9 +162,22 @@ async function getIncumbentAndParty(election2019Url) {
         incumbent = m[2] + ' ' + m[1];
         party = m[3].substr(0, 1);
     }
+    const rows = $('div.col-xs-12.col-md-4 table tbody tr').get();
+    let closestCounty = '';
+    const counties = [];
+    for (const row of rows) {
+        counties.push($('td', row).eq(0).text());
+    }
+    for (const county of noVaCounties) {
+        if (counties.includes(county)) {
+            closestCounty = county;
+            break;
+        }
+    }
     return {
-        Incumbent: incumbent,
-        Party: party,
+        'Incumbent': incumbent,
+        'Party': party,
+        'Closest NoVa County': closestCounty,
     };
 }
 
