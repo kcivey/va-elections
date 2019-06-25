@@ -46,6 +46,9 @@
       width: auto;
       margin: 0;
     }
+    table.dataTable.fixedHeader-floating {
+      margin-top: 0 !important;
+    }
   </style>
 </head>
 <body>
