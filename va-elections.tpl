@@ -171,7 +171,8 @@
       }
     );
     const $table = $('#races-table')
-            .on('draw.dt', () => $('#races-table_wrapper').width($table.width()));
+            .on('draw.dt', () => $('#races-table_wrapper').width($table.width()))
+            .on('column-visibility.dt', () => $table.columns.adjust().draw());
     const table = $table.DataTable({
       columns: [
         <% _.forEach(headers, function (header) {
