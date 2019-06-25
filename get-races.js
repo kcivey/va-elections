@@ -26,7 +26,7 @@ const argv = require('yargs')
     })
     .strict(true)
     .argv;
-const request = require('./request');
+const request = require('./lib/request');
 const googleApiKey = process.env.GOOGLE_API_KEY;
 const dailyKosSpreadsheetId = '1YZRfFiCDBEYB7M18fDGLH8IrmyMQGdQKqpOu9lLvmdo';
 const houseUrl = 'https://www.vpap.org/elections/house/candidates/general/';
