@@ -53,6 +53,15 @@
 </head>
 <body>
 <h1>Virginia 2019 Elections</h1>
+<p>
+  The 2017 gubernatorial and 2016 presidential numbers come from
+  <a href="https://docs.google.com/spreadsheets/d/1YZRfFiCDBEYB7M18fDGLH8IrmyMQGdQKqpOu9lLvmdo/edit#gid=134618696">a spreadsheet compiled by Daily Kos Elections</a>,
+  which has been adjusted for the new district lines, which do not affect Northern Virginia (NoVa). The rest comes from the
+  <a href="https://www.vpap.org/elections/">Virginia Public Access Project</a>.
+  Margins are calculated from the Democratic and Republican votes, ignoring any votes for other parties or independents.
+  A narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
+  Incumbents are marked with an asterisk.
+</p>
 <div id="controls">
   <div class="control-group">
     <div class="form-check form-check-inline">
