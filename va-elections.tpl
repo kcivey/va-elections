@@ -152,44 +152,49 @@
       }
     };
     $.fn.dataTable.ext.search.push(
-            function (settings, searchData) {
-              if ($('#show-uncontested').prop('checked')) {
-                return true;
-              }
-              return searchData[1] && searchData[2];
-            },
-            function (settings, searchData) {
-              const chamber = $('#show-chamber input:checked').val();
-              switch (chamber) {
-                case 'house':
-                  return searchData[0].substr(0, 1) === 'H';
-                case 'senate':
-                  return searchData[0].substr(0, 1) === 'S';
-                default:
-                  return true;
-              }
-            }
+      function (settings, searchData) {
+        if ($('#show-uncontested').prop('checked')) {
+          return true;
+        }
+        return searchData[1] && searchData[2];
+      },
+      function (settings, searchData) {
+        const chamber = $('#show-chamber input:checked').val();
+        switch (chamber) {
+          case 'house':
+            return searchData[0].substr(0, 1) === 'H';
+          case 'senate':
+            return searchData[0].substr(0, 1) === 'S';
+          default:
+            return true;
+        }
+      }
     );
     const $table = $('#races-table')
             .on('draw.dt', () => $('#races-table_wrapper').width($table.width()));
     const table = $table.DataTable({
       columns: [
-              <% _.forEach(headers, function (header) {
-                if (header === 'District') { %>districtCol<% }
-                else if (header === 'Party') { %>{width: 20}<% }
-                else if (header === 'Open') { %>openCol<% }
-                else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
-                else if (/Margin$/.test(header)) { %>marginCol<% }
-                else { %>null<% } %>,
-              <% }); %>
+        <% _.forEach(headers, function (header) {
+          if (header === 'District') { %>districtCol<% }
+          else if (header === 'Party') { %>{width: 20}<% }
+          else if (header === 'Open') { %>openCol<% }
+          else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
+          else if (/Margin$/.test(header)) { %>marginCol<% }
+          else { %>null<% } %>,
+        <% }); %>
       ],
       fixedHeader: true,
       paging: false
     });
     $('#show-uncontested').on('click', function () { table.draw(); });
     $('#show-chamber input').on('change', function () { table.draw(); });
+    const hiddenColumns = [
+      <% _.forEach(headers, function (header, i) {
+        if (/\b(?:Votes|D|R)$/.test(header)) { %><%= i %>,<% } %>
+      <% }); %>
+    ];
     $('#show-vote-totals').on('click', function () {
-      table.columns([6, 7, 9, 10, 12, 13, 15, 16, 18, 19]).visible($(this).prop('checked'));
+      table.columns(hiddenColumns).visible($(this).prop('checked'));
     });
   });
 </script>
