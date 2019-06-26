@@ -49,6 +49,9 @@
     table.dataTable.fixedHeader-floating {
       margin-top: 0 !important;
     }
+    p {
+      max-width: 60rem;
+    }
   </style>
 </head>
 <body>
@@ -60,7 +63,7 @@
   <a href="https://www.vpap.org/elections/">Virginia Public Access Project</a>.
   Margins are calculated from the Democratic and Republican votes, ignoring any votes for other parties or independents.
   A narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
-  Incumbents are marked with an asterisk.
+  Incumbents are marked with an asterisk. Click the column headers to sort.
 </p>
 <div id="controls">
   <div class="control-group">
@@ -140,17 +143,23 @@
         return value;
       }
     };
+    const partyCol= {
+      width: 20,
+      searchable: false,
+    };
     const openCol = {
       className: 'center',
       width: 20,
       render: function (value, type) {
         return value === 'true' ? '\u2713' : '';
       },
+      searchable: false,
     };
     const numberCol = {
       className: 'number',
       visible: false,
-      render: $.fn.dataTable.render.number(',', '.')
+      render: $.fn.dataTable.render.number(',', '.'),
+      searchable: false,
     };
     const marginCol = {
       className: 'number',
@@ -161,7 +170,11 @@
         }
         value = +value;
         return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
-      }
+      },
+      searchable: false,
+    };
+    const nameCol = {
+      orderable: false,
     };
     $.fn.dataTable.ext.search.push(
       function (settings, searchData) {
@@ -189,11 +202,12 @@
       columns: [
         <% _.forEach(headers, function (header) {
           if (header === 'District') { %>districtCol<% }
-          else if (header === 'Party') { %>{width: 20}<% }
+          else if (header === 'Party') { %>partyCol<% }
           else if (header === 'Open') { %>openCol<% }
           else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
           else if (/Margin$/.test(header)) { %>marginCol<% }
-          else { %>null<% } %>,
+          else if (/County$/.test(header)) { %>null<% }
+          else { %>nameCol<% } %>,
         <% }); %>
       ],
       fixedHeader: true,
