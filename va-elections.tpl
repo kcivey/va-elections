@@ -62,7 +62,8 @@
   which has been adjusted for the new district lines, which do not affect Northern Virginia (NoVa). The rest comes from the
   <a href="https://www.vpap.org/elections/">Virginia Public Access Project</a>.
   Margins are calculated from the Democratic and Republican votes, ignoring any votes for other parties or independents.
-  A narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
+  "Closest NoVa County" means the NoVa county closest to DC that contains part of the district;
+  a narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
   Incumbents are marked with an asterisk. Click the column headers to sort.
 </p>
 <div id="controls">
