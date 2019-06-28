@@ -66,6 +66,7 @@
   a narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
   Incumbents are marked with an asterisk. Click the column headers to sort.
 </p>
+<div id="container" style="opacity: 0;">
 <div id="controls">
   <div class="control-group">
     <div class="form-check form-check-inline">
@@ -124,6 +125,7 @@
     <% }); %>
   </tbody>
 </table>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
@@ -198,6 +200,7 @@
     );
     const $table = $('#races-table')
             .on('draw.dt', () => $('#races-table_wrapper').width($table.width()))
+            .one('draw.dt', () => $('#container').css('opacity', 1))
             .on('column-visibility.dt', () => $table.columns.adjust().draw());
     const table = $table.DataTable({
       columns: [
