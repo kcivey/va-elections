@@ -19,6 +19,15 @@ const argv = require('yargs')
             type: 'boolean',
             describe: 'refresh all info, including historical vote counts (takes a while)',
         },
+        limit: {
+            type: 'number',
+            describe: 'maximum number of districts to retrieve',
+            default: Infinity,
+        },
+        verbose: {
+            type: 'boolean',
+            describe: 'print districts as processed',
+        },
         vpap: {
             type: 'boolean',
             describe: 'get earlier election votes from VPAP rather than Daily Kos',
@@ -45,6 +54,7 @@ const noVaCounties = [ // ordered by increasing distance from DC
     'Manassas City',
 ];
 let recordsByDistrict = {};
+let districtCount = 0;
 
 readExistingData()
     .then(() => processChamber(houseUrl))
@@ -72,6 +82,9 @@ function readExistingData() {
 }
 
 async function processChamber(chamberUrl) {
+    if (districtCount >= argv.limit) {
+        return {};
+    }
     const isHouse = /\/house/.test(chamberUrl);
     const $ = await getCheerio(chamberUrl);
     const headers = $('table.table thead tr:first-child th')
@@ -81,6 +94,9 @@ async function processChamber(chamberUrl) {
     headers.push('Open', 'Retiring Incumbent', 'Party', 'Closest NoVa County'); // to set order of keys
     const rows = $('table.table tbody tr').get();
     for (const row of rows) {
+        if (districtCount > argv.limit) {
+            return {};
+        }
         let values = $(row).find('td')
             .map((i, td) => $(td).html().trim().replace(/\s+/g, ' '))
             .get();
@@ -96,6 +112,9 @@ async function processChamber(chamberUrl) {
         }
         const election2019Url = url.resolve(chamberUrl, m[1]);
         const district= m[2].replace(/\s+/, '');
+        if (argv.verbose) {
+            console.log(district);
+        }
         const record = _.zipObject(headers, values);
         if (argv.full || !recordsByDistrict[district]) {
             Object.assign(
@@ -103,6 +122,7 @@ async function processChamber(chamberUrl) {
                 await getPreviousElectionData(election2019Url),
                 await getIncumbentAndParty(election2019Url),
                 argv.vpap ? await getEarlierElectionsDataFromVpap(election2019Url) : {},
+                await getCampaignContributions(election2019Url),
             );
             const open = !values.some(function (value) {
                 return Array.isArray(value) && value.some(v => v.substr(-1) === '*');
@@ -119,8 +139,15 @@ async function processChamber(chamberUrl) {
                 recordsByDistrict[district][key] = value;
             }
         }
+        districtCount++;
+        if (districtCount >= argv.limit) {
+            break;
+        }
     }
-    if (!argv.vpap) {
+    if (!argv.vpap && argv.full) {
+        if (argv.verbose) {
+            console.log('getting Daily Kos data');
+        }
         recordsByDistrict = await addDailyKosData(isHouse, recordsByDistrict);
     }
     return recordsByDistrict;
@@ -179,6 +206,38 @@ async function getIncumbentAndParty(election2019Url) {
         'Party': party,
         'Closest NoVa County': closestCounty,
     };
+}
+
+async function getCampaignContributions(election2019Url) {
+    const $ = await getCheerio(election2019Url);
+    const rows = $('table.table > tbody > tr').get();
+    const record = {};
+    const parties = ['D', 'R'];
+    for (const party of parties) {
+        record[`$ Raised (${party})`] = null;
+    }
+    for (const row of rows) {
+        if ($(row).hasClass('ghost')) {
+            continue;
+        }
+        const text = $('td', row).eq(0).text();
+        const m = text.match(/\(([A-Z])\)/);
+        if (!m) {
+            throw new Error(`No party found in "${text}"`);
+        }
+        const party = m[1];
+        if (!parties.includes(party)) {
+            continue;
+        }
+        const amount = $('td', row).eq(1).text().replace(/\D+/g, ''); // delete all nondigits
+        const key = `$ Raised (${party})`;
+        if (record[key] !== null) {
+            throw new Error(`Duplicate ${party} row found for ${election2019Url}`);
+        }
+        record[key] = +amount;
+    }
+    record['D $ Advantage'] = (record['$ Raised (D)'] || 0) - (record['$ Raised (R)'] || 0);
+    return record;
 }
 
 async function getEarlierElectionsDataFromVpap(election2019Url) {
@@ -253,6 +312,9 @@ function addDailyKosData(isHouse, records) {
                     return;
                 }
                 const district = headers[0] + row[0];
+                if (!records[district]) {
+                    return;
+                }
                 row = row.map(function (v) {
                     // Convert numbers to numbers
                     return /^[\d,]+$/.test(v) ? +v.replace(/,/g, '') : v;
@@ -327,9 +389,18 @@ function outputHtml(data) {
             throw err;
         }
         const compiled = _.template(templateString);
-        const headers = Object.keys(data[Object.keys(data)[0]]);
+        let headers = Object.keys(data[Object.keys(data)[0]]);
         headers.unshift('District');
-        const html = compiled({headers, data, marginStyle});
+        headers = headers.filter(r => !r.includes('$'))
+            .concat(headers.filter(r => r.includes('$'))); // move campaign finance to end
+        const dollarMax = Object.values(data).reduce(function (max, record) {
+            return Math.max(
+                Math.abs(record['$ Raised (D)']),
+                Math.abs(record['$ Raised (R)']),
+                max
+            );
+        }, 0);
+        const html = compiled({headers, data, marginStyle, dollarMax});
         fs.writeFile(__dirname + '/va-elections.html', html, function (err) {
             if (err) {
                 throw err;

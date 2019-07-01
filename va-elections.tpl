@@ -28,12 +28,6 @@
     .empty {
       background-color: #eee;
     }
-    .number {
-      text-align: right;
-    }
-    .center {
-      text-align: center;
-    }
     #controls {
       position: absolute;
       z-index: 100;
@@ -76,8 +70,8 @@
   </div>
   <div class="control-group">
     <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-vote-totals" class="form-check-input">
-      <label class="form-check-label" for="show-vote-totals">Show vote totals</label>
+      <input type="checkbox" id="show-all-columns" class="form-check-input">
+      <label class="form-check-label" for="show-all-columns">Show all columns</label>
     </div>
   </div>
   <div class="control-group">
@@ -108,7 +102,7 @@
       <tr>
         <% _.forEach(headers, function (key) { %>
           <% var value = key === 'District' ? district : r[key]; %>
-          <td<% if (/Margin/.test(key)) { %> <%= marginStyle(value) %><% }
+          <td<% if (/Margin|\$/.test(key)) { %> <%= marginStyle(/\$/.test(key) ? ((/\(R\)/.test(key) ? -1 : 1) * 100 * value / dollarMax) : value) %><% }
             else if (key === 'Party') { %> class="<%= {D: 'democrat', R: 'republican'}[value] || 'empty' %>"<% }
             else if ((Array.isArray(value) && !value.length) || value == null || value === '') { %> class="empty"<% } %>
           >
@@ -143,7 +137,7 @@
             return m[1] + m[2].padStart(3, '0');
           }
         }
-        return value;
+        return value;numberCol
       }
     };
     const partyCol= {
@@ -151,7 +145,7 @@
       searchable: false,
     };
     const openCol = {
-      className: 'center',
+      className: 'text-center',
       width: 20,
       render: function (value, type) {
         return value === 'true' ? '\u2713' : '';
@@ -159,25 +153,51 @@
       searchable: false,
     };
     const numberCol = {
-      className: 'number',
+      className: 'text-right',
       visible: false,
       render: $.fn.dataTable.render.number(',', '.'),
       searchable: false,
     };
     const marginCol = {
-      className: 'number',
+      className: 'text-right',
       width: 30,
       render: function (value, type) {
         if (value === '') {
           return '';
         }
         value = +value;
-        return type === 'display' ? (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value) : value;
+        return type === 'display' ? (value > 0 ? '+' : value < 0 ? '\u2212' : '') + Math.abs(value) : value;
       },
       searchable: false,
     };
     const nameCol = {
       orderable: false,
+    };
+    const dollarCol = {
+      className: 'text-right',
+      visible: false,
+      render: function (value, type) {
+        if (type !== 'display') {
+          return value;
+        }
+        const abs = Math.abs(value);
+        return (value < 0 ? '\u2212' : '') + (abs ? ((abs < 1000 ? '<1' : Math.round(abs / 1000)) + 'k') : '0');
+      },
+      searchable: false,
+    };
+    const dollarAdvantageCol = {
+      className: 'text-right',
+      render: function (value, type) {
+        if (type !== 'display') {
+          return value;
+        }
+        let display = dollarCol.render(value, 'display');
+        if (value > 0) {
+          display = '+' + display;
+        }
+        return display;
+      },
+      searchable: false,
     };
     $.fn.dataTable.ext.search.push(
       function (settings, searchData) {
@@ -209,6 +229,8 @@
           else if (header === 'Party') { %>partyCol<% }
           else if (header === 'Open') { %>openCol<% }
           else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
+          else if (/^\$/.test(header)) { %>dollarCol<% }
+          else if (/\$ Advantage$/.test(header)) { %>dollarAdvantageCol<% }
           else if (/Margin$/.test(header)) { %>marginCol<% }
           else if (/County$/.test(header)) { %>null<% }
           else { %>nameCol<% } %>,
@@ -221,10 +243,10 @@
     $('#show-chamber input').on('change', function () { table.draw(); });
     const hiddenColumns = [
       <% _.forEach(headers, function (header, i) {
-        if (/\b(?:Votes|D|R)$/.test(header)) { %><%= i %>,<% } %>
+        if (/Raised|\b(?:Votes|D|R)$/.test(header)) { %><%= i %>,<% } %>
       <% }); %>
     ];
-    $('#show-vote-totals').on('click', function () {
+    $('#show-all-columns').on('click', function () {
       table.columns(hiddenColumns).visible($(this).prop('checked'));
     });
   });
