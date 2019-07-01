@@ -416,7 +416,7 @@ function marginStyle(margin, max) {
     margin = +margin;
     let darkness = Math.abs(margin);
     if (max && darkness) {
-        darkness = 100 * Math.sqrt(darkness) / Math.sqrt(max);
+        darkness = 100 * Math.sqrt(darkness / max);
     }
     let background;
     const level = (100 - darkness).toFixed(1);
