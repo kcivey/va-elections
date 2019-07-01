@@ -409,21 +409,26 @@ function outputHtml(data) {
     });
 }
 
-function marginStyle(margin) {
-    let background;
+function marginStyle(margin, max) {
     if (margin == null) {
         return 'class="empty"';
     }
     margin = +margin;
+    let darkness = Math.abs(margin);
+    if (max && darkness) {
+        darkness = 100 * Math.sqrt(darkness) / Math.sqrt(max);
+    }
+    let background;
+    const level = (100 - darkness).toFixed(1);
     if (margin === 0) {
         background = 'white';
     }
     else if (margin < 0) {
-        background = `rgb(100%, ${100 + margin}%, ${100 + margin}%)`;
+        background = `rgb(100%, ${level}%, ${level}%)`;
     }
     else {
-        background = `rgb(${100 - margin}%, ${100 - margin}%, 100%)`;
+        background = `rgb(${level}%, ${level}%, 100%)`;
     }
-    const color = Math.abs(margin) > 50 ? 'white' : 'black';
+    const color = darkness > 50 ? 'white' : 'black';
     return `style="background-color: ${background}; color: ${color};" class="number"`;
 }

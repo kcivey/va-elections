@@ -102,7 +102,7 @@
       <tr>
         <% _.forEach(headers, function (key) { %>
           <% var value = key === 'District' ? district : r[key]; %>
-          <td<% if (/Margin|\$/.test(key)) { %> <%= marginStyle(/\$/.test(key) ? ((/\(R\)/.test(key) ? -1 : 1) * 100 * value / dollarMax) : value) %><% }
+          <td<% if (/Margin|\$/.test(key)) { %> <%= marginStyle((key.includes('(R)') ? -1 : 1) * value, (key.includes('$') && dollarMax)) %><% }
             else if (key === 'Party') { %> class="<%= {D: 'democrat', R: 'republican'}[value] || 'empty' %>"<% }
             else if ((Array.isArray(value) && !value.length) || value == null || value === '') { %> class="empty"<% } %>
           >
