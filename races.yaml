@@ -1282,7 +1282,8 @@ HD59:
   2016 President R: 24263
   2016 President Margin: -28
 HD60:
-  Democrat: []
+  Democrat:
+    - Janie Zimmerman
   Republican:
     - James Edmunds*
   Other: []
@@ -1610,7 +1611,8 @@ HD74:
 HD75:
   Democrat:
     - Roslyn Tyler*
-  Republican: []
+  Republican:
+    - Otto Wachsmann
   Other: []
   Open: false
   Retiring Incumbent: ''
@@ -1629,8 +1631,7 @@ HD75:
   2016 President R: 14868
   2016 President Margin: 10
 HD76:
-  Democrat:
-    - Clint Jenkins
+  Democrat: []
   Republican:
     - Chris Jones*
   Other: []
@@ -1653,8 +1654,7 @@ HD76:
 HD77:
   Democrat:
     - Cliff Hayes*
-  Republican:
-    - Ron Wallace
+  Republican: []
   Other: []
   Open: false
   Retiring Incumbent: ''
@@ -2441,8 +2441,7 @@ SD13:
     - John Bell
   Republican:
     - Geary Higgins
-  Other:
-    - Jasmine Moawad-Barrientos
+  Other: []
   Open: true
   Retiring Incumbent: Dick Black
   Party: R
@@ -2460,7 +2459,8 @@ SD13:
   2016 President R: 54280
   2016 President Margin: 9
 SD14:
-  Democrat: []
+  Democrat:
+    - Rebecca E Raveson
   Republican:
     - John Cosgrove*
   Other: []
@@ -3001,7 +3001,8 @@ SD38:
 SD39:
   Democrat:
     - George Barker*
-  Republican: []
+  Republican:
+    - Samuel Hillenburg
   Other: []
   Open: false
   Retiring Incumbent: ''
