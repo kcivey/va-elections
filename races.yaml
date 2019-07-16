@@ -1631,7 +1631,8 @@ HD75:
   2016 President R: 14868
   2016 President Margin: 10
 HD76:
-  Democrat: []
+  Democrat:
+    - Clint Jenkins
   Republican:
     - Chris Jones*
   Other: []
@@ -2702,7 +2703,8 @@ SD25:
   Democrat:
     - Creigh Deeds*
   Republican: []
-  Other: []
+  Other:
+    - Elliott Harding
   Open: false
   Retiring Incumbent: ''
   Party: D
