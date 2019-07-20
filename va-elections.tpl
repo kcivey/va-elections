@@ -74,16 +74,16 @@
       <label class="form-check-label" for="show-all-columns">Show all columns</label>
     </div>
   </div>
-  <div class="control-group">
-    <div id="show-chamber" class="form-check form-check-inline">
+  <div id="show-chamber" class="control-group">
+    <div class="form-check form-check-inline">
       <input type="radio" id="show-chamber-1" class="form-check-input" name="chamber" value="senate">
       <label class="form-check-label" for="show-chamber-1">Senate</label>
     </div>
-    <div id="show-chamber" class="form-check form-check-inline">
+    <div class="form-check form-check-inline">
       <input type="radio" id="show-chamber-2" class="form-check-input" name="chamber" value="house">
       <label class="form-check-label" for="show-chamber-2">House</label>
     </div>
-    <div id="show-chamber" class="form-check form-check-inline">
+    <div class="form-check form-check-inline">
       <input type="radio" id="show-chamber-3" class="form-check-input" name="chamber" value="both" checked>
       <label class="form-check-label" for="show-chamber-3">Both</label>
     </div>
