@@ -137,7 +137,7 @@
             return m[1] + m[2].padStart(3, '0');
           }
         }
-        return value;numberCol
+        return value;
       }
     };
     const partyCol= {
