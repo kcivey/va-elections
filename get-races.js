@@ -11,24 +11,28 @@ const {decodeHTML} = require('entities');
 const {google} = require('googleapis');
 const argv = require('yargs')
     .options({
-        csv: {
+        'csv': {
             type: 'boolean',
             describe: 'output to stdout as CSV rather than writing HTML file',
         },
-        full: {
+        'full': {
             type: 'boolean',
             describe: 'refresh all info, including historical vote counts (takes a while)',
         },
-        limit: {
+        'limit': {
             type: 'number',
             describe: 'maximum number of districts to retrieve',
             default: Infinity,
         },
-        verbose: {
+        'output-only': {
+            type: 'boolean',
+            describe: 'don\'t refresh data, just print',
+        },
+        'verbose': {
             type: 'boolean',
             describe: 'print districts as processed',
         },
-        vpap: {
+        'vpap': {
             type: 'boolean',
             describe: 'get earlier election votes from VPAP rather than Daily Kos',
         },
@@ -56,11 +60,16 @@ const noVaCounties = [ // ordered by increasing distance from DC
 let recordsByDistrict = {};
 let districtCount = 0;
 
-readExistingData()
-    .then(() => processChamber(houseUrl))
-    .then(() => processChamber(senateUrl))
-    .then(writeData)
-    .then(argv.csv ? outputCsv : outputHtml)
+let promise = readExistingData();
+if (!argv['output-only']) {
+    promise = promise.then(() => processChamber(houseUrl))
+        .then(() => processChamber(senateUrl))
+        .then(writeData);
+}
+else {
+    promise = promise.then(() => recordsByDistrict);
+}
+promise.then(argv.csv ? outputCsv : outputHtml)
     .catch(err => console.error(err));
 
 function readExistingData() {
