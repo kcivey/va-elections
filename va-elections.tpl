@@ -74,6 +74,12 @@
       <label class="form-check-label" for="show-all-columns">Show all columns</label>
     </div>
   </div>
+  <div class="control-group">
+    <div class="form-check form-check-inline">
+      <input type="checkbox" id="show-pickups" class="form-check-input">
+      <label class="form-check-label" for="show-pickups">Show only possible D⮕R</label>
+    </div>
+  </div>
   <div id="show-chamber" class="control-group">
     <div class="form-check form-check-inline">
       <input type="radio" id="show-chamber-1" class="form-check-input" name="chamber" value="senate">
@@ -216,6 +222,12 @@
           default:
             return true;
         }
+      },
+      function (settings, searchData, index, rowData) {
+        if (!$('#show-pickups').prop('checked')) {
+          return true;
+        }
+        return rowData[1] && rowData[6] === 'R';
       }
     );
     const $table = $('#races-table')
@@ -239,7 +251,7 @@
       fixedHeader: true,
       paging: false
     });
-    $('#show-uncontested').on('click', function () { table.draw(); });
+    $('#show-uncontested,#show-pickups').on('click', function () { table.draw(); });
     $('#show-chamber input').on('change', function () { table.draw(); });
     const hiddenColumns = [
       <% _.forEach(headers, function (header, i) {
