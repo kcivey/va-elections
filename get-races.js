@@ -133,13 +133,13 @@ async function processChamber(chamberUrl) {
                 argv.vpap ? await getEarlierElectionsDataFromVpap(election2019Url) : {},
                 await getCampaignContributions(election2019Url),
             );
-            const open = !values.some(function (value) {
-                return Array.isArray(value) && value.some(v => v.substr(-1) === '*');
-            });
-            record['Open'] = open;
-            record['Retiring Incumbent'] = open ? record['Incumbent'] : '';
-            delete record['Incumbent'];
         }
+        const open = !values.some(function (value) {
+            return Array.isArray(value) && value.some(v => v.substr(-1) === '*');
+        });
+        record['Open'] = open;
+        record['Retiring Incumbent'] = open ? record['Incumbent'] : '';
+        delete record['Incumbent'];
         for (const [key, value] of Object.entries(record)) {
             if (!recordsByDistrict[district]) {
                 recordsByDistrict[district] = {};
