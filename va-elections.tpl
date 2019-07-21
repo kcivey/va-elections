@@ -77,7 +77,7 @@
   <div class="control-group">
     <div class="form-check form-check-inline">
       <input type="checkbox" id="show-pickups" class="form-check-input">
-      <label class="form-check-label" for="show-pickups">Show only possible D⮕R</label>
+      <label class="form-check-label" for="show-pickups">Show only possible R→D</label>
     </div>
   </div>
   <div id="show-chamber" class="control-group">
