@@ -5,7 +5,7 @@
   "author": "Keith C. Ivey <keith@iveys.org>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-google": "^0.13.0"
   },
   "dependencies": {
@@ -14,10 +14,10 @@
     "cheerio": "^1.0.0-rc.3",
     "csv-stringify": "^5.3.0",
     "dotenv": "^8.0.0",
-    "entities": "^1.1.2",
+    "entities": "^2.0.0",
     "googleapis": "^41.0.1",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "request": "^2.88.0",
     "request-plus": "^2.0.0",
     "yargs": "^13.3.0"
