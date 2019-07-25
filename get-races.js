@@ -393,7 +393,7 @@ function outputCsv(data) {
 }
 
 function outputHtml(data) {
-    fs.readFile(__dirname + '/va-elections.tpl', 'utf8', function (err, templateString) {
+    fs.readFile(__dirname + '/va-elections.html.tpl', 'utf8', function (err, templateString) {
         if (err) {
             throw err;
         }
