@@ -65,6 +65,7 @@ if (!argv['output-only']) {
     promise = promise.then(() => processChamber(houseUrl))
         .then(() => processChamber(senateUrl))
         .then(addRatings)
+        .then(addFixes)
         .then(writeData);
 }
 else {
@@ -387,6 +388,18 @@ function addRatings() {
         const [level, party] = string.split(' ');
         return {Safe: 4, Likely: 3, Lean: 2, Tilt: 1, Tossup: 0}[level] *
             (party === 'R' ? -1 : 1);
+    }
+}
+
+function addFixes() {
+    if (!recordsByDistrict['HD30']['Republican'].length) {
+        recordsByDistrict['HD30']['Republican'] = ['(probable write-in)'];
+    }
+    if (!recordsByDistrict['HD80']['Party']) {
+        recordsByDistrict['HD80']['Party'] = 'D';
+    }
+    if (!recordsByDistrict['SD7']['Party']) {
+        recordsByDistrict['SD7']['Party'] = 'R';
     }
 }
 

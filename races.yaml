@@ -692,7 +692,8 @@ HD29:
 HD30:
   Democrat:
     - Ann Ridgeway
-  Republican: []
+  Republican:
+    - (probable write-in)
   Other: []
   Open: true
   Retiring Incumbent: Nick Freitas
@@ -1881,7 +1882,7 @@ HD80:
     - Ryan Collin Benton
   Open: true
   Retiring Incumbent: ''
-  Party: ''
+  Party: D
   Closest NoVa County: ''
   Previous D Votes: 20292
   Previous R Votes: 0
@@ -2524,7 +2525,7 @@ SD7:
   Other: []
   Open: true
   Retiring Incumbent: ''
-  Party: ''
+  Party: R
   Closest NoVa County: ''
   Previous D Votes: 15434
   Previous R Votes: 18266
