@@ -40,11 +40,11 @@
       width: auto;
       margin: 0;
     }
+    table.dataTable td {
+      white-space: nowrap;
+    }
     table.dataTable.fixedHeader-floating {
       margin-top: 0 !important;
-    }
-    p {
-      max-width: 60rem;
     }
     th.rotate {
       height: 112px;
@@ -57,20 +57,44 @@
     th.rotate > div > span {
       padding: 6px 0;
     }
+    .columns {
+      border: #ccc 1px solid;
+      padding: 1rem;
+      columns: 2 20rem;
+      max-width: 70rem;
+      column-fill: balance;
+      column-gap: 2rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
 <h1>Virginia 2019 Elections</h1>
+<div class="columns">
 <p>
   The 2017 gubernatorial and 2016 presidential numbers come from
   <a href="https://docs.google.com/spreadsheets/d/1YZRfFiCDBEYB7M18fDGLH8IrmyMQGdQKqpOu9lLvmdo/edit#gid=134618696">a spreadsheet compiled by Daily Kos Elections</a>,
   which has been adjusted for the new district lines, which do not affect Northern Virginia (NoVa). The rest comes from the
   <a href="https://www.vpap.org/elections/">Virginia Public Access Project</a>.
   Margins are calculated from the Democratic and Republican votes, ignoring any votes for other parties or independents.
+</p>
+<p>
   "Closest NoVa County" means the NoVa county closest to DC that contains part of the district;
   a narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
-  Incumbents are marked with an asterisk. Click the column headers to sort.
+  Incumbents are marked with an asterisk.
+  "Nuttycombe Rating" is from <a href="https://mobile.twitter.com/ChazNuttycombe/status/1151171782449225728">Chaz Nuttycombe</a>.
+  "Tribbett Rating" is from <a href="https://mobile.twitter.com/ChazNuttycombe/status/1151171782449225728">Ben Tribbett</a> (aka Not Larry Sabato).
+  Note that Nuttycombe uses a "Tilt" category in his ratings, but Tribbett does not.
+  Click the column headers to sort.
 </p>
+<p>
+  In the filtering, "uncontested" races are those that don't have both a Democrat and a Republican (other parties are
+  ignored, since there don't seem to be any significant third-party candidates).
+  "Possible R→D" means currently Republican-held seats where there is a Democratic candidate running, whether or not
+  they have a realistic chance of winning.
+</p>
+</div>
+
 <div id="container" style="opacity: 0;">
 <div id="controls">
   <div class="control-group">
@@ -120,6 +144,7 @@
         <% _.forEach(headers, function (key) { %>
           <% var value = key === 'District' ? district : r[key]; %>
           <td<% if (/Margin|\$/.test(key)) { %> <%= marginStyle((key.includes('(R)') ? -1 : 1) * value, (key.includes('$') && dollarMax)) %><% }
+            else if (/Rating/.test(key)) { %> <%= marginStyle(value * 25) %><% }
             else if (key === 'Party') { %> class="<%= {D: 'democrat', R: 'republican'}[value] || 'empty' %>"<% }
             else if ((Array.isArray(value) && !value.length) || value == null || value === '') { %> class="empty"<% } %>
           >
@@ -190,6 +215,15 @@
     const nameCol = {
       orderable: false,
     };
+    const ratingCol = {
+      render: function (value, type) {
+          if (type === 'display') {
+              return ['Tossup', 'Tilt', 'Lean', 'Likely', 'Safe'][Math.abs(value)] +
+                  (value < 0 ? ' R' : value > 0 ? ' D' : '');
+          }
+          return value;
+      }
+    };
     const dollarCol = {
       className: 'text-right',
       visible: false,
@@ -255,6 +289,7 @@
           else if (/^\$/.test(header)) { %>dollarCol<% }
           else if (/\$ Advantage$/.test(header)) { %>dollarAdvantageCol<% }
           else if (/Margin$/.test(header)) { %>marginCol<% }
+          else if (/Rating$/.test(header)) { %>ratingCol<% }
           else if (/County$/.test(header)) { %>null<% }
           else { %>nameCol<% } %>,
         <% }); %>

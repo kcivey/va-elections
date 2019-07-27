@@ -64,6 +64,7 @@ let promise = readExistingData();
 if (!argv['output-only']) {
     promise = promise.then(() => processChamber(houseUrl))
         .then(() => processChamber(senateUrl))
+        .then(addRatings)
         .then(writeData);
 }
 else {
@@ -362,6 +363,31 @@ function getDemMargin(dVotes, rVotes) {
     rVotes = rVotes ? +rVotes : 0;
     const margin = 100 * (dVotes - rVotes) / (dVotes + rVotes);
     return Math.sign(margin) * Math.round(Math.abs(margin)); // to avoid rounding .5 differently for + and -
+}
+
+function addRatings() {
+    for (const name of ['nuttycombe', 'tribbett']) {
+        const file = `${__dirname}/${name}.csv`;
+        const content = fs.readFileSync(file, 'utf-8');
+        const ratings = {};
+        for (const line of content.split('\n')) {
+            const [district, rating] = line.split('\t');
+            if (district) {
+                ratings[district] = rating;
+            }
+        }
+        const columnHead = name.substr(0, 1).toUpperCase() + name.substr(1) +
+            ' Rating';
+        for (const [district, record] of Object.entries(recordsByDistrict)) {
+            record[columnHead] = getNumberRating(ratings[district] || ('Safe ' + record['Party']));
+        }
+    }
+
+    function getNumberRating(string) {
+        const [level, party] = string.split(' ');
+        return {Safe: 4, Likely: 3, Lean: 2, Tilt: 1, Tossup: 0}[level] *
+            (party === 'R' ? -1 : 1);
+    }
 }
 
 function writeData() {
