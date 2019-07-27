@@ -46,6 +46,17 @@
     p {
       max-width: 60rem;
     }
+    th.rotate {
+      height: 112px;
+      white-space: nowrap;
+    }
+    th.rotate > div {
+      transform: translate(15px, 4px) rotate(-45deg);
+      width: 30px;
+    }
+    th.rotate > div > span {
+      padding: 6px 0;
+    }
   </style>
 </head>
 <body>
@@ -99,7 +110,7 @@
   <thead>
     <tr>
       <% _.forEach(headers, function (header) { %>
-        <th><%- header %></th>
+        <th class="rotate"><div><span><%- header %></span></div></th>
       <% }); %>
     </tr>
   </thead>
