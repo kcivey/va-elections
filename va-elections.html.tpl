@@ -92,17 +92,12 @@
   ignored, since there don't seem to be any significant third-party candidates).
   "Possible R→D" means currently Republican-held seats where there is a Democratic candidate running, whether or not
   they have a realistic chance of winning.
+  "Competitive" means that Nuttycombe or Tribbett has rated the race as not safe.
 </p>
 </div>
 
 <div id="container" style="opacity: 0;">
 <div id="controls">
-  <div class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-uncontested" class="form-check-input">
-      <label class="form-check-label" for="show-uncontested">Show uncontested races</label>
-    </div>
-  </div>
   <div class="control-group">
     <div class="form-check form-check-inline">
       <input type="checkbox" id="show-all-columns" class="form-check-input">
@@ -111,8 +106,20 @@
   </div>
   <div class="control-group">
     <div class="form-check form-check-inline">
+      <input type="checkbox" id="show-uncontested" class="form-check-input">
+      <label class="form-check-label" for="show-uncontested">Show uncontested races too</label>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-check form-check-inline">
       <input type="checkbox" id="show-pickups" class="form-check-input">
       <label class="form-check-label" for="show-pickups">Show only possible R→D</label>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-check form-check-inline">
+      <input type="checkbox" id="show-competitive" class="form-check-input">
+      <label class="form-check-label" for="show-competitive">Show only competitive races</label>
     </div>
   </div>
   <div id="show-chamber" class="control-group">
@@ -222,7 +229,8 @@
                   (value < 0 ? ' R' : value > 0 ? ' D' : '');
           }
           return value;
-      }
+      },
+      searchable: false,
     };
     const dollarCol = {
       className: 'text-right',
@@ -273,7 +281,13 @@
           return true;
         }
         return rowData[1] && rowData[6] === 'R';
-      }
+      },
+      function (settings, searchData, index, rowData) {
+        if (!$('#show-competitive').prop('checked')) {
+          return true;
+        }
+        return Math.abs(rowData[17]) < 4 || Math.abs(rowData[18]) < 4;
+      },
     );
     const $table = $('#races-table')
             .on('draw.dt', () => $('#races-table_wrapper').width($table.width()))
@@ -297,7 +311,7 @@
       fixedHeader: true,
       paging: false
     });
-    $('#show-uncontested,#show-pickups').on('click', function () { table.draw(); });
+    $('#show-uncontested,#show-pickups,#show-competitive').on('click', function () { table.draw(); });
     $('#show-chamber input').on('change', function () { table.draw(); });
     const hiddenColumns = [
       <% _.forEach(headers, function (header, i) {
