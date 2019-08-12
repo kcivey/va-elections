@@ -65,8 +65,13 @@ let promise = readExistingData();
 if (!argv['output-only']) {
     promise = promise.then(() => processChamber(houseUrl))
         .then(() => processChamber(senateUrl))
-        .then(addRatings)
+        .then(function () {
+            const districtsFound = Object.keys(recordsByDistrict).length;
+            assert.strictEqual(districtsFound, 140,
+                `Expected 140 districts, found ${districtsFound}`);
+        })
         .then(addFixes)
+        .then(addRatings)
         .then(writeData);
 }
 else {
@@ -167,19 +172,17 @@ async function getPreviousElectionData(election2019Url) {
     const isHouse = /\/house/.test(election2019Url);
     const detailUrl = election2019Url.replace('2019', isHouse ? '2017' : '2015');
     const $ = await getCheerio(detailUrl);
-    const rows = $('table.table tbody tr').get();
+    const rows = $('table.table tbody tr').not('.ghost').get();
+    assert(rows.length > 0, `Can't find vote table in ${detailUrl}`);
     const votes = {};
     for (const row of rows) {
-        if ($(row).hasClass('ghost')) {
-            continue;
-        }
         const cells = $(row).find('td');
         const candidate = cells.eq(0).text();
-        const m = candidate.match(/\((\w)\)/);
-        if (m) {
-            votes[m[1]] = +cells.eq(2).text().replace(/^\s*([\d,]+)\s.+$/sm, '$1')
-                .replace(/,/g, '');
-        }
+        const m = candidate.match(/\(([^)]+)\)/);
+        assert(m, `Unexpected candidate format "${candidate}" in ${detailUrl}`);
+        votes[m[1]] = +cells.eq(2).text()
+            .replace(/^\s*([\d,]+)\s.+$/sm, '$1')
+            .replace(/,/g, '');
     }
     const record = {};
     for (const abbr of ['D', 'R']) {
@@ -192,14 +195,25 @@ async function getPreviousElectionData(election2019Url) {
 async function getIncumbentAndParty(election2019Url) {
     const districtUrl = election2019Url.replace(/\/elections\/.*/, '/district/');
     const $ = await getCheerio(districtUrl);
-    let incumbent = $('div.col-xs-12.col-md-3').find('div').eq(1).text().trim();
+    const incumbentDiv = $('div.col-12.col-lg-3');
+    assert.strictEqual(incumbentDiv.length, 1, `Can't find incumbent section in ${districtUrl}`);
+    const head = incumbentDiv.find('h4').text().trim();
+    let incumbent = '';
     let party = '';
-    const m = incumbent.match(/^([^,+]+),\s+(.+?)\s+(\w+)$/);
-    if (m) {
+    if (head === 'Current Representative:') {
+        incumbent = incumbentDiv.find('div').eq(1).text().trim();
+        assert(incumbent, `Can't find incumbent in ${districtUrl}`);
+        const m = incumbent.match(/^([^,+]+),\s+(.+?)\s+(\w+)$/);
+        assert(m, `Unexpected incumbent format "${incumbent}" in ${districtUrl}`);
         incumbent = m[2] + ' ' + m[1];
         party = m[3].substr(0, 1);
     }
-    const rows = $('div.col-xs-12.col-md-4 table tbody tr').get();
+    else {
+        assert.strictEqual(head, 'Seat is currently open',
+            `Unexpected incumbent head format "${head}" in ${districtUrl}`);
+    }
+    const rows = $('div.col-12.col-lg-4 table tbody tr').get();
+    assert(rows.length > 0, `Can't find county table in ${districtUrl}`);
     let closestCounty = '';
     const counties = [];
     for (const row of rows) {
@@ -239,7 +253,7 @@ async function getCampaignContributions(election2019Url) {
         }
         const amount = $('td', row).eq(1).text().replace(/\D+/g, ''); // delete all nondigits
         const key = `$ Raised (${party})`;
-        assert(record[key] === null, `Duplicate ${party} row found for ${election2019Url}`);
+        assert.strictEqual(record[key], null, `Duplicate ${party} row found for ${election2019Url}`);
         record[key] = +amount;
     }
     record['D $ Advantage'] = (record['$ Raised (D)'] || 0) - (record['$ Raised (R)'] || 0);
@@ -379,8 +393,11 @@ function addRatings() {
 
     function getNumberRating(string) {
         const [level, party] = string.split(' ');
-        return {Safe: 4, Likely: 3, Lean: 2, Tilt: 1, Tossup: 0}[level] *
-            (party === 'R' ? -1 : 1);
+        if (level === 'Tossup') {
+            return 0;
+        }
+        assert(['D', 'R'].includes(party), `Unexpected party in rating "${string}"`);
+        return {Safe: 4, Likely: 3, Lean: 2, Tilt: 1}[level] * (party === 'R' ? -1 : 1);
     }
 }
 
