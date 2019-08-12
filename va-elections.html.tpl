@@ -47,7 +47,7 @@
       margin-top: 0 !important;
     }
     th.rotate {
-      height: 112px;
+      height: 135px;
       white-space: nowrap;
     }
     th.rotate > div {
