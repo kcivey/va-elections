@@ -3,6 +3,7 @@
 require('dotenv').config();
 const url = require('url');
 const fs = require('fs');
+const assert = require('assert');
 const cheerio = require('cheerio');
 const _ = require('lodash');
 const yaml = require('js-yaml');
@@ -118,9 +119,7 @@ async function processChamber(chamberUrl) {
                 .map(decodeHTML);
         });
         const m = districtLinkHtml.match(/href="([^"]+)"\s*>\s*([HS]D\s*\d+)\s*</);
-        if (!m) {
-            throw new Error(`Unexpected format "${districtLinkHtml}"`);
-        }
+        assert(m, `Unexpected format "${districtLinkHtml}"`);
         const election2019Url = url.resolve(chamberUrl, m[1]);
         const district= m[2].replace(/\s+/, '');
         if (argv.verbose) {
@@ -233,18 +232,14 @@ async function getCampaignContributions(election2019Url) {
         }
         const text = $('td', row).eq(0).text();
         const m = text.match(/\(([A-Z])\)/);
-        if (!m) {
-            throw new Error(`No party found in "${text}"`);
-        }
+        assert(m, `No party found in "${text}"`);
         const party = m[1];
         if (!parties.includes(party)) {
             continue;
         }
         const amount = $('td', row).eq(1).text().replace(/\D+/g, ''); // delete all nondigits
         const key = `$ Raised (${party})`;
-        if (record[key] !== null) {
-            throw new Error(`Duplicate ${party} row found for ${election2019Url}`);
-        }
+        assert(record[key] === null, `Duplicate ${party} row found for ${election2019Url}`);
         record[key] = +amount;
     }
     record['D $ Advantage'] = (record['$ Raised (D)'] || 0) - (record['$ Raised (R)'] || 0);
@@ -274,9 +269,7 @@ async function getEarlierElectionsDataFromVpap(election2019Url) {
                 for (const row of rows) {
                     const cells = $(row).find('td');
                     const m = cells.eq(0).text().match(/\(([^)]+)\)/);
-                    if (!m) {
-                        throw new Error(`Unexpected format "${cells.eq(0).text()}"`);
-                    }
+                    assert(m, `Unexpected format "${cells.eq(0).text()}"`);
                     votes[m[1]] = +cells.eq(1).text().trim()
                         .replace(/,/g, '');
                 }
@@ -432,29 +425,21 @@ function outputCsv(data) {
 }
 
 function outputHtml(data) {
-    fs.readFile(__dirname + '/va-elections.html.tpl', 'utf8', function (err, templateString) {
-        if (err) {
-            throw err;
-        }
-        const compiled = _.template(templateString);
-        let headers = Object.keys(data[Object.keys(data)[0]]);
-        headers.unshift('District');
-        headers = headers.filter(r => !r.includes('$'))
-            .concat(headers.filter(r => r.includes('$'))); // move campaign finance to end
-        const dollarMax = Object.values(data).reduce(function (max, record) {
-            return Math.max(
-                Math.abs(record['$ Raised (D)']),
-                Math.abs(record['$ Raised (R)']),
-                max
-            );
-        }, 0);
-        const html = compiled({headers, data, marginStyle, dollarMax});
-        fs.writeFile(__dirname + '/va-elections.html', html, function (err) {
-            if (err) {
-                throw err;
-            }
-        });
-    });
+    const templateString = fs.readFileSync(__dirname + '/va-elections.html.tpl', 'utf8');
+    const compiled = _.template(templateString);
+    let headers = Object.keys(data[Object.keys(data)[0]]);
+    headers.unshift('District');
+    headers = headers.filter(r => !r.includes('$'))
+        .concat(headers.filter(r => r.includes('$'))); // move campaign finance to end
+    const dollarMax = Object.values(data).reduce(function (max, record) {
+        return Math.max(
+            Math.abs(record['$ Raised (D)']),
+            Math.abs(record['$ Raised (R)']),
+            max
+        );
+    }, 0);
+    const html = compiled({headers, data, marginStyle, dollarMax});
+    fs.writeFileSync(__dirname + '/va-elections.html', html);
 }
 
 function marginStyle(margin, max) {
