@@ -402,9 +402,7 @@ function addRatings() {
 }
 
 function addFixes() {
-    if (!recordsByDistrict['HD30']['Republican'].length) {
-        recordsByDistrict['HD30']['Republican'] = ['(probable write-in)'];
-    }
+    recordsByDistrict['HD30']['Republican'] = ['(probable write-in)'];
     if (!recordsByDistrict['HD80']['Party']) {
         recordsByDistrict['HD80']['Party'] = 'D';
     }
