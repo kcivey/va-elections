@@ -82,8 +82,8 @@
   "Closest NoVa County" means the NoVa county closest to DC that contains part of the district;
   a narrow definition of NoVa is used, going only as far as Prince William and Loudoun Counties.
   Incumbents are marked with an asterisk.
-  "Nuttycombe Rating" is from <a href="https://mobile.twitter.com/ChazNuttycombe/status/1151171782449225728">Chaz Nuttycombe</a>.
-  "Tribbett Rating" is from <a href="https://mobile.twitter.com/ChazNuttycombe/status/1154214187155042304">Ben Tribbett</a> (aka Not Larry Sabato).
+  "Nuttycombe Rating" is from <a href="https://twitter.com/ChazNuttycombe/status/1168567142318596096">Chaz Nuttycombe</a>.
+  "Tribbett Rating" is from <a href="https://twitter.com/ChazNuttycombe/status/1168563886024470528">Ben Tribbett</a> (aka Not Larry Sabato).
   Note that Nuttycombe uses a "Tilt" category in his ratings, but Tribbett does not.
   Click the column headers to sort.
 </p>
