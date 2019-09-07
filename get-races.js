@@ -245,6 +245,9 @@ async function getCampaignContributions(election2019Url) {
             continue;
         }
         const text = $('td', row).eq(0).text();
+        if (text.includes('Freitas')) { // write-in note
+            continue;
+        }
         const m = text.match(/\(([A-Z])\)/);
         assert(m, `No party found in "${text}"`);
         const party = m[1];
