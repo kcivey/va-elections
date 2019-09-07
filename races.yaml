@@ -232,8 +232,8 @@ HD10:
   2016 President D: 22674
   2016 President R: 19799
   2016 President Margin: 7
-  Nuttycombe Rating: 0
-  Tribbett Rating: 0
+  Nuttycombe Rating: 1
+  Tribbett Rating: 1
 HD11:
   Democrat:
     - Sam Rasoul*
@@ -303,8 +303,8 @@ HD13:
   2016 President D: 21207
   2016 President R: 15459
   2016 President Margin: 16
-  Nuttycombe Rating: 3
-  Tribbett Rating: 0
+  Nuttycombe Rating: 2
+  Tribbett Rating: 1
 HD14:
   Democrat:
     - Eric Stamps
@@ -663,7 +663,7 @@ HD28:
   2016 President D: 17847
   2016 President R: 18267
   2016 President Margin: -1
-  Nuttycombe Rating: 1
+  Nuttycombe Rating: 0
   Tribbett Rating: 0
 HD29:
   Democrat:
@@ -694,7 +694,8 @@ HD30:
     - Ann Ridgeway
   Republican:
     - (probable write-in)
-  Other: []
+  Other:
+    - Nick Freitas* (Write-in)
   Open: true
   Retiring Incumbent: Nick Freitas
   Party: R
@@ -702,16 +703,16 @@ HD30:
   Previous D Votes: 9333
   Previous R Votes: 15355
   Previous Margin: -24
-  $ Raised (D): 23575
-  $ Raised (R): 23561
-  D $ Advantage: 14
+  $ Raised (D): 7805
+  $ Raised (R): null
+  D $ Advantage: 7805
   2017 Governor D: 9525
   2017 Governor R: 15068
   2017 Governor Margin: -23
   2016 President D: 13913
   2016 President R: 23579
   2016 President Margin: -26
-  Nuttycombe Rating: -4
+  Nuttycombe Rating: -2
   Tribbett Rating: 0
 HD31:
   Democrat:
@@ -947,7 +948,7 @@ HD40:
   2016 President R: 18772
   2016 President Margin: 12
   Nuttycombe Rating: 0
-  Tribbett Rating: -3
+  Tribbett Rating: -2
 HD41:
   Democrat:
     - Eileen Filler-Corn*
@@ -1183,7 +1184,7 @@ HD50:
   2016 President D: 18952
   2016 President R: 14050
   2016 President Margin: 15
-  Nuttycombe Rating: 3
+  Nuttycombe Rating: 2
   Tribbett Rating: 0
 HD51:
   Democrat:
@@ -1208,7 +1209,7 @@ HD51:
   2016 President R: 17814
   2016 President Margin: 9
   Nuttycombe Rating: 2
-  Tribbett Rating: 0
+  Tribbett Rating: 1
 HD52:
   Democrat:
     - Luke Torian*
@@ -1566,8 +1567,8 @@ HD66:
   2016 President D: 20031
   2016 President R: 18189
   2016 President Margin: 5
-  Nuttycombe Rating: -1
-  Tribbett Rating: -3
+  Nuttycombe Rating: 0
+  Tribbett Rating: -2
 HD67:
   Democrat:
     - Karrie Delaney*
@@ -1802,8 +1803,8 @@ HD76:
   2016 President D: 22683
   2016 President R: 16122
   2016 President Margin: 17
-  Nuttycombe Rating: 0
-  Tribbett Rating: -2
+  Nuttycombe Rating: 1
+  Tribbett Rating: 0
 HD77:
   Democrat:
     - Cliff Hayes*
@@ -1935,9 +1936,9 @@ HD82:
   Previous D Votes: 11174
   Previous R Votes: 16048
   Previous Margin: -18
-  $ Raised (D): 22886
+  $ Raised (D): 23004
   $ Raised (R): 135039
-  D $ Advantage: -112153
+  D $ Advantage: -112035
   2017 Governor D: 12634
   2017 Governor R: 14372
   2017 Governor Margin: -6
@@ -1992,7 +1993,7 @@ HD84:
   2016 President D: 15843
   2016 President R: 17419
   2016 President Margin: -5
-  Nuttycombe Rating: -1
+  Nuttycombe Rating: -2
   Tribbett Rating: -3
 HD85:
   Democrat:
@@ -2087,7 +2088,7 @@ HD88:
   2016 President D: 17463
   2016 President R: 23303
   2016 President Margin: -14
-  Nuttycombe Rating: -3
+  Nuttycombe Rating: -4
   Tribbett Rating: -3
 HD89:
   Democrat:
@@ -2158,7 +2159,7 @@ HD91:
   2016 President R: 16787
   2016 President Margin: 5
   Nuttycombe Rating: 2
-  Tribbett Rating: 0
+  Tribbett Rating: 1
 HD92:
   Democrat:
     - Jeion Ward*
@@ -2540,7 +2541,7 @@ SD7:
   2016 President R: 44619
   2016 President Margin: 0
   Nuttycombe Rating: 2
-  Tribbett Rating: -2
+  Tribbett Rating: -1
 SD8:
   Democrat:
     - Missy Cotter Smasal
@@ -2635,7 +2636,7 @@ SD11:
   2016 President D: 47651
   2016 President R: 59725
   2016 President Margin: -11
-  Nuttycombe Rating: -3
+  Nuttycombe Rating: -2
   Tribbett Rating: -2
 SD12:
   Democrat:
@@ -2660,7 +2661,7 @@ SD12:
   2016 President R: 49627
   2016 President Margin: 3
   Nuttycombe Rating: 1
-  Tribbett Rating: -2
+  Tribbett Rating: -1
 SD13:
   Democrat:
     - John Bell
