@@ -163,7 +163,8 @@ async function processChamber(chamberUrl) {
         if (argv.verbose) {
             console.log('getting Daily Kos data');
         }
-        recordsByDistrict = await addDailyKosData(isHouse, recordsByDistrict);
+        recordsByDistrict = // eslint-disable-line require-atomic-updates
+            await addDailyKosData(isHouse, recordsByDistrict);
     }
     return recordsByDistrict;
 }
