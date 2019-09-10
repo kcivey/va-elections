@@ -57,6 +57,8 @@ const noVaCounties = [ // ordered by increasing distance from DC
     'Prince William County',
     'Manassas Park City',
     'Manassas City',
+    'Stafford County',
+    'Fauquier County',
 ];
 let recordsByDistrict = {};
 let districtCount = 0;

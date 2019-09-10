@@ -409,7 +409,7 @@ HD18:
   Open: false
   Retiring Incumbent: ''
   Party: R
-  Closest NoVa County: ''
+  Closest NoVa County: Fauquier County
   Previous D Votes: 9486
   Previous R Votes: 16686
   Previous Margin: -28
@@ -650,7 +650,7 @@ HD28:
   Open: true
   Retiring Incumbent: Bob Thomas
   Party: R
-  Closest NoVa County: ''
+  Closest NoVa County: Stafford County
   Previous D Votes: 11760
   Previous R Votes: 11842
   Previous Margin: -0.0
@@ -2075,7 +2075,7 @@ HD88:
   Open: false
   Retiring Incumbent: ''
   Party: R
-  Closest NoVa County: ''
+  Closest NoVa County: Stafford County
   Previous D Votes: 9918
   Previous R Votes: 14022
   Previous Margin: -17
@@ -2651,9 +2651,9 @@ SD12:
   Previous D Votes: 16797
   Previous R Votes: 25504
   Previous Margin: -21
-  $ Raised (D): 404039
+  $ Raised (D): 178918
   $ Raised (R): 830612
-  D $ Advantage: -426573
+  D $ Advantage: -651694
   2017 Governor D: 40516
   2017 Governor R: 37099
   2017 Governor Margin: 4
