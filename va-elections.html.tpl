@@ -151,6 +151,7 @@
         <% _.forEach(headers, function (key) { %>
           <% var value = key === 'District' ? district : r[key]; %>
           <td<% if (/Margin|\$/.test(key)) { %> <%= marginStyle((key.includes('(R)') ? -1 : 1) * value, (key.includes('$') && dollarMax)) %><% }
+            else if (key === 'VPAP Index') { %> <%= marginStyle(value, 75) %><% }
             else if (/Rating/.test(key)) { %> <%= marginStyle(value * 25) %><% }
             else if (key === 'Party') { %> class="<%= {D: 'democrat', R: 'republican'}[value] || 'empty' %>"<% }
             else if ((Array.isArray(value) && !value.length) || value == null || value === '') { %> class="empty"<% } %>
@@ -219,6 +220,19 @@
       },
       searchable: false,
     };
+    const vpapCol = {
+        width: 30,
+        render: function (value, type) {
+            value = +value;
+            if (type !== 'display') {
+                return value;
+            }
+            return (value < 0 ? 'R' : 'D') + '+' + Math.abs(value).toFixed(1);
+        }
+    };
+    const hiddenCol = {
+        visible: false,
+    };
     const nameCol = {
       orderable: false,
     };
@@ -286,38 +300,38 @@
         if (!$('#show-competitive').prop('checked')) {
           return true;
         }
-        return Math.abs(rowData[17]) < 4 || Math.abs(rowData[18]) < 4;
+        return Math.abs(rowData[19]) < 4 || Math.abs(rowData[20]) < 4;
       },
     );
+    const columns = [
+        <% _.forEach(headers, function (header) {
+            if (header === 'District') { %>districtCol<% }
+            else if (header === 'Party') { %>partyCol<% }
+            else if (header === 'Open') { %>openCol<% }
+            else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
+            else if (/^\$/.test(header)) { %>dollarCol<% }
+            else if (/\$ Advantage$/.test(header)) { %>dollarAdvantageCol<% }
+            else if (/Margin$/.test(header)) { %>marginCol<% }
+            else if (/Rating$/.test(header)) { %>ratingCol<% }
+            else if (/VPAP/.test(header)) { %>vpapCol<% }
+            else if (/Other|County$/.test(header)) { %>hiddenCol<% }
+            else if (/Region/.test(header)) { %>null<% }
+            else { %>nameCol<% } %>,
+        <% }); %>
+    ];
     const $table = $('#races-table')
             .on('draw.dt', () => $('#races-table_wrapper').width($table.width()))
             .one('draw.dt', () => $('#container').css('opacity', 1))
             .on('column-visibility.dt', () => $table.columns.adjust().draw());
     const table = $table.DataTable({
-      columns: [
-        <% _.forEach(headers, function (header) {
-          if (header === 'District') { %>districtCol<% }
-          else if (header === 'Party') { %>partyCol<% }
-          else if (header === 'Open') { %>openCol<% }
-          else if (/\b(?:Votes|D|R)$/.test(header)) { %>numberCol<% }
-          else if (/^\$/.test(header)) { %>dollarCol<% }
-          else if (/\$ Advantage$/.test(header)) { %>dollarAdvantageCol<% }
-          else if (/Margin$/.test(header)) { %>marginCol<% }
-          else if (/Rating$/.test(header)) { %>ratingCol<% }
-          else if (/County$/.test(header)) { %>null<% }
-          else { %>nameCol<% } %>,
-        <% }); %>
-      ],
+      columns: columns,
       fixedHeader: true,
       paging: false
     });
     $('#show-uncontested,#show-pickups,#show-competitive').on('click', function () { table.draw(); });
     $('#show-chamber input').on('change', function () { table.draw(); });
-    const hiddenColumns = [
-      <% _.forEach(headers, function (header, i) {
-        if (/Raised|\b(?:Votes|D|R)$/.test(header)) { %><%= i %>,<% } %>
-      <% }); %>
-    ];
+    const hiddenColumns = columns.map(function (col, i) { return col && col.visible ? null : i; })
+        .filter(function (value) { return value != null; });
     $('#show-all-columns').on('click', function () {
       table.columns(hiddenColumns).visible($(this).prop('checked'));
     });

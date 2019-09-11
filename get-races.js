@@ -110,7 +110,7 @@ async function processChamber(chamberUrl) {
         .map((i, th) => $(th).text().trim())
         .get();
     headers.shift(); // remove "District" column head
-    headers.push('Open', 'Retiring Incumbent', 'Party', 'Closest NoVa County'); // to set order of keys
+    headers.push('Open', 'Retiring Incumbent', 'Party', 'Region', 'Closest NoVa County', 'VPAP Index'); // to set order of keys
     const rows = $('table.table tbody tr').get();
     for (const row of rows) {
         if (districtCount > argv.limit) {
@@ -140,6 +140,7 @@ async function processChamber(chamberUrl) {
                 await getIncumbentAndParty(election2019Url),
                 argv.vpap ? await getEarlierElectionsDataFromVpap(election2019Url) : {},
                 await getCampaignContributions(election2019Url),
+                {'Region': '', 'VPAP Index': null}, // set so they'll stay when undefined are removed below
             );
         }
         const open = !values.some(function (value) {
@@ -161,12 +162,16 @@ async function processChamber(chamberUrl) {
             break;
         }
     }
-    if (!argv.vpap && argv.full) {
-        if (argv.verbose) {
-            console.log('getting Daily Kos data');
+    if (argv.full) {
+        if (!argv.vpap) {
+            if (argv.verbose) {
+                console.log('getting Daily Kos data');
+            }
+            recordsByDistrict = // eslint-disable-line require-atomic-updates
+                await addDailyKosData(isHouse, recordsByDistrict);
         }
         recordsByDistrict = // eslint-disable-line require-atomic-updates
-            await addDailyKosData(isHouse, recordsByDistrict);
+            await addVpapIndex(isHouse, recordsByDistrict);
     }
     return recordsByDistrict;
 }
@@ -366,6 +371,22 @@ function addDailyKosData(isHouse, records) {
         });
 }
 
+async function addVpapIndex(isHouse, records) {
+    const indexUrl = 'https://www.vpap.org/elections/' + (isHouse ? 'house' : 'senate') + '/vpap-index/';
+    const html = await request(indexUrl);
+    const m = html.match(/var data = (\[.+?]);/s);
+    assert(m, `Can't find VPAP indexes in ${indexUrl}`);
+    const json = m[1].replace(/'/g, '"');
+    const districtData = JSON.parse(json);
+    for (const d of districtData) {
+        const district = (isHouse ? 'H' : 'S') + 'D' + d.district;
+        // Reverse sign of VPAP index for consistency with other columns
+        records[district]['VPAP Index'] = -(100 * d.vpap_index_float).toFixed(2);
+        records[district]['Region'] = d.region;
+    }
+    return records;
+}
+
 function getCheerio(requestOptions) {
     return request(requestOptions)
         .then(html => cheerio.load(html))
@@ -472,6 +493,7 @@ function marginStyle(margin, max) {
     if (max && darkness) {
         darkness = 100 * Math.sqrt(darkness / max);
     }
+    darkness = Math.min(100, Math.max(darkness, 0));
     let background;
     const level = (100 - darkness).toFixed(1);
     if (margin === 0) {
