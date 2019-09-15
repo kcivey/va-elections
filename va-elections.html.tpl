@@ -36,6 +36,16 @@
       display: inline-block;
       margin-right: 1rem;
     }
+    #container {
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+    #container-top-scroller {
+      overflow-x: scroll;
+    }
+    #container-top-scroller > div {
+      height: 20px;
+    }
     table.dataTable {
       width: auto;
       margin: 0;
@@ -51,11 +61,17 @@
       white-space: nowrap;
     }
     th.rotate > div {
-      transform: translate(15px, 4px) rotate(-45deg);
+      transform-origin: top left;
+      transform: rotate(-45deg);
       width: 30px;
     }
     th.rotate > div > span {
       padding: 6px 0;
+    }
+    .table td.rotate-spacer {
+      border: none;
+      padding: 0;
+      margin: 0;
     }
     .columns {
       border: #ccc 1px solid;
@@ -95,7 +111,9 @@
   "Competitive" means that Nuttycombe or Tribbett has rated the race as not safe.
 </p>
 </div>
-
+<div id="container-top-scroller">
+  <div></div>
+</div>
 <div id="container" style="opacity: 0;">
 <div id="controls">
   <div class="control-group">
@@ -141,7 +159,7 @@
   <thead>
     <tr>
       <% _.forEach(headers, function (header) { %>
-        <th class="rotate"><div><span><%- header %></span></div></th>
+        <th><%- header %></th>
       <% }); %>
     </tr>
   </thead>
@@ -320,12 +338,20 @@
         <% }); %>
     ];
     const $table = $('#races-table')
-            .on('draw.dt', () => $('#races-table_wrapper').width($table.width()))
             .one('draw.dt', () => $('#container').css('opacity', 1))
+            .on('draw.dt', function () {
+                $('#container-top-scroller div').width($table.width());
+            })
             .on('column-visibility.dt', () => $table.columns.adjust().draw());
+    adjustTableForRotatedHeads('#races-table');
+    const numberOfColumns = $table.find('tr').eq(0).children().length;
+    while (numberOfColumns > columns.length) {
+        columns.push({searchable: false, sortable: false});
+    }
     const table = $table.DataTable({
       columns: columns,
       fixedHeader: true,
+      dom: '<"row"<"col-12"f>><"row"<"col-12"tr>><"row"<"col-12"i>>',
       paging: false
     });
     $('#show-uncontested,#show-pickups,#show-competitive').on('click', function () { table.draw(); });
@@ -335,6 +361,58 @@
     $('#show-all-columns').on('click', function () {
       table.columns(hiddenColumns).visible($(this).prop('checked'));
     });
+    $('#container').on('scroll', function () {
+      const pos = $(this).scrollLeft();
+      $('table[aria-describedby=races-table_info].fixedHeader-floating').css('left', 20 - pos);
+      $('#container-top-scroller').scrollLeft(pos);
+    });
+    $('#container-top-scroller').on('scroll', function () {
+      const pos = $(this).scrollLeft();
+      $('#container').scrollLeft(pos);
+    });
+    $(window).on('scroll', function (evt) {
+        const pos = $('#container').scrollLeft();
+        $('table[aria-describedby=races-table_info].fixedHeader-floating').css('left', 20 - pos);
+    });
+    function adjustTableForRotatedHeads(table) {
+      const $table = $(table);
+      const heads = $table.find('thead th');
+      if (!heads.is('.rotate')) {
+        heads.addClass('rotate')
+          .wrapInner('<div><span></span></div>');
+      }
+      const rad = 45 * Math.PI / 180;
+      const sin = Math.sin(rad);
+      const cos = Math.cos(rad);
+      const tableRight = $table.offset().left + $table.width();
+      let maxHeadHeight = 0;
+      let maxRight = 0;
+      heads.not('.rotate-spacer').each(function () {
+        const $head = $(this);
+        const $span = $head.find('span');
+        const width = $span.outerWidth();
+        const height = $span.outerHeight();
+        const paddingRight = parseInt($head.css('paddingRight'), 10);
+        const actualWidth = Math.abs(width * cos) + Math.abs(height * sin) + paddingRight;
+        const actualHeight = Math.abs(width * sin) + Math.abs(height * cos);
+        const actualRight = $span.offset().left + actualWidth;
+        if (actualHeight > maxHeadHeight) {
+          maxHeadHeight = actualHeight;
+        }
+        if (actualRight > maxRight) {
+          maxRight = actualRight;
+        }
+      });
+      heads.height(maxHeadHeight);
+      if (!$table.find('.rotate-spacer').length) {
+        $table.find('tr').append($('<td/>').addClass('rotate-spacer'));
+      }
+      const spacerWidth = Math.max(0, maxRight - tableRight);
+      $table.find('.rotate-spacer')
+        .toggle(spacerWidth > 0)
+        .eq(0)
+        .html($('<div/>').width(spacerWidth)) // setting td doesn't keep column from collapsing
+    }
   });
 </script>
 <%= '\x3c%= nav %\x3e' %>
