@@ -28,10 +28,6 @@
     .empty {
       background-color: #eee;
     }
-    #controls {
-      position: absolute;
-      z-index: 100;
-    }
     .control-group {
       display: inline-block;
       margin-right: 1rem;
@@ -55,6 +51,9 @@
     }
     table.dataTable.fixedHeader-floating {
       margin-top: 0 !important;
+    }
+    div.dataTables_wrapper div.dataTables_filter {
+      text-align: left;
     }
     th.rotate {
       height: 135px;
@@ -115,44 +114,42 @@
   <div></div>
 </div>
 <div id="container" style="opacity: 0;">
-<div id="controls">
-  <div class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-all-columns" class="form-check-input">
-      <label class="form-check-label" for="show-all-columns">Show all columns</label>
-    </div>
+<div class="control-group">
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="show-all-columns" class="form-check-input">
+    <label class="form-check-label" for="show-all-columns">Show all columns</label>
   </div>
-  <div class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-uncontested" class="form-check-input">
-      <label class="form-check-label" for="show-uncontested">Show uncontested races too</label>
-    </div>
+</div>
+<div class="control-group">
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="show-uncontested" class="form-check-input">
+    <label class="form-check-label" for="show-uncontested">Show uncontested races too</label>
   </div>
-  <div class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-pickups" class="form-check-input">
-      <label class="form-check-label" for="show-pickups">Show only possible R→D</label>
-    </div>
+</div>
+<div class="control-group">
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="show-pickups" class="form-check-input">
+    <label class="form-check-label" for="show-pickups">Show only possible R→D</label>
   </div>
-  <div class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="checkbox" id="show-competitive" class="form-check-input">
-      <label class="form-check-label" for="show-competitive">Show only competitive races</label>
-    </div>
+</div>
+<div class="control-group">
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="show-competitive" class="form-check-input">
+    <label class="form-check-label" for="show-competitive">Show only competitive races</label>
   </div>
-  <div id="show-chamber" class="control-group">
-    <div class="form-check form-check-inline">
-      <input type="radio" id="show-chamber-1" class="form-check-input" name="chamber" value="senate">
-      <label class="form-check-label" for="show-chamber-1">Senate</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input type="radio" id="show-chamber-2" class="form-check-input" name="chamber" value="house">
-      <label class="form-check-label" for="show-chamber-2">House</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input type="radio" id="show-chamber-3" class="form-check-input" name="chamber" value="both" checked>
-      <label class="form-check-label" for="show-chamber-3">Both</label>
-    </div>
+</div>
+<div id="show-chamber" class="control-group">
+  <div class="form-check form-check-inline">
+    <input type="radio" id="show-chamber-1" class="form-check-input" name="chamber" value="senate">
+    <label class="form-check-label" for="show-chamber-1">Senate</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input type="radio" id="show-chamber-2" class="form-check-input" name="chamber" value="house">
+    <label class="form-check-label" for="show-chamber-2">House</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input type="radio" id="show-chamber-3" class="form-check-input" name="chamber" value="both" checked>
+    <label class="form-check-label" for="show-chamber-3">Both</label>
   </div>
 </div>
 <table id="races-table" class="table">
