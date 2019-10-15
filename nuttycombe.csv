@@ -3,19 +3,18 @@ HD13	Lean D
 HD21	Lean D
 HD27	Tossup
 HD28	Tossup
-HD30	Lean R
+HD30	Likely R
 HD31	Likely D
 HD33	Likely R
 HD40	Tossup
 HD50	Lean D
 HD51	Lean D
-HD62	Likely R
 HD66	Tossup
-HD68	Tossup
+HD68	Tilt D
 HD72	Lean D
 HD73	Tilt D
+HD75	Likely D
 HD76	Tilt D
-HD81	Likely R
 HD83	Tossup
 HD84	Lean R
 HD85	Tilt D
@@ -24,7 +23,7 @@ HD93	Likely D
 HD94	Likely D
 HD96	Likely R
 HD100	Tilt R
-SD7	Lean D
+SD7	Tossup
 SD8	Tilt R
 SD10	Lean D
 SD11	Tilt R

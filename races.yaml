@@ -253,7 +253,7 @@ HD10:
   2016 President R: 19799
   2016 President Margin: 7
   Nuttycombe Rating: 1
-  Tribbett Rating: 1
+  Tribbett Rating: 0
 HD11:
   Democrat:
     - Sam Rasoul*
@@ -595,7 +595,7 @@ HD24:
   Republican:
     - Ronnie Campbell*
   Other:
-    - Billy Fishpaw
+    - Eli Fishpaw
   Open: false
   Retiring Incumbent: ''
   Party: R
@@ -772,8 +772,8 @@ HD30:
   2016 President D: 13913
   2016 President R: 23579
   2016 President Margin: -26
-  Nuttycombe Rating: -2
-  Tribbett Rating: 0
+  Nuttycombe Rating: -3
+  Tribbett Rating: -2
 HD31:
   Democrat:
     - Elizabeth Guzman*
@@ -876,7 +876,7 @@ HD34:
   2016 President R: 16236
   2016 President Margin: 23
   Nuttycombe Rating: 4
-  Tribbett Rating: 2
+  Tribbett Rating: 3
 HD35:
   Democrat:
     - Mark Keam*
@@ -1002,7 +1002,7 @@ HD39:
   2016 President R: 11566
   2016 President Margin: 42
   Nuttycombe Rating: 4
-  Tribbett Rating: 3
+  Tribbett Rating: 4
 HD40:
   Democrat:
     - Dan Helmer
@@ -1285,7 +1285,7 @@ HD50:
   2016 President R: 14050
   2016 President Margin: 15
   Nuttycombe Rating: 2
-  Tribbett Rating: 0
+  Tribbett Rating: 1
 HD51:
   Democrat:
     - Hala Ayala*
@@ -1594,7 +1594,7 @@ HD62:
   2016 President D: 17262
   2016 President R: 18760
   2016 President Margin: -4
-  Nuttycombe Rating: -3
+  Nuttycombe Rating: -4
   Tribbett Rating: -3
 HD63:
   Democrat:
@@ -1750,8 +1750,8 @@ HD68:
   2016 President D: 26009
   2016 President R: 20567
   2016 President Margin: 12
-  Nuttycombe Rating: 0
-  Tribbett Rating: 0
+  Nuttycombe Rating: 1
+  Tribbett Rating: 2
 HD69:
   Democrat:
     - Betsy Carr*
@@ -1853,7 +1853,7 @@ HD72:
   2016 President R: 18706
   2016 President Margin: 7
   Nuttycombe Rating: 2
-  Tribbett Rating: 2
+  Tribbett Rating: 1
 HD73:
   Democrat:
     - Rodney Willett
@@ -1929,7 +1929,7 @@ HD75:
   2016 President D: 18285
   2016 President R: 14868
   2016 President Margin: 10
-  Nuttycombe Rating: 4
+  Nuttycombe Rating: 3
   Tribbett Rating: 3
 HD76:
   Democrat:
@@ -2083,7 +2083,7 @@ HD81:
   2016 President D: 16286
   2016 President R: 18469
   2016 President Margin: -6
-  Nuttycombe Rating: -3
+  Nuttycombe Rating: -4
   Tribbett Rating: -3
 HD82:
   Democrat:
@@ -2419,7 +2419,7 @@ HD94:
   2016 President R: 13332
   2016 President Margin: 18
   Nuttycombe Rating: 3
-  Tribbett Rating: 2
+  Tribbett Rating: 0
 HD95:
   Democrat:
     - Cia Price*
@@ -2575,7 +2575,7 @@ HD100:
   2016 President R: 15861
   2016 President Margin: 3
   Nuttycombe Rating: -1
-  Tribbett Rating: -2
+  Tribbett Rating: -1
 SD1:
   Democrat:
     - Monty Mason*
@@ -2754,7 +2754,7 @@ SD7:
   2016 President D: 44887
   2016 President R: 44619
   2016 President Margin: 0
-  Nuttycombe Rating: 2
+  Nuttycombe Rating: 0
   Tribbett Rating: -1
 SD8:
   Democrat:
@@ -2833,7 +2833,7 @@ SD10:
   2016 President R: 45906
   2016 President Margin: 14
   Nuttycombe Rating: 2
-  Tribbett Rating: 0
+  Tribbett Rating: 1
 SD11:
   Democrat:
     - Amanda Pohl
@@ -2885,7 +2885,7 @@ SD12:
   2016 President R: 49627
   2016 President Margin: 3
   Nuttycombe Rating: 1
-  Tribbett Rating: -1
+  Tribbett Rating: 0
 SD13:
   Democrat:
     - John Bell
